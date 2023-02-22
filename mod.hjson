@@ -1,0 +1,8 @@
+name: "radiatr"
+displayName: "The Radiatr"
+author: StarkillerTheGreat & Zielony Trójkąt
+description: "New planet Radiatr"
+version: "0.00"
+minGameVersion: "141.2"
+dependencies:["multi-crafter"]
+hidden: false

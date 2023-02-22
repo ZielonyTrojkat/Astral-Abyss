@@ -1,0 +1,10 @@
+type: item
+name: Magnetite
+description: a
+  "cost": 25,
+  "color": "00eeff",
+  "flammability": 0,
+  "explosiveness": 0,
+  "radioactivity": 0,
+  "charge": 0
+  research: lead
