@@ -1,0 +1,47 @@
+name: Rayvolpe
+"type": ItemTurret,
+"size": 4,
+"health": 1500,
+range: 350
+rotateSpeed: 4.5
+reload: 6
+burstSpacing: 3
+shots: 1
+xRand: 1
+outlineColor: 252729
+recoilAmount: 3
+shootSound: shootAlt
+shoot: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 10
+    barrelOffset: 0
+}
+ammoTypes: {
+  lead: {
+    type: BasicBulletType
+    speed: 7
+    lifetime: 60
+    damage: 12
+    width: 20
+    height: 25
+    frontColor: ffffff
+    backColor: ff1100
+    shootEffect: "shootSmall"        
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 5
+    collidesTiles: false
+    explodeRange: 90
+    splashDamageRadius: 90
+    splashDamage: 24
+    hitEffect: flakExplosionBig
+  }
+}
+category: turret
+requirements: [
+  lead/120
+]
+research: lead
+researchCost: [
+    lead/1
+  ]

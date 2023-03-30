@@ -1,0 +1,11 @@
+type: UnitCargoUnloadPoint
+size: 3
+staleTimeDuration: 30
+requirements: [
+  lonsdaleite/30
+]
+category: units
+research: core-2
+researchCost: [
+   lonsdaleite/1
+  ]

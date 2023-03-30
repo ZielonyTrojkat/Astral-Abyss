@@ -1,0 +1,25 @@
+type: BeamNode
+category: power
+health: 200
+size: 1
+laserColor1: 
+laserColor2:
+laserWidth:
+pulseMag:
+pulseScl:
+range: 6
+requirements: [
+  resonance/20
+]
+research: {
+    parent: lead
+    objectives: [
+        {
+            type: OnSector
+            preset: Origin
+        }
+    ]
+}
+researchCost: [
+    resonance/750
+  ]

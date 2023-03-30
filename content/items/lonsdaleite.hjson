@@ -1,0 +1,10 @@
+type: item
+name: Lonsdaleite
+description: Ore that contains very high amount of uranium.
+cost: 2,
+color: 00eeff,
+flammability: 0.0,
+explosiveness: 0.0,
+radioactivity: 0,
+charge: 0.0
+research: lead

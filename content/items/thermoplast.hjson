@@ -1,0 +1,10 @@
+type: item
+name: Thermoplast
+description: Ore that contains very high amount of uranium.
+cost: 2,
+color: 00eeff,
+flammability: 0.2,
+explosiveness: 0.2,
+radioactivity: 0,
+charge: 0.2
+research: lead
