@@ -16,7 +16,7 @@ research: {
     objectives: [
         {
             type: OnSector
-            preset: Origin
+            preset: origin
         }
     ]
 }
