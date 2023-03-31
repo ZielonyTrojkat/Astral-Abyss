@@ -2,11 +2,11 @@ type: BeamNode
 category: power
 health: 200
 size: 1
-laserColor1: 
-laserColor2:
-laserWidth:
-pulseMag:
-pulseScl:
+laserColor1: ccffff
+laserColor2: ff44ff
+laserWidth: 5
+pulseMag: 3
+pulseScl: 3
 range: 6
 requirements: [
   resonance/20
