@@ -9,7 +9,7 @@ pulseMag: 3
 pulseScl: 3
 range: 6
 requirements: [
-  resonance/20
+  resonance-crystal/20
 ]
 research: {
     parent: lead
@@ -21,5 +21,5 @@ research: {
     ]
 }
 researchCost: [
-    resonance/750
+    resonance-crystal/750
   ]
