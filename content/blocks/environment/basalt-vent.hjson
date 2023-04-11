@@ -1,0 +1,7 @@
+type: SteamVent
+variants: 2
+parent: basalt-floor
+blendGroup: basalt-floor
+attributes: {
+  steam: 1
+}

@@ -2,14 +2,15 @@ type: Fracker
 size: 5
 liquidCapacity: 120
 result: dissonance
+attribute: dissonance
 pumpAmount: 1
 baseEfficiency: 0
-itemUseTime: 210
+hasPower: true
 consumes: {
   power: 11
 }
 category: production
-research: water-extractor
+research: lead
 requirements: [
-  copper/1500
+  palladium/1500
 ]

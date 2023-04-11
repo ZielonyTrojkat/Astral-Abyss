@@ -1,10 +1,8 @@
 type: item
-name: Resonance crystal
-description: Ore that contains very high amount of uranium.
-cost: 2,
-color: 00eeff,
-flammability: 0,
-explosiveness: 0,
-radioactivity: 0,
-charge: 1
-research: lead
+cost: 1
+color: ff0000
+flammability: 0
+explosiveness: 0
+radioactivity: 0
+charge: 0.5
+research: palladium

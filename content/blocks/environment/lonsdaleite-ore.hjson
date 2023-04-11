@@ -1,0 +1,6 @@
+type: OreBlock
+itemDrop: lonsdaleite
+variants: 1
+oreDefault: true
+oreScale: 30
+oreThreshold: 0.88

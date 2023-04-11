@@ -1,6 +1,6 @@
 type: OreBlock
-itemDrop: magnetite
-variants: 1
+itemDrop: palladium
+variants: 3
 oreDefault: true
-oreScale: 20
+oreScale: 25
 oreThreshold: 0.85

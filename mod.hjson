@@ -1,7 +1,7 @@
-name: "radiatr-mod"
-displayName: "The Radiatr"
+name: "Darken-mod"
+displayName: "The Darken"
 author: StarkillerTheGreat & Zielony Trójkąt
-description: "New planet Radiatr"
+description: "New planet Darken"
 version: "0.00"
 minGameVersion: "141.2"
 dependencies:["multi-crafter"]
