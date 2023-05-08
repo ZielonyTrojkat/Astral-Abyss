@@ -1,0 +1,78 @@
+generator: sunGenerator
+parent: sun 
+solarSystem: sun
+name: Darken
+accesible: true
+bloom: true
+lightColor: ffffff
+hasAtmosphere: true
+iconColor: e38922
+allowWavesSimulation: false
+allowSectorSimulation: true
+allowSectorInvasion: false
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+updateLighting: false
+orbitRadius: 10
+prebuildBase: false
+atmosphereRadIn: 0.01
+atmosphereRadOut: 0.3
+atmosphereColor: a11f1f
+alwaysUnlocked: true
+defaultCore: crimson-core1
+clearSectorOnLose: true
+visible: true
+startSector: 0,
+sectorSize: 3
+sectorSeed: 69
+landCloudColor: 752727
+cloudMesh: {
+  type: HexSkyMesh
+  planet: Darken
+  seed: 2
+  speed: 99
+  radius: 0.15
+  divisions: 10
+  color: 503c66ab
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0
+}
+mesh: {
+  type: SunMesh
+  planet: sun
+  seed: 100
+  color1: f29327
+  color2: f04f26
+  divisions: 5
+  radius: 10
+  octaves: 5
+  persistence: 0.01
+  scale: 5
+  mag: 0.8
+  }
+hiddenItems: [
+  copper
+  lead
+  scrap
+  graphite
+  coal
+  titanium
+  thorium
+  silicon
+  plastanium
+  phase-fabric
+  surge-alloy
+  spore-pod
+  sand
+  blast-compound
+  pyratite
+  metaglass
+  beryllium
+  oxide
+  tungsten
+  carbide
+  fissile-matter
+  dormant-cyst
+  ]
