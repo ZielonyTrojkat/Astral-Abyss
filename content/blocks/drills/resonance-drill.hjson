@@ -1,18 +1,25 @@
-type: Drill
+type: BeamDrill
 category: production
 health: 200
 size: 2
 fogRadius: 0
-hasPower: false
+hasPower: true
 underBullets: false
 drillTime: 400
-tier: 2
+laserWidth: 1
+pulseIntensity: 0.1
+range: 4
+tier: 3
+glowColor: ff0000
+consumes: {
+  power: 0.5
+  }
 
 requirements: [
-  palladium/16
+  resonance-crystal/10
 ]
 research: {
-    parent: core-darken1
+    parent: lead
     objectives: [
         {
             type: OnSector

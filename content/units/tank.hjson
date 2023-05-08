@@ -9,25 +9,27 @@ speed: 0.85
 rotateSpeed: 4
 range: 80
 itemCapacity: 0
-treadPullOffset: 4
+treadPullOffset: 8
 treadRects: [
-  {
-  x: 3
-  y: 2
-  width: 2
-  height: 5
-  }
-  {
-  x: 5
-  height: 5
-  }
+{
+x: 10
+y: 15
+"width": 13,
+"height": 16
+}
+{
+x: 10
+y: -30
+"width": 13,
+"height": 16
+}
 ]
 envEnabled: 17
 envDisabled: 0
 outlineColor: "2d2f39"
 weapons: [
  {
-    name: rubid-weapon
+    name: tank-gun
     rotate: true
     x: 0
     y: 0
@@ -48,33 +50,6 @@ spread: 7
       recoil: 0.1
       width: 8
       height: 10
-      trailWidth: 1.6
-      trailLength: 3
-      shootEffect: none
-      smokeEffect: none
-    }
-  }
-  {
-    name: central-rubid-weapon
-    x: 0
-    y: 8
-    mirror: false
-    shootSound: pew
-    reload: 9
-    shoot: {
-type: ShootSpread
-shots: 5
-spread: 6
-}
-    bullet: {
-      type: BasicBulletType
-      sprite: missile-large
-      damage: 10
-      speed: 8
-      lifetime: 12
-      recoil: 0.15
-      width: 5
-      height: 7
       trailWidth: 1.6
       trailLength: 3
       shootEffect: none

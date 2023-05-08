@@ -1,0 +1,21 @@
+type: CoreBlock
+category: effect
+health: 5000
+size: 4
+fogRadius: 10
+hasPower: false
+underBullets: false
+absorbLasers: true
+itemCapacity: 5000
+unitCapModifier: 12
+unitType: poly
+requirements: [
+  palladium/1000
+]
+research: {
+  root: true
+  name: Darken
+  requiresUnlock: false
+  planet: Darken
+  }
+alwaysUnlocked: true

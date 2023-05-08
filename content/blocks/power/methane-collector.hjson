@@ -23,7 +23,7 @@ research: {
     objectives: [
         {
             type: OnSector
-            preset: origin
+            preset: groundZero
         }
     ]
 }

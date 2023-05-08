@@ -1,0 +1,33 @@
+type: UnitFactory
+health: 800
+size: 3
+squareSprite: false
+consumes: {
+  power: 1.2
+}
+plans: [
+  {
+    unit: tank
+    time: 1200
+    requirements: [
+     palladium/20
+     resonance-crystal/15
+    ]
+  }
+]
+requirements: [
+  palladium/50
+]
+category: units
+research: {
+    parent: "lead",
+    objectives: [
+        {
+            type: "OnSector",
+            preset: "origin"
+        }
+    ]
+}
+researchCost: [
+    palladium/70
+  ]

@@ -14,3 +14,5 @@ research: lead
 requirements: [
   palladium/1500
 ]
+ambientSound: shirobon
+ambientSoundVolume: 10000
