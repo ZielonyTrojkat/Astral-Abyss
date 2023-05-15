@@ -1,7 +1,7 @@
 name: Ray
-"type": ItemTurret,
-"size": 2,
-"health": 1500,
+type: ItemTurret
+size: 2
+health: 1500
 range: 350
 rotateSpeed: 4.5
 reload: 40
