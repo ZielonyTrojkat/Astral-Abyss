@@ -1,0 +1,7 @@
+type: SteamVent
+variants: 2
+parent: red-floor
+blendGroup: red-floor
+attributes: {
+  steam: 1
+}
