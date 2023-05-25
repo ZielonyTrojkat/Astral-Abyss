@@ -13,11 +13,24 @@ consumes: {
      ferrofluid/0.5
     ]
 }
-warmupSpeed: 0.005
+warmupSpeed: 0.003
 powerProduction: 40
 drawer: [
   {
+    type: DrawRegion
+    suffix: -bottom
+  }
+  {
+    type: DrawRegion
+    suffix: -rotor
+    rotateSpeed: 10
+  }
+  {
     type: DrawDefault
+  }
+  {
+    type: DrawRegion
+    suffix: -top
   }
 ]
 
