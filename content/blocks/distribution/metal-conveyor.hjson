@@ -1,0 +1,21 @@
+type: Conveyor
+hasShadow: true
+health: 80
+speed: 0.5
+displayedSpeed: 3
+requirements: [
+  palladium/1
+]
+category: distribution
+research: {
+    parent: "darken-mod-crimson-core1",
+    objectives: [
+        {
+            type: "SectorComplete",
+            preset: "onset"
+        }
+    ]
+},
+researchCost: [
+    palladium/1
+  ]

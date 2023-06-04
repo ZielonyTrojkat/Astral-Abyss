@@ -1,8 +1,8 @@
 type: item
 cost: 1
-color: 4f3665
+color: 2e2382
 flammability: 0
 explosiveness: 0
 radioactivity: 0
 charge: 0
-research: lead
+research: darken-mod-resonance-crystal

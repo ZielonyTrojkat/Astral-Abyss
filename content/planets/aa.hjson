@@ -1,0 +1,75 @@
+generator: PlanetGenerator
+parent: sun 
+name: Darken
+accesible: true
+hasAtmosphere: true
+iconColor: 10d7e6
+allowWavesSimulation: false
+allowSectorSimulation: true
+allowSectorInvasion: false
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+updateLighting: false
+orbitRadius: 10
+prebuildBase: false
+atmosphereRadIn: 0.01
+atmosphereRadOut: 0.3
+atmosphereColor: a11f1f
+alwaysUnlocked: true
+defaultCore: crimson-core1
+clearSectorOnLose: true
+visible: true
+startSector: 0
+sectorSize: 3
+sectorSeed: 69
+landCloudColor: 752727
+cloudMesh: {
+  type: HexSkyMesh
+  planet: Darken
+  seed: 2
+  speed: 3
+  radius: 0.15
+  divisions: 5
+  color: 503c66ab
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+mesh: {
+  type: NoiseMesh
+  planet: Zilo
+  seed: 100
+  color1: 4d263f
+  color2: 851b1b
+  divisions: 5
+  radius: 1
+  octaves: 4
+  persistence: 0.01
+  scale: 3
+  mag: 0.8
+  }
+hiddenItems: [
+  copper
+  lead
+  scrap
+  graphite
+  coal
+  titanium
+  thorium
+  silicon
+  plastanium
+  phase-fabric
+  surge-alloy
+  spore-pod
+  sand
+  blast-compound
+  pyratite
+  metaglass
+  beryllium
+  oxide
+  tungsten
+  carbide
+  fissile-matter
+  dormant-cyst
+  ]
