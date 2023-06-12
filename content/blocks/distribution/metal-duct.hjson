@@ -1,8 +1,6 @@
-type: Conveyor
-hasShadow: true
+type: Duct
 health: 80
-speed: 0.5
-displayedSpeed: 3
+speed: 10
 requirements: [
   palladium/1
 ]
