@@ -3,6 +3,5 @@ displayName: "The Darken"
 author: StarkillerTheGreat & Zielony Trójkąt
 description: "New planet Darken"
 version: "0.00"
-minGameVersion: "141.2"
-dependencies:["multi-crafter"]
+minGameVersion: "144.1"
 hidden: false
