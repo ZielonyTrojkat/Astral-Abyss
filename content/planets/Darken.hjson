@@ -12,7 +12,7 @@
     alwaysUnlocked: true,
     defaultCore: "darken-mod-crimson-core1",
     sectorSeed: 69,
-    startSector: 8,
+    startSector: 0,
     sectorSize: 3,
     clearSectorOnLose: true,
     allowSectorInvasion: false,
@@ -44,7 +44,6 @@
     ],
 cloudMesh: {
   type: HexSkyMesh
-  planet: an
   seed: 2
   speed: 3
   radius: 0.15
@@ -57,7 +56,6 @@ cloudMesh: {
 }
     "mesh": {
       "type": "NoiseMesh",
-      "planet": "an",
       "seed": 100,
       "color1": "4d263f",
       "color2": "851b1b",

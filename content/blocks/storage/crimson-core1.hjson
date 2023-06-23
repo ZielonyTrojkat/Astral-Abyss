@@ -16,6 +16,6 @@ research: {
   root: true
   name: Darken
   requiresUnlock: false
-  planet: Zielon
+  planet: Darken
   }
 alwaysUnlocked: true

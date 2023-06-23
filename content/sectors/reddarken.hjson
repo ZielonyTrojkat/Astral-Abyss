@@ -1,5 +1,5 @@
     sector: 0,
-    planet: "Zielon",
+    planet: "Darken",
     captureWave: 0
     research: {
         parent: "darken-mod-crimson-core1",
