@@ -8,7 +8,7 @@ underBullets: false
 absorbLasers: true
 itemCapacity: 5000
 unitCapModifier: 12
-unitType: poly
+unitType: crimson-core-unit1
 requirements: [
   palladium/1000
 ]

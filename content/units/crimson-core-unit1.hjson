@@ -9,7 +9,7 @@
     "armor": 1,
     "itemCapacity": 50,
   "outlineColor": "36363c",
-    "engineOffset": 6,
+    "engineOffset": 7,
     "faceTarget": true,
     controller: BuilderAI
     mineTier: 2
