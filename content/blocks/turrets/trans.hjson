@@ -25,6 +25,29 @@ status: melting
 statusDuration: 70
 hitShake: 8
 hitSound: explosion
+shootEffect:   	{
+	"type": "ParticleEffect",
+    "particles": 10,
+    "length": 16,
+    "lifetime": 20,
+    "interp": "circleOut",
+    "sizeInterp": "pow5In",
+    "colorFrom": "ffb78a",
+    "colorTo": "c26b34",
+    "sizeFrom": 2,
+    "sizeTo": 0
+    offsetY: 0
+	},
+   "hitEffect": {
+    "type": "multiEffect",
+    "effects": [
+    ]
+   }
+    trailChance: 0.6
+    trailLength: 8
+    trailWidth: 4
+}
+}
 drawer: {
   type: DrawTurret
   parts: [
@@ -48,29 +71,6 @@ drawer: {
       moveRot: -8
     }
   ]
-}
-shootEffect:   	{
-	"type": "ParticleEffect",
-    "particles": 10,
-    "length": 16,
-    "lifetime": 20,
-    "interp": "circleOut",
-    "sizeInterp": "pow5In",
-    "colorFrom": "ffb78a",
-    "colorTo": "c26b34",
-    "sizeFrom": 2,
-    "sizeTo": 0
-    offsetY: 0
-	},
-   "hitEffect": {
-    "type": "multiEffect",
-    "effects": [
-    ]
-   }
-    trailChance: 0.6
-    trailLength: 8
-    trailWidth: 4
-}
 }
 category: turret
 requirements: [
