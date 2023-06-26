@@ -41,22 +41,17 @@ lightningType: {
     despawnHit: true
     despawnEffect: none
     hitEffect: {
-    type: multiEffect
-    effects: [
-    {
-    type: ParticleEffect
-    particles: 1
-    sizeFrom: 8
-    sizeTo: 0
-    length: 0
-    spin: 0
-    lifetime: 30
-    region: darken-mod-square                 
-    colorFrom: ff7373
-    colorTo: de4545
-    }
-    ]
-}
+      type: ParticleEffect
+      particles: 1
+      sizeFrom: 8
+      sizeTo: 0
+      length: 0
+      spin: 0
+      lifetime: 30
+      region: darken-mod-square                 
+      colorFrom: ff7373
+      colorTo: de4545
+   }  
 }
 trailChance: 0.6
 trailLength: 8
