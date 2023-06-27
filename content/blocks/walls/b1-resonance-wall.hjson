@@ -2,6 +2,11 @@ type: Wall
 category: defense
 health: 680
 size: 1
+lightningSound: spark
+lightningChance: 0.1
+lightningColor: ff3b3b
+lightningDamage: 20
+lightningLength: 12
 
 requirements: [
   resonance-crystal/5
