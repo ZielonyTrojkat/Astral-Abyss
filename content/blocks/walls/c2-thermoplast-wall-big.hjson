@@ -1,0 +1,12 @@
+type: Wall
+category: defense
+health: 3360
+size: 2
+absorbLasers: true
+
+requirements: [
+  thermoplast/20
+]
+researchCost: [
+    thermoplast/500
+  ]

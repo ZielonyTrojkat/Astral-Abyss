@@ -1,6 +1,6 @@
 type: naval
 flying: false
-hitSize: 10
+hitSize: 9
 omniMovement: false
 health: 200
 armor: 1
@@ -8,11 +8,12 @@ speed: 0.5
 rotateSpeed: 4
 range: 80
 itemCapacity: 0
-outlineColor: 2d2f39
+outlineColor: 323236
 weapons: [
  {
     name: ship1-gun
     rotate: true
+    rotateSpeed: 12
     x: 4
     y: 1
     top: true

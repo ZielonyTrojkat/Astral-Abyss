@@ -1,11 +1,11 @@
 type: naval
 flying: false
-hitSize: 12
+hitSize: 18
 omniMovement: false
-health: 800
+health: 4000
 armor: 1
-speed: 0.45
-rotateSpeed: 4
+speed: 0.4
+rotateSpeed: 3
 range: 80
 itemCapacity: 0
 outlineColor: 323236
@@ -14,8 +14,8 @@ weapons: [
     name: ship1-gun
     rotate: true
     rotateSpeed: 12
-    x: 6
-    y: -4
+    x: 8
+    y: 2
     top: true
     mirror: true
     shootSound: pew
@@ -47,22 +47,24 @@ weapons: [
     }
   }
  {
-    name: ship2-gun-main
+    name: ship3-gun-main
     rotate: true
-    rotateSpeed: 10
+    rotateSpeed: 4
     x: 0
-    y: -1.5
+    y: -5
     top: true
     mirror: false
     shootSound: pew
-    reload: 40
+    reload: 60
     ignoreRotation: true
     targetAir: true
     recoil: 0.8
     shoot: {
-     type: ShootSpread
-    shots: 1
-    spread: 7
+      type: shootHelix
+      shots: 1
+      mag: 0.8
+      offset: 0
+      scl: 4
     }
     bullet: {
       type: BasicBulletType
@@ -71,13 +73,14 @@ weapons: [
       frontColor: a5c7c9
       trailColor: 7bacb0
       damage: 30
-      speed: 2
+      speed: 3
       lifetime: 60
       recoil: 0.0
       width: 5
       height: 7
-      trailWidth: 1.6
-      trailLength: 7
+      trailWidth: 2
+      trailLength: 15
+      trailChance: -1
       shootEffect: none
       smokeEffect: none
     }

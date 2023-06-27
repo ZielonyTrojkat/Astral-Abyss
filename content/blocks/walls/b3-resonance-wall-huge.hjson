@@ -1,0 +1,11 @@
+type: Wall
+category: defense
+health: 6120
+size: 3
+
+requirements: [
+  resonance-crystal/60
+]
+researchCost: [
+    resonance-crystal/1500
+  ]

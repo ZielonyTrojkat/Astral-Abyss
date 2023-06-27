@@ -1,0 +1,11 @@
+type: Wall
+category: defense
+health: 4500
+size: 3
+
+requirements: [
+  palladium/60
+]
+researchCost: [
+    palladium/1500
+  ]

@@ -7,6 +7,9 @@ hasPower: false
 underBullets: false
 drillTime: 400
 tier: 2
+arrows: 1
+drawMineItem: false
+squareSprite: false
 
 requirements: [
   palladium/16
