@@ -10,8 +10,8 @@ underBullets: true
 consumes: {
     powerBuffered: 1000
     }
-laserColor1: ff1b1b
-laserColor2: c10000
+laserColor1: c73636aa
+laserColor2: ba2f2faa
 laserWidth: 0.5
 pulseMag: 0.05
 pulseScl: 8
