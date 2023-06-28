@@ -1,0 +1,58 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 3
+fogRadius: 1
+hasItems: true
+hasPower: true
+hasLiquids: true
+liquidCapacity: 80
+ambientSound: hum
+ambientSoundVolume: 1
+craftTime: 60
+craftEffect: none
+consumes: {
+  power: 5
+  items: [
+  magnetite/3
+  ]
+  liquids: [
+  water/1
+  ]
+  }
+outputLiquid: ferrofluid/0.5
+
+requirements: [
+  palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawLiquidTile
+  suffix: -liquid1
+  drawLiquid: ferrofluid
+  }
+  {
+  type: DrawLiquidRegion
+  suffix: -liquid2
+  drawLiquid: water
+  }
+  {
+  type: DrawRegion
+  suffix: -rotator
+  rotateSpeed: 0.5
+  }
+  {
+  type: DrawDefault
+  }
+  ]
+  }
