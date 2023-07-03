@@ -1,0 +1,65 @@
+type: ShockMine
+category: effect
+health: 40
+size: 1
+hasShadow: false
+damage: 10
+tileDamage: 15
+length: 7
+tendrils: 4
+lightningColor: ed4642
+shots: 1
+cooldown: 60
+requirements: [
+  palladium/16
+]
+research: {
+    parent: crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: groundZero
+        }
+    ]
+}
+researchCost: [
+    resonance-crystal/750
+  ]
+
+bullet: {
+type: BombBulletType
+speed: 0
+lifetime: 1
+hittable: false
+instantDisappear: true
+splashDamage: 20
+splashDamageRadius: 20
+damage: 0
+status: none
+statusDuration: 0
+incendAmount: 0
+incendSpread: 0
+incendChance: 0
+makeFire: false
+hitEffect: {
+type: ExplosionEffect
+sparks: 6
+sparkColor: ed4642
+smokes: 0
+waveRad: 15
+waveLife: 15
+waveStroke: 4
+sparkStroke: 4
+sparkRad: 15
+sparkLen: 6
+smokeSize: 0
+smokeRad: 0
+waveColor: c23936
+smokeColor: c23936
+}
+despawnHit: true
+}
+despawnSound: explosion
+hitColor: 65daf7
+backColor: 65daf7
+frontColor: 59bdeb

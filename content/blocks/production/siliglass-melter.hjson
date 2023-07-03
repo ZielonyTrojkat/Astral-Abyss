@@ -8,12 +8,12 @@ hasPower: true
 hasLiquids: false
 ambientSound: hum
 ambientSoundVolume: 1
-craftTime: 120
+craftTime: 48
 craftEffect: none
 consumes: {
-  power: 2
+  power: 1
   items: [
-  silica/3
+  silica/2
   ]
   }
 outputItem: siliglass/1

@@ -1,0 +1,25 @@
+type: StackConveyor
+speed: 0.05
+itemCapacity: 20
+health: 40
+outputRouter: false
+category: distribution
+requirements: [
+  magnetite/2
+]   
+loadEffect: {
+  type: ParticleEffect
+  length: 3
+  particles: 9
+  line: true
+  strokeFrom: 0.8
+  strokeTo: 0.1
+}
+unloadEffect: {
+  type: ParticleEffect
+  length: 3
+  particles: 9
+  line: true
+  strokeFrom: 0.8
+  strokeTo: 0.1
+}

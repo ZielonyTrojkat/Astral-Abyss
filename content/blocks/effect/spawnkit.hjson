@@ -1,0 +1,31 @@
+type: ConsumeGenerator
+category: effect
+health: 100
+size: 1
+hasShadow: false
+liquidCapacity: 100
+explodeOnFull: true
+outputLiquid: water/1
+explosionPuddleLiquid: neoplasm
+explosionPuddleRange: 60
+explosionPuddleAmount: 30
+explosionPuddles: 10
+destroyBullet: {
+  spawnUnit: mono
+}
+
+requirements: [
+  palladium/16
+]
+research: {
+    parent: crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: groundZero
+        }
+    ]
+}
+researchCost: [
+    resonance-crystal/750
+]

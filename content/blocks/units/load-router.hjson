@@ -1,0 +1,9 @@
+type: PayloadRouter
+size: 3
+moveTime: 80
+moveForce: 300
+payloadLimit: 3
+category: units
+requirements: [
+  palladium/1
+]

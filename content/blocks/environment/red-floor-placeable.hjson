@@ -1,0 +1,6 @@
+type: Floor
+variants: 3
+isFloor: true
+requirements: [
+  palladium/1
+]

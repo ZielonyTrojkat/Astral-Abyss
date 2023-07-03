@@ -1,0 +1,89 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 3
+fogRadius: 1
+squareSprite: false
+hasItems: true
+hasPower: true
+hasLiquids: false
+ambientSound: hum
+ambientSoundVolume: 1
+itemCapacity: 16
+craftTime: 150
+craftEffect: {
+  type: MultiEffect
+  effects: [
+    {
+      type: ParticleEffect
+      line: true
+      particles: 16
+      lifetime: 40
+      baseLength: 0
+      length: 20
+      lenFrom: 5
+      lenTo: 0
+      strokeFrom: 3
+      strokeTo: 0
+      colorFrom: ffa3a3
+      colorTo: f53838
+      interp: circleOut
+    }
+  ]
+}
+consumes: {
+  power: 8
+  items: [
+  armor-plate-mk2/4
+  lonsdaleite/8
+  ]
+  }
+outputItem: armor-plate-mk3/2
+
+requirements: [
+  palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawRegion
+  suffix: -gear
+  rotateSpeed: 1
+  rotation: 22.5
+  x: -4
+  y: 4
+  }
+  {
+  type: DrawRegion
+  suffix: -gear
+  rotateSpeed: -1
+  x: 4
+  y: -4
+  }
+  {
+  type: DrawPistons
+  suffix: -piston
+  sinMag: 5
+  sinScl: 11.925
+  angleOffset: 45
+  sides: 2
+  sinOffset: 50
+  }
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawGlowRegion
+  suffix: -heat
+  }
+  ]
+  }

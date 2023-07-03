@@ -67,22 +67,34 @@ weapons: [
       scl: 4
     }
     bullet: {
-      type: BasicBulletType
+      type: ArtilleryBulletType
       sprite: missile-large
-      backColor: 68969a
-      frontColor: a5c7c9
-      trailColor: 7bacb0
-      damage: 30
-      speed: 3
-      lifetime: 60
-      recoil: 0.0
+      backColor: c1c4c9
+      frontColor: dfe2e8
+      trailColor: edf0f5
+      damage: 50
+      speed: 2
+      lifetime: 100
+      recoil: 0.2
       width: 5
       height: 7
-      trailWidth: 2
-      trailLength: 15
-      trailChance: -1
+      trailWidth: 1.6
+      trailLength: 7
+      lenght: 4
       shootEffect: none
-      smokeEffect: none
+      smokeEffect: shootSmallSmoke
+      fragBullet: {
+        speed: 3
+        collidesTiles: false
+        damage: 20
+        despawnHit: true
+        width: 4
+        heigth: 6
+        lifetime: 10
+        fragVelocityMin: 0.3
+      fragVelocityMax: 1.5
+      fragBullets: 1
+            }
     }
   }
 ]
