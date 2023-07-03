@@ -1,7 +1,7 @@
 type: SteamVent
 variants: 2
-parent: red-floor
-blendGroup: red-floor
+parent: cinnabar-stone
+blendGroup: cinnabar-stone
 attributes: {
   steam: 1
 }

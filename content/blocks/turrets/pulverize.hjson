@@ -1,115 +1,363 @@
-
-"type": ItemTurret,
-"size": 5,
-"health": 1500,
-range: 400
-rotateSpeed: 10
-reload: 500
-burstSpacing: 3
-shots: 1
-xRand: 1
-outlineColor: 252729
+targetAir: true
+type: ItemTurret
+size: 5
+health: 2300
+range: 200
+rotateSpeed: 3
+moveWhileCharging: false
+reload: 80
 recoilAmount: 3
-shootSound: shootAlt
+shootSound: blaster
+shake: 4
+cooldownTime: 60
+shootWarmupSpeed: 0.03
+minWarmup: 0.9
+warmupMaintainTime: 60
 shoot: {
-    type: ShootAlternate
-    barrels: 1
-    spread: 10
-    barrelOffset: 0
-    moveWhileCharging: false
-  firstShotDelay: 500
-"chargeEffect": {
-"type": "MultiEffect",
-    "effects": [
-{
-    "type": "ParticleEffect",
-    "particles": 1,
-    "sizeFrom": 1,
-    "sizeTo": 5,
-    "length": 0,
-    "lifetime": 500,
-    "colorFrom": "fa7f7f",
-    "colorTo": "91f6ff",
-    "cone": 360
-	},
-    {
-    "type": "WaveEffect",
-    "lifetime": 500,
-    "sizeFrom": 50,
-    "sizeTo": 0,
-    "strokeFrom": 5,
-    "strokeTo": 0,
-    "colorFrom": "fa7f7f",
-    "colorTo": "e02f2f"
-}
- {
-              type: ParticleEffect
-              particles: 20
-              lifetime: 500
-              length: 20
-              sizeFrom: 5
-              sizeTo: 1
-              colorFrom: 9daeff00
-              colorTo: e02f2f
-              strokeFrom: 3
-              strokeTo: 1.5
-              interp: pow3Out
-              spin: 3
-              sizeInterp: pow2In
-              region: darken-mod-star
-            }
-    ]
-}
+  type: ShootBarrel
+  firstShotDelay: 180
+  shots: 1
+  barrels: [
+    0, -5, 0
+  ]
 }
 ammoTypes: {
-  resonance-crystal: {
+    resonance-crystal: {
+type: BasicBulletType
+width: 20
+height: 26
+damage: 75
+splashDamage: 50
+splashDamageRadius: 16
+speed: 4
+lifetime: 50
+frontColor: ff7373
+backColor: de4545
+status: melting
+statusDuration: 70
+hitShake: 8
+hitSound: spark
+lightning: 6
+lightningDamage: 10
+lightningCone: 360
+lightningLengthRand: 5
+lightningLength: 8
+lightningColor: ff3333
+lightningType: {
     type: BasicBulletType
-    speed: 3
-    lifetime: 500
-    damage: 500
-    width: 20
-    height: 30
-    spin: 3
-    inaccuracy: 10
-    backColor: e02f2f
-    frontColor: fa7f7f
-    shootEffect: "shootSmall"        
-    smokeEffect: "shootSmallSmoke"
-    ammoMultiplier: 1
-    collidesTiles: false
-    despawnEffect: {
+    damage: 0
+    lifetime: 0
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: ParticleEffect
+      particles: 1
+      sizeFrom: 8
+      sizeTo: 0
+      length: 0
+      spin: 0
+      lifetime: 30
+      region: darken-mod-square                 
+      colorFrom: ff7373
+      colorTo: de4545
+   }  
+}
+trailChance: 0.6
+trailLength: 8
+trailWidth: 4
+trailColor: de4545
+chargeEffect: {
+type: MultiEffect
+    effects: [
+    {
     type: WaveEffect
-    lifetime: 10
+    offsetX: -5
+    lifetime: 180
     sizeFrom: 0
-    sizeTo: 10
-    strokeFrom: 6
-    strokeTo: 0
-    colorFrom: fa7f7f
-    colorTo: e02f2f
+    sizeTo: 5
+    strokeFrom: 0
+    strokeTo: 7
+    colorFrom: f74639
+    colorTo: ff695e
+    }
+    ]
   }
-    backSprite: darken-mod-star
-    sprite: darken-mod-star2
-    shrinkX: 0
-    shrinkY: 0
-    trailChance: 1
-    trailEffect: {
-    type: ParticleEffect
-    particles: 1
-    length: 0
-    lifetime: 15
-    sizeFrom: 10
-    sizeTo: 0
-    colorFrom: fa7f7f
-    colorTo: e02f2f
-    region: particle
-  }
-  }
+}
+}
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -movable
+      mirror: true
+      progress: warmup
+      heatProgress: charge
+      under: true
+      moveX: 1.5
+      moveY: -1.0
+      moveRot: -5
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          x: 1.5
+          y: 1.2
+          growX: 0.45
+          growY: 0.45
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          moveX: 14.5
+          moveY: -1.0
+          growX: 0.5
+          growY: 0.5
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -barrel
+      mirror: false
+      progress: warmup
+      moveY: -2
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          y: -2
+        }
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -main
+      under: false
+    }
+    {
+      type: RegionPart
+      suffix: -wing2
+      mirror: true
+      progress: warmup
+      heatProgress: charge
+      moveX: 1.0
+      moveY: -0.2
+      moveRot: 0
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 1.0
+          moveY: -0.2
+          growX: 0.05
+          growY: 0.05
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          growX: 0.15
+          growY: 0.15
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -wing1
+      mirror: true
+      progress: warmup
+      heatProgress: charge
+      moveX: 1.5
+      moveY: -0.0
+      moveRot: -10
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 2.5
+          moveY: -1.0
+          growX: 0.1
+          growY: 0.1
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          moveX: 3.0
+          moveY: -1.5
+          growX: 0.1
+          growY: 0.1
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -wing3
+      mirror: true
+      progress: warmup
+      heatProgress: charge
+      moveX: 2.0
+      moveY: -1.0
+      moveRot: -10
+      growX: 0.05
+      growY: 0.05
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 1.0
+          moveY: -1.0
+          growX: 0.05
+          growY: 0.05
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          growX: 0.1
+          growY: 0.1
+        } 
+      ]
+    }
+
+
+
+    {
+      type: RegionPart
+      suffix: -none1
+      mirror: true
+      progress: warmup
+      under: true
+      moveX: 1.5
+      moveY: -1.0
+      moveRot: -5
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          x: 1.5
+          y: 1.2
+          growX: 0.45
+          growY: 0.45
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          moveX: 14.5
+          moveY: -1.0
+          growX: 0.5
+          growY: 0.5
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -none2
+      mirror: true
+      progress: warmup
+      moveX: 1.0
+      moveY: -0.2
+      moveRot: 0
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 1.0
+          moveY: -0.2
+          growX: 0.05
+          growY: 0.05
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          growX: 0.15
+          growY: 0.15
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -none3
+      mirror: true
+      progress: warmup
+      moveX: 1.5
+      moveY: -0.0
+      moveRot: -10
+      growX: 0.1
+      growY: 0.1
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 2.5
+          moveY: -1.0
+          growX: 0.1
+          growY: 0.1
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          moveX: 3.0
+          moveY: -1.5
+          growX: 0.1
+          growY: 0.1
+        } 
+      ]
+    }
+    {
+      type: RegionPart
+      suffix: -none4
+      mirror: true
+      progress: warmup
+      moveX: 2.0
+      moveY: -1.0
+      moveRot: -10
+      growX: 0.05
+      growY: 0.05
+      moves: [
+        {
+          type: PartMove
+          progress: charge
+          rot: -5
+          moveX: 1.0
+          moveY: -1.0
+          growX: 0.05
+          growY: 0.05
+        }
+        {
+          type: PartMove
+          progress: recoil
+          rot: -10
+          growX: 0.1
+          growY: 0.1
+        } 
+      ]
+    }
+  ]
 }
 category: turret
 requirements: [
-  lead/120
+  palladium/700
 ]
-research: lead
-researchCost: [
-    lead/1
-  ]
