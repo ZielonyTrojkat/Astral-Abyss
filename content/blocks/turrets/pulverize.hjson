@@ -2,20 +2,21 @@ targetAir: true
 type: ItemTurret
 size: 5
 health: 2300
-range: 200
-rotateSpeed: 3
+range: 360
+rotateSpeed: 2
 moveWhileCharging: false
-reload: 80
+heatRequirement: 2
+reload: 240
 recoilAmount: 3
 shootSound: blaster
 shake: 4
-cooldownTime: 60
+cooldownTime: 150
 shootWarmupSpeed: 0.03
 minWarmup: 0.9
 warmupMaintainTime: 60
 shoot: {
   type: ShootBarrel
-  firstShotDelay: 180
+  firstShotDelay: 200
   shots: 1
   barrels: [
     0, -5, 0
@@ -30,7 +31,7 @@ damage: 75
 splashDamage: 50
 splashDamageRadius: 16
 speed: 4
-lifetime: 50
+lifetime: 90
 frontColor: ff7373
 backColor: de4545
 status: melting
@@ -70,15 +71,85 @@ chargeEffect: {
 type: MultiEffect
     effects: [
     {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 200
+    particles: 30
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 150
+    particles: 16
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 100
+    particles: 16
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    region: darken-mod-big-plasma1
+    lifetime: 200
+    particles: 1
+    length: 0
+    sizeInterp: sineOut
+    sizeFrom: 0
+    sizeTo: 12
+    spin: -6
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
     type: WaveEffect
     offsetX: -5
-    lifetime: 180
+    region: darken-mod-big-plasma1
+    lifetime: 200
+    sizeInterp: sineOut
     sizeFrom: 0
-    sizeTo: 5
+    sizeTo: 0
     strokeFrom: 0
-    strokeTo: 7
-    colorFrom: f74639
-    colorTo: ff695e
+    strokeTo: 20
+    colorFrom: fa5043
+    colorTo: ff6f63
     }
     ]
   }
@@ -104,7 +175,7 @@ drawer: {
           type: PartMove
           progress: charge
           rot: -5
-          x: 1.5
+          x: 1.6
           y: 1.2
           growX: 0.45
           growY: 0.45
@@ -112,11 +183,11 @@ drawer: {
         {
           type: PartMove
           progress: recoil
-          rot: -10
-          moveX: 14.5
-          moveY: -1.0
-          growX: 0.5
-          growY: 0.5
+          rot: -20
+          moveX: 15.5
+          moveY: -2.0
+          growX: 0.55
+          growY: 0.55
         } 
       ]
     }
@@ -164,6 +235,8 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
+          moveX: 0.5
+          moveY: -0.5
           growX: 0.15
           growY: 0.15
         } 
@@ -226,11 +299,19 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
+          moveX: 0.5
+          moveY: -0.5
           growX: 0.1
           growY: 0.1
         } 
       ]
     }
+
+
+
+
+
+
 
 
 
@@ -250,7 +331,7 @@ drawer: {
           type: PartMove
           progress: charge
           rot: -5
-          x: 1.5
+          x: 1.6
           y: 1.2
           growX: 0.45
           growY: 0.45
@@ -258,11 +339,11 @@ drawer: {
         {
           type: PartMove
           progress: recoil
-          rot: -10
-          moveX: 14.5
-          moveY: -1.0
-          growX: 0.5
-          growY: 0.5
+          rot: -20
+          moveX: 15.5
+          moveY: -2.0
+          growX: 0.55
+          growY: 0.55
         } 
       ]
     }
@@ -290,6 +371,8 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
+          moveX: 0.5
+          moveY: -0.5
           growX: 0.15
           growY: 0.15
         } 
@@ -350,6 +433,8 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
+          moveX: 0.5
+          moveY: -0.5
           growX: 0.1
           growY: 0.1
         } 
