@@ -8,10 +8,10 @@ consumes: {
 plans: [
   {
     unit: ship1
-    time: 1200
+    time: 600
     requirements: [
-     palladium/20
-     resonance-crystal/15
+     palladium/40
+     siliglass/25
     ]
   }
 ]

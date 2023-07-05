@@ -6,17 +6,20 @@ range: 360
 rotateSpeed: 2
 moveWhileCharging: false
 heatRequirement: 2
-reload: 240
+reload: 280
 recoilAmount: 3
-shootSound: blaster
-shake: 4
+chargeSound: pulverize-charge
+shootSound: plasma-blast-longer
+soundPitchMin: 1
+soundPitchMax: 1
+shake: 8
 cooldownTime: 150
 shootWarmupSpeed: 0.03
 minWarmup: 0.9
 warmupMaintainTime: 60
 shoot: {
   type: ShootBarrel
-  firstShotDelay: 200
+  firstShotDelay: 240
   shots: 1
   barrels: [
     0, -5, 0
@@ -30,7 +33,7 @@ height: 26
 damage: 75
 splashDamage: 50
 splashDamageRadius: 16
-speed: 4
+speed: 3
 lifetime: 90
 frontColor: ff7373
 backColor: de4545
@@ -67,6 +70,20 @@ trailChance: 0.6
 trailLength: 8
 trailWidth: 4
 trailColor: de4545
+intervalBullets: 2
+intervalDelay: 10
+intervalRandomSpread: 0
+intervalSpread: 180
+intervalAngle: 0
+intervalBullet: {
+  hitSound: spark
+  instantDisappear: true
+  lightning: 1
+  lightningDamage: 10
+  lightningLengthRand: 4
+  lightningLength: 8
+  lightningColor: ff3333
+}
 chargeEffect: {
 type: MultiEffect
     effects: [
@@ -74,7 +91,7 @@ type: MultiEffect
     type: ParticleEffect
     offsetX: -5
     line: true
-    lifetime: 200
+    lifetime: 240
     particles: 30
     length: -40
     baseLength: 40
@@ -92,7 +109,7 @@ type: MultiEffect
     type: ParticleEffect
     offsetX: -5
     line: true
-    lifetime: 150
+    lifetime: 200
     particles: 16
     length: -40
     baseLength: 40
@@ -110,7 +127,7 @@ type: MultiEffect
     type: ParticleEffect
     offsetX: -5
     line: true
-    lifetime: 100
+    lifetime: 160
     particles: 16
     length: -40
     baseLength: 40
@@ -127,8 +144,44 @@ type: MultiEffect
     {
     type: ParticleEffect
     offsetX: -5
+    line: true
+    lifetime: 120
+    particles: 13
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 80
+    particles: 10
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
     region: darken-mod-big-plasma1
-    lifetime: 200
+    lifetime: 240
     particles: 1
     length: 0
     sizeInterp: sineOut
@@ -141,15 +194,28 @@ type: MultiEffect
     {
     type: WaveEffect
     offsetX: -5
-    region: darken-mod-big-plasma1
-    lifetime: 200
+    lifetime: 240
     sizeInterp: sineOut
     sizeFrom: 0
-    sizeTo: 0
-    strokeFrom: 0
-    strokeTo: 20
+    sizeTo: 20
+    strokeFrom: 2
+    strokeTo: 0
     colorFrom: fa5043
     colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    region: darken-mod-ball
+    lifetime: 240
+    particles: 1
+    length: 0
+    sizeInterp: sineOut
+    sizeFrom: 0
+    sizeTo: 17
+    spin: -6
+    colorFrom: e8493c
+    colorTo: ff8278
     }
     ]
   }
@@ -157,6 +223,7 @@ type: MultiEffect
 }
 drawer: {
   type: DrawTurret
+  basePrefix: dark-
   parts: [
     {
       type: RegionPart

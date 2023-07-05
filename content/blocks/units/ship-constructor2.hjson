@@ -1,0 +1,38 @@
+type: Reconstructor
+health: 800
+size: 3
+squareSprite: false
+constructTime: 800
+liquidCapacity: 60
+consumes: {
+  power: 2
+    items: {
+      items: [
+        palladium/60
+        armor-plate-mk1/20
+      ]
+    }
+  liquid: {
+    liquid: methane
+    amount: 0.6
+  }
+}
+upgrades: [
+  [ship1, ship2]
+]
+requirements: [
+  palladium/50
+]
+category: units
+research: {
+    parent: lead
+    objectives: [
+        {
+            type: OnSector
+            preset: origin
+        }
+    ]
+}
+researchCost: [
+    palladium/70
+  ]
