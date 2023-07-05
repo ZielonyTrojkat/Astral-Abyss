@@ -1,18 +1,31 @@
 targetAir: true
 type: ItemTurret
+squareSprite: false
 size: 5
 health: 2300
-range: 360
+range: 400
 rotateSpeed: 2
 moveWhileCharging: false
-heatRequirement: 2
-reload: 280
-recoilAmount: 3
+reload: 320
+heatRequirement: 60
+maxHeatEfficiency: 1
+liquidCapacity: 60
+hasLiquids: true
+consumes: {
+  power: 30
+liquid: {
+	liquid: resoplasma
+	optional: false
+	update: false
+	amount: 0.6
+	}
+}
+recoilAmount: 5
 chargeSound: pulverize-charge
 shootSound: plasma-blast-longer
 soundPitchMin: 1
 soundPitchMax: 1
-shake: 8
+shake: 10
 cooldownTime: 150
 shootWarmupSpeed: 0.03
 minWarmup: 0.9
@@ -28,50 +41,35 @@ shoot: {
 ammoTypes: {
     resonance-crystal: {
 type: BasicBulletType
-width: 20
-height: 26
-damage: 75
+width: 25
+height: 25
+damage: 720
+shrinkX: 0
+shrinkY: 0
+sprite: darken-mod-big-plasma1
 splashDamage: 50
 splashDamageRadius: 16
 speed: 3
-lifetime: 90
+spin: -5
+lifetime: 125
 frontColor: ff7373
 backColor: de4545
 status: melting
 statusDuration: 70
-hitShake: 8
-hitSound: spark
-lightning: 6
-lightningDamage: 10
-lightningCone: 360
-lightningLengthRand: 5
-lightningLength: 8
-lightningColor: ff3333
-lightningType: {
-    type: BasicBulletType
-    damage: 0
-    lifetime: 0
-    despawnHit: true
-    despawnEffect: none
-    hitEffect: {
-      type: ParticleEffect
-      particles: 1
-      sizeFrom: 8
-      sizeTo: 0
-      length: 0
-      spin: 0
-      lifetime: 30
-      region: darken-mod-square                 
-      colorFrom: ff7373
-      colorTo: de4545
-   }  
-}
-trailChance: 0.6
-trailLength: 8
-trailWidth: 4
-trailColor: de4545
+hitShake: 18
+hitSound: largeCannon
+despawnHit: true
+splashDamage: 450
+splashDamageRadius: 60
+splashDamagePierce: false
+homingPower: 0.01
+homingRange: 100
+trailChance: -1
+trailLength: 25
+trailWidth: 7
+trailColor: f25c5c
 intervalBullets: 2
-intervalDelay: 10
+bulletInterval: 7
 intervalRandomSpread: 0
 intervalSpread: 180
 intervalAngle: 0
@@ -79,10 +77,119 @@ intervalBullet: {
   hitSound: spark
   instantDisappear: true
   lightning: 1
-  lightningDamage: 10
-  lightningLengthRand: 4
-  lightningLength: 8
+  lightningDamage: 20
+  lightningLengthRand: 5
+  lightningLength: 5
   lightningColor: ff3333
+  hitEffect: none
+  despawnEffect: none
+}
+hitEffect: {
+  type: MultiEffect
+  effects: [
+    {
+    type: WaveEffect
+    lifetime: 40
+    sizeFrom: 20
+    sizeTo: 70
+    interp: circleOut
+    strokeFrom: 15
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    lifetime: 80
+    particles: 20
+    cone: 360
+    length: 100
+    region: darken-mod-star3
+    baseLength: 0
+    interp: exp5Out
+    sizeInterp: pow5In
+    sizeFrom: 5
+    sizeTo: 0
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff8585
+    colorTo: ff5454
+    spin: -6
+    }
+    {
+    type: ParticleEffect
+    line: true
+    lifetime: 80
+    particles: 30
+    cone: 360
+    length: 120
+    baseLength: 0
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 15
+    lenTo: 0
+    strokeFrom: 7
+    strokeTo: 0
+    colorFrom: ff857a
+    colorTo: ff5e52
+    }
+    {
+    type: ParticleEffect
+    line: true
+    lifetime: 140
+    particles: 30
+    cone: 360
+    length: 100
+    baseLength: 0
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 15
+    lenTo: 0
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff5c5c
+    colorTo: ff3030
+    }
+    {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 80
+    sizeTo: 75
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 60
+    sizeTo: 55
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+  ]
+}
+shootEffect: {
+    type: ParticleEffect
+    offsetX: -10
+    line: true
+    lifetime: 80
+    particles: 40
+    cone: 60
+    length: 45
+    baseLength: 0
+    interp: circleOut
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 5
+    lenTo: 0
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: ff8278
+    colorTo: fa5043
 }
 chargeEffect: {
 type: MultiEffect
@@ -250,8 +357,8 @@ drawer: {
         {
           type: PartMove
           progress: recoil
-          rot: -20
-          moveX: 15.5
+          rot: -25
+          moveX: 16.5
           moveY: -2.0
           growX: 0.55
           growY: 0.55
@@ -334,7 +441,7 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
-          moveX: 3.0
+          moveX: 4.0
           moveY: -1.5
           growX: 0.1
           growY: 0.1
@@ -356,17 +463,17 @@ drawer: {
         {
           type: PartMove
           progress: charge
-          rot: -5
-          moveX: 1.0
-          moveY: -1.0
+          rot: -10
+          moveX: 1.5
+          moveY: -1.5
           growX: 0.05
           growY: 0.05
         }
         {
           type: PartMove
           progress: recoil
-          rot: -10
-          moveX: 0.5
+          rot: -15
+          moveX: 1.5
           moveY: -0.5
           growX: 0.1
           growY: 0.1
@@ -406,8 +513,8 @@ drawer: {
         {
           type: PartMove
           progress: recoil
-          rot: -20
-          moveX: 15.5
+          rot: -25
+          moveX: 16.5
           moveY: -2.0
           growX: 0.55
           growY: 0.55
@@ -469,7 +576,7 @@ drawer: {
           type: PartMove
           progress: recoil
           rot: -10
-          moveX: 3.0
+          moveX: 4.0
           moveY: -1.5
           growX: 0.1
           growY: 0.1
@@ -490,17 +597,17 @@ drawer: {
         {
           type: PartMove
           progress: charge
-          rot: -5
-          moveX: 1.0
-          moveY: -1.0
+          rot: -10
+          moveX: 1.5
+          moveY: -1.5
           growX: 0.05
           growY: 0.05
         }
         {
           type: PartMove
           progress: recoil
-          rot: -10
-          moveX: 0.5
+          rot: -15
+          moveX: 1.5
           moveY: -0.5
           growX: 0.1
           growY: 0.1
