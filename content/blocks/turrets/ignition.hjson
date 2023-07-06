@@ -1,0 +1,70 @@
+
+type: ItemTurret
+size: 2
+health: 500
+range: 350
+rotateSpeed: 4.5
+reload: 3
+burstSpacing: 3
+shots: 1
+xRand: 1
+outlineColor: 252729
+recoilAmount: 3
+shootSound: disclaimer2
+shoot: {
+    type: ShootAlternate
+    barrels: 1
+    spread: 10
+    barrelOffset: 0
+}
+ammoTypes: {
+  resonance-crystal: {
+    type: BasicBulletType
+    speed: 3
+    lifetime: 90
+    damage: 12
+    width: 4
+    height: 20
+    inaccuracy: 1
+    backColor: e02f2f
+    frontColor: fa7f7f
+    shootEffect: "shootSmall"        
+    smokeEffect: "shootSmallSmoke"
+    ammoMultiplier: 1
+    collidesTiles: false
+    despawnEffect: {
+    type: WaveEffect
+    lifetime: 10
+    sizeFrom: 0
+    sizeTo: 10
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: fa7f7f
+    colorTo: e02f2f
+  }
+    backSprite: darken-mod-ball
+    sprite: darken-mod-ball
+    shrinkX: 0
+    shrinkY: 0
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 10
+    lifetime: 15
+    sizeFrom: 5
+    sizeTo: 0
+    colorFrom: fa7f7f
+    colorTo: e02f2f
+    region: particle
+  }
+  }
+}
+category: turret
+requirements: [
+  lead/120
+]
+research: lead
+researchCost: [
+    lead/1
+  ]
