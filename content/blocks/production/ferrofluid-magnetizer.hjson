@@ -6,7 +6,7 @@ fogRadius: 1
 hasItems: true
 hasPower: true
 hasLiquids: true
-liquidCapacity: 80
+liquidCapacity: 180
 ambientSound: hum
 ambientSoundVolume: 1
 craftTime: 60
@@ -17,7 +17,7 @@ consumes: {
   magnetite/3
   ]
   liquids: [
-  water/1
+  water/0.5
   ]
   }
 outputLiquid: ferrofluid/0.5
@@ -38,18 +38,17 @@ type: DrawMulti
   }
   {
   type: DrawLiquidTile
+  drawLiquid: water
+  }
+  {
+  type: DrawLiquidRegion
   suffix: -liquid1
   drawLiquid: ferrofluid
   }
   {
-  type: DrawLiquidRegion
-  suffix: -liquid2
-  drawLiquid: water
-  }
-  {
   type: DrawRegion
   suffix: -rotator
-  rotateSpeed: 0.5
+  rotateSpeed: 3
   }
   {
   type: DrawDefault

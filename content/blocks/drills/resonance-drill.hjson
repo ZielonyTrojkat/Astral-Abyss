@@ -6,15 +6,15 @@ fogRadius: 0
 hasPower: true
 underBullets: false
 drillTime: 400
-laserWidth: 1
-pulseIntensity: 0.1
+laserWidth: 0.7
+pulseIntensity: 0.07
 range: 4
 tier: 3
-glowColor: ff0000
 consumes: {
   power: 0.5
   }
-
+sparkColor: ff0000
+boostHeatColor: ff0000
 requirements: [
   resonance-crystal/10
 ]
