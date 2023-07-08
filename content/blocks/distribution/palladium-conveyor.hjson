@@ -1,20 +1,20 @@
 type: Conveyor
-health: 80
-speed: 0.05
-displayedSpeed: 12
+health: 50
+speed: 0.03
+displayedSpeed: 8
+
 requirements: [
   palladium/1
 ]
-category: distribution
+researchCost: [
+  resonance-crystal/750
+]
 research: {
-    parent: "darken-mod-crimson-core1",
+    parent: core-darken1
     objectives: [
         {
-            type: "SectorComplete",
-            preset: "onset"
+            type: OnSector
+            preset: hollow-crater
         }
     ]
-},
-researchCost: [
-    palladium/1
-  ]
+}

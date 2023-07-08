@@ -1,0 +1,11 @@
+type: Conduit
+leaks: true
+health: 15
+hasPower: false
+requirements: [
+  palladium/2
+]
+liquidCapacity: 6
+liquidPressure: 1
+botColor: 4a4b53
+category: liquid

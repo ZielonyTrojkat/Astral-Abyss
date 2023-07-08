@@ -4,8 +4,17 @@ health: 500
 size: 1
 
 requirements: [
-  palladium/5
+  palladium/6
 ]
 researchCost: [
-    palladium/100
-  ]
+  palladium/100
+]
+research: {
+    parent: darken-mod-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

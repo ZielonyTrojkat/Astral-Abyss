@@ -21,18 +21,18 @@ upgrades: [
   [ship1, ship2]
 ]
 requirements: [
-  palladium/50
+  palladium/4
+  magnetite/4
 ]
-category: units
+researchCost: [
+  magnetite/750
+]
 research: {
-    parent: lead
+    parent: darken-mod-ship-constructor1
     objectives: [
         {
             type: OnSector
-            preset: origin
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    palladium/70
-  ]

@@ -14,18 +14,16 @@ squareSprite: false
 requirements: [
   palladium/16
 ]
+alwaysUnlocked: true
 research: {
     parent: core-darken1
     objectives: [
         {
             type: OnSector
-            preset: groundZero
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    resonance-crystal/750
-  ]
 
 drillEffect: {
   type: MultiEffect

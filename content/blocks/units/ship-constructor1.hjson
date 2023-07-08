@@ -16,18 +16,18 @@ plans: [
   }
 ]
 requirements: [
-  palladium/50
+  palladium/4
+  magnetite/4
 ]
-category: units
+researchCost: [
+  magnetite/750
+]
 research: {
-    parent: "lead",
+    parent: darken-mod-crimson-core1
     objectives: [
         {
-            type: "OnSector",
-            preset: "origin"
+            type: OnSector
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    palladium/70
-  ]

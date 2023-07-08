@@ -1,7 +1,4 @@
-{
-"localizedName": "Dissonance",
-"description": "Can be extracted from air and can be used for production",
-"gas": false,
-"cache": "water",
-"color": "451057"
-}
+gas: false
+cache: water
+color: 451057
+research: darken-mod-ferrofluid

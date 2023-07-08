@@ -98,3 +98,16 @@ weapons: [
     }
   }
 ]
+
+researchCost: [
+  magnetite/750
+]
+research: {
+    parent: darken-mod-ship2
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

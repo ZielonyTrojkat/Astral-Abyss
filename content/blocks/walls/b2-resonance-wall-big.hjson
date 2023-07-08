@@ -9,8 +9,17 @@ lightningDamage: 20
 lightningLength: 12
 
 requirements: [
-  resonance-crystal/20
+  palladium/6
 ]
 researchCost: [
-    resonance-crystal/500
-  ]
+  palladium/100
+]
+research: {
+    parent: darken-mod-b1-resonance-wall
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

@@ -1,19 +1,19 @@
 type: DuctRouter
 health: 100
 speed: 10
+
 requirements: [
-  palladium/1
+  palladium/4
 ]
-category: distribution
+researchCost: [
+  palladium/50
+]
 research: {
-    parent: "darken-mod-crimson-core1",
+    parent: darken-mod-palladium-conveyor
     objectives: [
         {
-            type: "SectorComplete",
-            preset: "onset"
+            type: OnSector
+            preset: hollow-crater
         }
     ]
-},
-researchCost: [
-    palladium/1
-  ]
+}

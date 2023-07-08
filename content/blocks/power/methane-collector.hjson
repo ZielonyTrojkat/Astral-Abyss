@@ -7,6 +7,7 @@ hasPower: true
 hasLiquids: true
 liquidCapacity: 100
 underBullets: false
+squareSprite: false
 
 attribute: steam
 displayEfficiency: false
@@ -15,18 +16,30 @@ baseEfficiency: 0
 craftTime: 60
 outputLiquid: methane/0.1
 
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawBlurSpin
+    suffix: -rotator
+    rotateSpeed: 6
+  }
+]
+
 requirements: [
-  palladium/20
+  palladium/40
+  magnetite/40
+]
+researchCost: [
+  magnetite/750
 ]
 research: {
-    parent: lead
+    parent: darken-mod-crimson-core1
     objectives: [
         {
             type: OnSector
-            preset: groundZero
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    resonance-crystal/750
-  ]

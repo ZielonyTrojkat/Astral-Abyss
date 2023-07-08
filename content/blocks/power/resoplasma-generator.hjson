@@ -1,0 +1,39 @@
+type: GenericCrafter
+category: power
+health: 4000
+size: 4
+fogRadius: 1
+hasItems: true
+hasPower: true
+hasLiquids: false
+ambientSound: hum
+ambientSoundVolume: 1
+craftTime: 60
+craftEffect: none
+consumes: {
+  power: 1
+  items: [
+  silica/2
+  ]
+  }
+outputLiquid: resoplasma/1
+
+requirements: [
+  palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawDefault
+  }
+  ]
+  }

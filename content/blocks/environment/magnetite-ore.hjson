@@ -1,6 +1,6 @@
 type: OreBlock
 itemDrop: magnetite
-variants: 1
+variants: 3
 oreDefault: true
 oreScale: 20
 oreThreshold: 0.85

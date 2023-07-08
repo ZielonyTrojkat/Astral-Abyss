@@ -4,9 +4,24 @@ itemCapacity: 20
 health: 40
 outputRouter: false
 category: distribution
+
 requirements: [
-  magnetite/2
-]   
+  palladium/4
+  magnetite/4
+]
+researchCost: [
+  magnetite/750
+]
+research: {
+    parent: darken-mod-palladium-conveyor
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}
+
 loadEffect: {
   type: ParticleEffect
   length: 3

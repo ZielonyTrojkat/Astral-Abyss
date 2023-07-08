@@ -1,6 +1,6 @@
 type: BeamNode
 category: power
-health: 100
+health: 400
 size: 1
 fogRadius: 1
 hasPower: true
@@ -8,7 +8,7 @@ consumesPower: true
 outputsPower: true
 underBullets: true
 consumes: {
-    powerBuffered: 1000
+    powerBuffered: 3000
     }
 laserColor1: fc2323
 laserColor2: ba2f2faa
@@ -18,17 +18,18 @@ pulseScl: 8
 range: 10
 
 requirements: [
-  resonance-crystal/10
+  resonance-crystal/8
+  armor-plate-mk2/4
+]
+researchCost: [
+  magnetite/750
 ]
 research: {
-    parent: lead
+    parent: darken-mod-a1-crimson-node
     objectives: [
         {
             type: OnSector
-            preset: groundZero
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    resonance-crystal/750
-  ]

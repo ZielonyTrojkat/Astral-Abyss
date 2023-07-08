@@ -15,21 +15,22 @@ consumes: {
   }
 sparkColor: ff0000
 boostHeatColor: ff0000
+
 requirements: [
-  resonance-crystal/10
+  palladium/16
+]
+researchCost: [
+  resonance-crystal/750
 ]
 research: {
-    parent: lead
+    parent: core-darken1
     objectives: [
         {
             type: OnSector
-            preset: groundZero
+            preset: hollow-crater
         }
     ]
 }
-researchCost: [
-    resonance-crystal/750
-  ]
 
 drillEffect: {
   type: MultiEffect

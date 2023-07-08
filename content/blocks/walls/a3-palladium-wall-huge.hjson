@@ -4,8 +4,17 @@ health: 4500
 size: 3
 
 requirements: [
-  palladium/60
+  palladium/6
 ]
 researchCost: [
-    palladium/1500
-  ]
+  palladium/100
+]
+research: {
+    parent: darken-mod-a2-palladium-wall-big
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}
