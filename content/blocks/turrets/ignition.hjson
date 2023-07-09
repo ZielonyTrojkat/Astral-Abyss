@@ -1,4 +1,3 @@
-
 type: ItemTurret
 size: 2
 health: 500
@@ -10,7 +9,7 @@ shots: 1
 xRand: 1
 outlineColor: 252729
 recoilAmount: 3
-shootSound: disclaimer2
+shootSound: small-laser-1
 shoot: {
     type: ShootAlternate
     barrels: 1
@@ -19,7 +18,12 @@ shoot: {
 }
 ammoTypes: {
   resonance-crystal: {
-    type: BasicBulletType
+    type: ArtilleryBulletType
+    incendAmount: 3
+    incendChance: 1
+    incendSpread: 8
+    makeFire: true
+    despawnHit: true
     speed: 3
     lifetime: 90
     damage: 12
@@ -31,7 +35,6 @@ ammoTypes: {
     shootEffect: "shootSmall"        
     smokeEffect: "shootSmallSmoke"
     ammoMultiplier: 1
-    collidesTiles: false
     despawnEffect: {
     type: WaveEffect
     lifetime: 10

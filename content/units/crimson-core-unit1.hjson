@@ -9,7 +9,6 @@
     "armor": 1,
     "itemCapacity": 50,
   "outlineColor": "36363c",
-    "engineOffset": 7,
     "faceTarget": true,
     controller: BuilderAI
     mineTier: 2
@@ -17,6 +16,23 @@
     buildSpeed: 1
     buildBeamOffset: 5
     isEnemy: false
+    "engineOffset": 7,
+    engineSize: 2
+engines: [
+{
+x: 5
+y: -2
+rotation: 315
+radius: 2
+}
+{
+x: -5
+y: -2
+rotation: -135
+radius: 2
+}
+]
+
 weapons: [
 {
 name: coreflare-gun
