@@ -1,0 +1,21 @@
+type: SolarGenerator
+size: 3
+hasPower: true
+powerProduction: 1
+category: power
+
+requirements: [
+  resonance-crystal/8
+]
+researchCost: [
+  resonance-crystal/750
+]
+research: {
+    parent: darken-mod-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

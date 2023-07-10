@@ -2,12 +2,13 @@ type: ConsumeGenerator
 category: power
 health: 4000
 size: 4
+squareSprite: false
 fogRadius: 1
 hasItems: false
 hasPower: true
 hasLiquids: true
 ambientSound: barely-alive
-ambientSoundVolume: 10000000
+ambientSoundVolume: 1
 powerProduction: 100
 liquidCapacity: 60
 warmupSpeed: 0.01
