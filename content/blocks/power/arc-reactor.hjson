@@ -1,7 +1,7 @@
-type: ConsumeGenerator
+type: VariableReactor
 category: power
-health: 4000
-size: 4
+health: 9000
+size: 6
 squareSprite: false
 fogRadius: 1
 hasItems: false
@@ -9,18 +9,23 @@ hasPower: true
 hasLiquids: true
 ambientSound: spicy-future
 ambientSoundVolume: 1
-powerProduction: 100
+powerProduction: 600
+explosionMinWarmup: 0.5
 liquidCapacity: 60
-warmupSpeed: 0.01
+warmupSpeed: 0.005
+maxHeat: 100
+unstableSpeed: 0.0015
 consumes: {
   liquids: [
     {
     liquid: resoplasma
     amount: 0.25
     }
+  ]
+  items: [
     {
-    liquid: liquid-methane
-    amount: 0.25
+    item: technetium
+    amount: 1
     }
   ]
 }
@@ -33,14 +38,14 @@ researchCost: [
   lead/1
   ]
 
-generateEffectRange: 12
+generateEffectRange: 18
 effectChance: 0.03
-generateEffect: {
+effect: {
   type: ParticleEffect
   particles: 1
   region: darken-mod-star3
   sizeFrom: 0
-  sizeTo: 2
+  sizeTo: 0
   sizeInterp: circleOut
   length: 5
   lifetime: 180
@@ -57,12 +62,9 @@ type: DrawMulti
   suffix: -bottom
   }
   {
-    type: DrawPlasma
-    suffix: -plasma
-    plasmas: 3
-    plasma1: e83f3f
-    plasma2: ff808d
-    plasma3: ffc7cc
+  type: DrawLiquidTile
+  drawLiquid: resoplasma
+  padding: 2
   }
   {
   type: DrawDefault
@@ -70,7 +72,7 @@ type: DrawMulti
   {
   type: DrawGlowRegion
   suffix: -glow
-  glowScale: 10
+  glowScale: 7
   color: ff4f4f
   }
   ]

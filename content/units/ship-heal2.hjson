@@ -11,7 +11,7 @@ itemCapacity: 0
 outlineColor: 323236
 weapons: [
  {
-    name: ship-heal-gun
+    name: a
     rotate: true
     rotateSpeed: 12
     x: 0
