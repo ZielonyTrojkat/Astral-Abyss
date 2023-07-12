@@ -5,7 +5,7 @@
   "size": 3,
   "itemCapacity": 30,
   "tier": 5,
-  "drillTime": 100,
+  "drillTime": 10,
   "drawMineItem": false,
   arrows: 0
   drillEffect: {

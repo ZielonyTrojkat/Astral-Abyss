@@ -22,17 +22,17 @@
     coreUnitDock: true
     vulnerableWithPayloads: true
     payloadCapacity: 256
-    "engineOffset": 7,
+    "engineOffset": 9,
     engineSize: 2
 engines: [
 {
-x: 5
+x: 7
 y: -2
 rotation: 315
 radius: 2
 }
 {
-x: -5
+x: -7
 y: -2
 rotation: -135
 radius: 2
