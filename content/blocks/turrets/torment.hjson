@@ -1,16 +1,17 @@
-name: Ray
-type: ItemTurret
-size: 2
-health: 1500
+type: LiquidTurret
+size: 3
+health: 500
 range: 350
 rotateSpeed: 4.5
-reload: 40
+reload: 3
 burstSpacing: 3
 shots: 1
 xRand: 1
+extinguish: false
+targetAir: false
 outlineColor: 252729
 recoilAmount: 3
-shootSound: shootAlt
+shootSound: splash
 shoot: {
     type: ShootAlternate
     barrels: 1
@@ -18,21 +19,29 @@ shoot: {
     barrelOffset: 0
 }
 ammoTypes: {
-  resonance-crystal: {
-    type: BasicBulletType
-    speed: 5
-    lifetime: 50
+  resoplasma: {
+    type: ArtilleryBulletType
+    incendAmount: 3
+    incendChance: 1
+    incendSpread: 8
+    makeFire: true
+    status: darken-mod-plasma-melting
+    statusDuration: 120
+    despawnHit: true
+    speed: 3
+    lifetime: 90
     damage: 12
-    width: 12
-    height: 12
-    spin: 3
-    inaccuracy: 10
+    width: 4
+    height: 20
+    inaccuracy: 1
     backColor: e02f2f
     frontColor: fa7f7f
     shootEffect: "shootSmall"        
     smokeEffect: "shootSmallSmoke"
     ammoMultiplier: 1
-    collidesTiles: false
+    splashDamage: 30
+    splashDamageRadius: 16
+    splashDamagePierce: false
     despawnEffect: {
     type: WaveEffect
     lifetime: 10
@@ -43,15 +52,15 @@ ammoTypes: {
     colorFrom: fa7f7f
     colorTo: e02f2f
   }
-    backSprite: radiatr-mod-star
-    sprite: radiatr-mod-star2
+    backSprite: darken-mod-ball
+    sprite: darken-mod-ball
     shrinkX: 0
     shrinkY: 0
     trailChance: 1
     trailEffect: {
     type: ParticleEffect
     particles: 1
-    length: 0
+    length: 10
     lifetime: 15
     sizeFrom: 5
     sizeTo: 0
@@ -61,6 +70,23 @@ ammoTypes: {
   }
   }
 }
+
+drawer: {
+  type: DrawTurret
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      progress: recoil
+      heatProgress: recoil
+      under: true
+      moveY: -1.5
+      growX: 0.1
+      growY: 0.1
+    }
+  ]
+}
+
 category: turret
 requirements: [
   lead/120

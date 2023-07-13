@@ -14,7 +14,7 @@ displayEfficiency: false
 minEfficiency: 9
 baseEfficiency: 0
 craftTime: 60
-outputLiquid: methane/0.6
+outputLiquid: methane/1.6
 
 drawer: [
   {
@@ -35,7 +35,7 @@ researchCost: [
   magnetite/750
 ]
 research: {
-    parent: darken-mod-crimson-core1
+    parent: darken-mod-methane-collector
     objectives: [
         {
             type: OnSector

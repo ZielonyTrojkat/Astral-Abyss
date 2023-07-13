@@ -1,14 +1,14 @@
 targetAir: true
 type: ItemTurret
-size: 2
+size: 3
 health: 2300
 range: 200
 rotateSpeed: 14
-reload: 80
+reload: 30
 recoilAmount: 3
-outlineColor: 252729
 shootSound: blaster
 shake: 4
+outlineColor: 252729
 cooldownTime: 60
 shootWarmupSpeed: 0.08
 minWarmup: 0.9
@@ -65,7 +65,8 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -barrel
+      suffix: -movable
+      mirror: true
       progress: recoil
       heatProgress: recoil
       under: true

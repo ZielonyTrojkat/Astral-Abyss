@@ -7,6 +7,7 @@ reload: 3
 burstSpacing: 3
 shots: 1
 xRand: 1
+targetAir: false
 outlineColor: 252729
 recoilAmount: 3
 shootSound: small-laser-1
@@ -23,6 +24,8 @@ ammoTypes: {
     incendChance: 1
     incendSpread: 8
     makeFire: true
+    status: darken-mod-plasma-melting
+    statusDuration: 120
     despawnHit: true
     speed: 3
     lifetime: 90
@@ -35,6 +38,9 @@ ammoTypes: {
     shootEffect: "shootSmall"        
     smokeEffect: "shootSmallSmoke"
     ammoMultiplier: 1
+    splashDamage: 30
+    splashDamageRadius: 16
+    splashDamagePierce: false
     despawnEffect: {
     type: WaveEffect
     lifetime: 10
