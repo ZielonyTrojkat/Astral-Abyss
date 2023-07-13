@@ -6,6 +6,7 @@ health: 2300
 range: 400
 rotateSpeed: 2
 moveWhileCharging: false
+outlineColor: 252729
 reload: 320
 heatRequirement: 60
 maxHeatEfficiency: 1
