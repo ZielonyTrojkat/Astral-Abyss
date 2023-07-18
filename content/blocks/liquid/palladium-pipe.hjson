@@ -3,7 +3,7 @@ leaks: true
 health: 15
 hasPower: false
 requirements: [
-  palladium/2
+  a1-palladium/2
 ]
 liquidCapacity: 6
 liquidPressure: 1

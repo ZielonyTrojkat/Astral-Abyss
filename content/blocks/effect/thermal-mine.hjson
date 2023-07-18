@@ -11,7 +11,7 @@ lightningColor: ed4642
 shots: 1
 cooldown: 60
 requirements: [
-  palladium/16
+  a1-palladium/16
 ]
 research: {
     parent: crimson-core1
@@ -23,7 +23,7 @@ research: {
     ]
 }
 researchCost: [
-    resonance-crystal/750
+    a4-resonance-crystal/750
   ]
 
 bullet: {

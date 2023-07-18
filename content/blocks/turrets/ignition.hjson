@@ -18,7 +18,7 @@ shoot: {
     barrelOffset: 0
 }
 ammoTypes: {
-  resonance-crystal: {
+  a4-resonance-crystal: {
     type: ArtilleryBulletType
     incendAmount: 3
     incendChance: 1

@@ -14,7 +14,7 @@ shootWarmupSpeed: 0.08
 minWarmup: 0.9
 warmupMaintainTime: 60
 ammoTypes: {
-    resonance-crystal: {
+    a4-resonance-crystal: {
 type: BasicBulletType
 width: 20
 height: 26
@@ -62,6 +62,7 @@ trailColor: de4545
 }
 drawer: {
   type: DrawTurret
+  basePrefix: dark-
   parts: [
     {
       type: RegionPart
@@ -86,5 +87,5 @@ drawer: {
 }
 category: turret
 requirements: [
-  palladium/700
+  a1-palladium/700
 ]

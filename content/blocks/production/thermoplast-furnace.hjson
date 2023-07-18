@@ -13,14 +13,14 @@ craftEffect: none
 consumes: {
   power: 2
   items: [
-  resonance-crystal/2
-  palladium/2
+  a4-resonance-crystal/2
+  a1-palladium/2
   ]
   }
-outputItem: thermoplast/2
+outputItem: b2-thermoplast/2
 
 requirements: [
-  palladium/40
+  a1-palladium/40
   ]
 research: lead
 researchCost: [

@@ -1,16 +1,17 @@
 type: CoreBlock
 category: effect
 health: 5000
-size: 4
+size: 3
 fogRadius: 10
 hasPower: false
 underBullets: false
 absorbLasers: true
+squareSprite: false
 itemCapacity: 5000
 unitCapModifier: 12
 unitType: crimson-core-unit1
 requirements: [
-  palladium/1000
+  a1-palladium/1000
 ]
 research: {
   root: true

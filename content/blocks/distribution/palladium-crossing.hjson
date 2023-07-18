@@ -1,0 +1,20 @@
+type: Junction
+health: 100
+speed: 10
+capacity: 8
+
+requirements: [
+  a1-palladium/3
+]
+researchCost: [
+  a1-palladium/60
+]
+research: {
+    parent: darken-mod-palladium-conveyor
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

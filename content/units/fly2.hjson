@@ -1,0 +1,151 @@
+type: payload
+flying: true
+lowAltitude: true
+speed: 1.5
+accel: 0.1
+drag: 0.04
+flying: true
+health: 300
+hitSize: 10
+armor: 1
+itemCapacity: 50
+outlineColor: 36363c
+faceTarget: true
+controller: BuilderAI
+mineTier: 2
+mineSpeed: 5
+buildSpeed: 1
+buildBeamOffset: 6
+isEnemy: false
+targetable: false
+hittable: false
+coreUnitDock: true
+vulnerableWithPayloads: true
+payloadCapacity: 64
+engineOffset: 8
+engineSize: 2.5
+engines: [
+{
+x: 5.5
+y: -4
+rotation: -90
+radius: 2
+}
+{
+x: -5.5
+y: -4
+rotation: -90
+radius: 2
+}
+]
+
+weapons: [
+ {
+    name: none
+    rotate: false
+    x: 0
+    y: 1
+    top: true
+    mirror: false
+    shootSound: pew
+    reload: 180
+    ignoreRotation: true
+    shootStatus: slow
+    shootStatusDuration: 120
+    shoot: {
+     type: ShootSpread
+    shots: 1
+    spread: 7
+    }
+    bullet: {
+      type: BasicBulletType
+      sprite: large-orb
+      frontColor: 8bb3b7
+      backColor: 8bb3b7
+      damage: 20
+      splashDamage: 30
+      splashDamageRadius: 30
+      splashDamagePierce: false
+      speed: 2
+      lifetime: 90
+      recoil: 1
+      width: 12
+      height: 12
+      shrinkX: 0
+      shrinkY: 0
+      shootEffect: none
+      smokeEffect: none
+      trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 15
+      region: darken-mod-ball
+      lightColor: A9D8FFFF
+      colorFrom: 7bacb0
+      colorTo: 68969a
+      sizeFrom: 7
+      sizeTo: 0
+      }
+trailInterval: 4
+trailColor: 8bb3b7
+trailInterp: circleOut
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 20
+        sizeTo: 17
+        interp: circleOut
+        strokeFrom: 8
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaff
+        }
+        {
+        type: WaveEffect
+        lifetime: 15
+        sizeFrom: 14
+        sizeTo: 11
+        interp: circleOut
+        strokeFrom: 7
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaff
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 40
+        lifetime: 40
+        lenFrom: 7
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaff
+        }
+      ]
+    }
+    }
+  }
+]
+
+abilities: [
+  {
+    type: ShieldArcAbility
+    max: 200
+    regen: 0.05
+    cooldown: 300
+    whenShooting: false
+    region: darken-mod-fly2-shield
+    drawArc: false
+  }
+]

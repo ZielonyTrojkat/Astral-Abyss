@@ -18,10 +18,10 @@ pulseScl: 8
 range: 10
 
 requirements: [
-  resonance-crystal/8
+  a4-resonance-crystal/8
 ]
 researchCost: [
-  resonance-crystal/750
+  a4-resonance-crystal/750
 ]
 research: {
     parent: darken-mod-crimson-core1

@@ -10,7 +10,7 @@ shootSound: shootAltLong
 shake: 4
 cooldownTime: 60
 ammoTypes: {
-    thermoplast: {
+    b2-thermoplast: {
 type: ArtilleryBulletType
 width: 12
 height: 16
@@ -88,5 +88,5 @@ shootEffect:   	{
 }
 category: turret
 requirements: [
-  palladium/700
+  a1-palladium/700
 ]

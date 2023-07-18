@@ -3,11 +3,11 @@ health: 100
 speed: 4
 
 requirements: [
-  palladium/6
-  magnetite/12
+  a1-palladium/6
+  b1-magnetite/12
 ]
 researchCost: [
-  magnetite/750
+  b1-magnetite/750
 ]
 research: {
     parent: darken-mod-magnetic-conveyor

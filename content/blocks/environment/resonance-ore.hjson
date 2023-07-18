@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: resonance-crystal
+itemDrop: a4-resonance-crystal
 variants: 2
 oreDefault: true
 oreScale: 20

@@ -5,5 +5,5 @@ moveForce: 300
 payloadLimit: 3
 category: units
 requirements: [
-  palladium/1
+  a1-palladium/1
 ]

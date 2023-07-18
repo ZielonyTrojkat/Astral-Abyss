@@ -24,14 +24,14 @@ consumes: {
   ]
   items: [
     {
-    item: technetium
+    item: c3-technetium
     amount: 1
     }
   ]
 }
 
 requirements: [
-  palladium/40
+  a1-palladium/40
   ]
 research: lead
 researchCost: [

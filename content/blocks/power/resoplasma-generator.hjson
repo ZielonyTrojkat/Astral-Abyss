@@ -26,7 +26,7 @@ consumes: {
 }
 
 requirements: [
-  palladium/40
+  a1-palladium/40
   ]
 research: lead
 researchCost: [

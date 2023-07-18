@@ -14,7 +14,7 @@ craftEffect: none
 consumes: {
   power: 5
   items: [
-  magnetite/3
+  b1-magnetite/3
   ]
   liquids: [
   water/0.5
@@ -23,7 +23,7 @@ consumes: {
 outputLiquid: ferrofluid/0.5
 
 requirements: [
-  palladium/40
+  a1-palladium/40
   ]
 research: lead
 researchCost: [

@@ -8,9 +8,9 @@ consumes: {
   power: 2
     items: {
       items: [
-        palladium/90
-        armor-plate-mk1/40
-        lonsdaleite/40
+        a1-palladium/90
+        a7-armor-plate/40
+        c1-lonsdaleite/40
       ]
     }
   liquid: {
@@ -22,11 +22,11 @@ upgrades: [
   [ship2, ship3]
 ]
 requirements: [
-  palladium/4
-  magnetite/4
+  a1-palladium/4
+  b1-magnetite/4
 ]
 researchCost: [
-  magnetite/750
+  b1-magnetite/750
 ]
 research: {
     parent: darken-mod-ship-constructor2

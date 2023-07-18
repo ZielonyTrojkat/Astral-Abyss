@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: magnetite
+itemDrop: b1-magnetite
 variants: 3
 oreDefault: true
 oreScale: 20

@@ -1,0 +1,44 @@
+type: AttributeCrafter
+category: power
+health: 200
+size: 3
+fogRadius: 3
+hasPower: true
+hasLiquids: true
+liquidCapacity: 100
+underBullets: false
+squareSprite: false
+
+attribute: steam
+displayEfficiency: false
+minEfficiency: 9
+baseEfficiency: 0
+craftTime: 60
+outputLiquid: methane/0.6
+
+drawer: [
+  {
+    type: DrawDefault
+  }
+  {
+    type: DrawBlurSpin
+    suffix: -rotator
+    rotateSpeed: 6
+  }
+]
+
+requirements: [
+  a1-palladium/40
+]
+researchCost: [
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

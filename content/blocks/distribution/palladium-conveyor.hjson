@@ -4,13 +4,13 @@ speed: 0.03
 displayedSpeed: 8
 
 requirements: [
-  palladium/1
+  a1-palladium/1
 ]
 researchCost: [
-  resonance-crystal/750
+  a1-palladium/20
 ]
 research: {
-    parent: core-darken1
+    parent: darken-mod-crimson-core1
     objectives: [
         {
             type: OnSector

@@ -40,7 +40,7 @@ shoot: {
   ]
 }
 ammoTypes: {
-    resonance-crystal: {
+    a4-resonance-crystal: {
 type: BasicBulletType
 width: 25
 height: 25
@@ -620,5 +620,5 @@ drawer: {
 }
 category: turret
 requirements: [
-  palladium/700
+  a1-palladium/700
 ]

@@ -5,8 +5,8 @@ size: 3
 absorbLasers: true
 
 requirements: [
-  thermoplast/50
+  b2-thermoplast/5
 ]
 researchCost: [
-    thermoplast/1500
-  ]
+  b2-thermoplast/100
+]

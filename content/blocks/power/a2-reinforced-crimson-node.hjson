@@ -18,11 +18,10 @@ pulseScl: 8
 range: 10
 
 requirements: [
-  resonance-crystal/8
-  armor-plate-mk2/4
+  a4-resonance-crystal/8
 ]
 researchCost: [
-  magnetite/750
+  b1-magnetite/750
 ]
 research: {
     parent: darken-mod-a1-crimson-node

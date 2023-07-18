@@ -4,10 +4,10 @@ health: 500
 size: 1
 
 requirements: [
-  palladium/6
+  a1-palladium/6
 ]
 researchCost: [
-  palladium/100
+  a1-palladium/100
 ]
 research: {
     parent: darken-mod-crimson-core1

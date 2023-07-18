@@ -1,0 +1,19 @@
+type: DuctRouter
+health: 100
+speed: 10
+
+requirements: [
+  a1-palladium/4
+]
+researchCost: [
+  a1-palladium/40
+]
+research: {
+    parent: darken-mod-palladium-crossing
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

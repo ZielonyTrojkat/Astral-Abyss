@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: palladium
+itemDrop: a1-palladium
 variants: 3
 oreDefault: true
 oreScale: 25

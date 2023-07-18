@@ -1,0 +1,58 @@
+type: payload
+flying: true
+lowAltitude: true
+speed: 2
+accel: 0.1
+drag: 0.04
+flying: true
+health: 300
+hitSize: 10
+armor: 1
+itemCapacity: 50
+outlineColor: 36363c
+faceTarget: true
+parts: [
+	{
+		type: HoverPart
+		x: 0
+		y: -6
+		radius: 7
+		phase: 90
+		stroke: 2
+		layerOffset: -0.001
+		color: c9a5c8
+	}
+]
+
+weapons: [
+ {
+    name: none
+    rotate: false
+    x: 0
+    y: 1
+    top: true
+    mirror: false
+    shootSound: pew
+    reload: 30
+    ignoreRotation: true
+    recoil: 0.8
+    shoot: {
+     type: ShootSpread
+    shots: 1
+    spread: 7
+    }
+    bullet: {
+      type: LaserBoltBulletType
+      frontColor: 8bb3b7
+      backColor: 8bb3b7
+      damage: 20
+      speed: 3
+      lifetime: 60
+      recoil: 0.0
+      width: 2
+      height: 6
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]

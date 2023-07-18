@@ -1,0 +1,27 @@
+
+type: WallCrafter
+size: 2
+category: production
+drillTime: 180
+output: a5-pyrodust
+attribute: pyrodust
+
+consumes: {
+  power: 0.5
+}
+
+requirements: [
+  a1-palladium/40
+]
+researchCost: [
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-a1-stroke-drill
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

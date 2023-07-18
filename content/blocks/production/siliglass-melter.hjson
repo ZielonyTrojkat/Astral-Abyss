@@ -13,13 +13,13 @@ craftEffect: none
 consumes: {
   power: 1
   items: [
-  silica/2
+  a2-silica/2
   ]
   }
-outputItem: siliglass/1
+outputItem: a3-siliglass/1
 
 requirements: [
-  palladium/40
+  a1-palladium/40
   ]
 research: lead
 researchCost: [

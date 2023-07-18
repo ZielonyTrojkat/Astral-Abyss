@@ -2,5 +2,5 @@ type: Floor
 variants: 3
 isFloor: true
 requirements: [
-  palladium/1
+  a1-palladium/1
 ]

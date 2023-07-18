@@ -6,11 +6,11 @@ outputRouter: false
 category: distribution
 
 requirements: [
-  palladium/4
-  magnetite/4
+  a1-palladium/4
+  b1-magnetite/4
 ]
 researchCost: [
-  magnetite/750
+  b1-magnetite/750
 ]
 research: {
     parent: darken-mod-palladium-conveyor
