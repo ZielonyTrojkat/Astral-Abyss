@@ -1,7 +1,7 @@
 name: "Darken-mod"
-displayName: "The Darken"
-author: StarkillerTheGreat & Zielony Trójkąt
-description: "New planet Darken"
-version: "0.00"
+displayName: "The Darken (WIP)"
+author: CY4N & Zielony Trójkąt
+description: "Work In Progress"
+version: "0.01"
 minGameVersion: "144.1"
 hidden: false
