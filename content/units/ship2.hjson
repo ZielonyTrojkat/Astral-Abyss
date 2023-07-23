@@ -117,6 +117,21 @@ weapons: [
     colorFrom: bdf8ff
     colorTo: 8ceaff
     }
+    smokeEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 40
+        lifetime: 40
+        lenFrom: 7
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaff
+    }
     despawnHit: true
     despawnEffect: none
     hitEffect: {

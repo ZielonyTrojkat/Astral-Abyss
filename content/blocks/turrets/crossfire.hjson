@@ -47,6 +47,21 @@ drawer: {
   ]
 }
 category: turret
+
+
 requirements: [
-  a1-palladium/700
+  a1-palladium/70
+  a3-siliglass/30
 ]
+researchCost: [
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-penetrate
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+type: Pump
+health: 600
+size: 2
+pumpAmount: 0.1
+liquidCapacity: 60
+squareSprite: false
+category: liquid
+
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+    type: DrawPumpLiquid
+  }
+  {
+  type: DrawRegion
+  suffix: -rotator
+  rotateSpeed: -5
+  }
+  {
+  type: DrawRegion
+  suffix: -rotator
+  rotateSpeed: -5
+  rotation: 45
+  }
+  {
+  type: DrawDefault
+  }
+  ]
+  }
+
+requirements: [
+  a1-palladium/16
+]
+researchCost: [
+  a4-resonance-crystal/750
+]
+research: {
+    parent: darken-mod-a1-stroke-drill
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

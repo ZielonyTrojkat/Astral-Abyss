@@ -3,7 +3,7 @@ size: 2
 health: 500
 range: 350
 rotateSpeed: 4.5
-reload: 3
+reload: 10
 burstSpacing: 3
 shots: 1
 xRand: 1
@@ -18,56 +18,29 @@ shoot: {
     barrelOffset: 0
 }
 ammoTypes: {
-  a4-resonance-crystal: {
-    type: ArtilleryBulletType
-    incendAmount: 3
-    incendChance: 1
-    incendSpread: 8
-    makeFire: true
-    status: darken-mod-plasma-melting
-    statusDuration: 120
-    despawnHit: true
-    speed: 3
-    lifetime: 90
-    damage: 12
-    width: 4
-    height: 20
-    inaccuracy: 1
-    backColor: e02f2f
-    frontColor: fa7f7f
-    shootEffect: "shootSmall"        
-    smokeEffect: "shootSmallSmoke"
-    ammoMultiplier: 1
-    splashDamage: 30
-    splashDamageRadius: 16
-    splashDamagePierce: false
-    despawnEffect: {
-    type: WaveEffect
-    lifetime: 10
-    sizeFrom: 0
-    sizeTo: 10
-    strokeFrom: 6
-    strokeTo: 0
-    colorFrom: fa7f7f
-    colorTo: e02f2f
-  }
-    backSprite: darken-mod-ball
-    sprite: darken-mod-ball
-    shrinkX: 0
-    shrinkY: 0
-    trailChance: 1
-    trailEffect: {
-    type: ParticleEffect
-    particles: 1
-    length: 10
-    lifetime: 15
-    sizeFrom: 5
-    sizeTo: 0
-    colorFrom: fa7f7f
-    colorTo: e02f2f
-    region: particle
-  }
-  }
+    a6-compacted-pyrophenium: {
+    type: BulletType
+    inaccuracy: 6
+    damage: 32
+    reloadMultiplier: 5
+    ammoMultiplier: 12
+    rangeChange: -80
+    speed: 3.35
+    lifetime: 18
+    hitSize: 7
+    pierce: true
+    shootEffect: shootSmallFlame
+    hitEffect: hitFlameSmall
+    despawnEffect: none
+    status: burning
+    keepVelocity: false
+    hittable: false
+}
+}
+
+drawer: {
+  type: DrawTurret
+  basePrefix: dark-
 }
 category: turret
 requirements: [

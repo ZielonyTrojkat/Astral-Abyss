@@ -71,14 +71,18 @@ drawer: {
       heatProgress: recoil
       under: true
       moveY: -1.5
-      growX: 0.1
-      growY: 0.1
+      xScl: 0.8
+      yScl: 0.8
+      growX: 0.08
+      growY: 0.08
     }
     {
       type: RegionPart
       suffix: -wing
       mirror: true
       progress: warmup
+      xScl: 0.8
+      yScl: 0.8
       moveX: 1.5
       moveY: -0.5
       moveRot: -8

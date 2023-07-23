@@ -1,0 +1,222 @@
+targetAir: true
+type: ItemTurret
+size: 2
+health: 2300
+range: 160
+rotateSpeed: 14
+reload: 30
+recoilAmount: 4
+shootSound: blaster
+shake: 2
+outlineColor: 252729
+shoot: {
+    type: ShootAlternate
+    barrels: 2
+    spread: 5
+}
+ammoTypes: {
+    a1-palladium: {
+      type: BasicBulletType
+      sprite: missile-large
+      backColor: 68969a
+      frontColor: a5c7c9
+      trailColor: 7bacb0
+      damage: 18
+      speed: 4
+      lifetime: 37
+      recoil: 0.0
+      width: 8
+      height: 10
+      weaveScale: 3
+      weaveMag: 3
+      weaveRandom: false
+      trailLength: 10
+      trailWidth: 2.5
+      trailRotation: true
+      trailInterval: 1.5
+      trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 15
+      region: darken-mod-trail1
+      lightColor: A9D8FFFF
+      colorFrom: 7bacb0
+      colorTo: 68969a
+      sizeFrom: 7
+      sizeTo: 0
+      }
+      smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 20
+        lifetime: 30
+        sizeFrom: 4
+        sizeTo: 0
+        offsetX: -2
+        cone: 20
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaffaa
+      }
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 40
+        lifetime: 40
+        lenFrom: 7
+        lenTo: 0
+        cone: 75
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: bdf8ff
+        colorTo: 8ceaff
+        }
+      ]
+    }
+}
+    a6-compacted-pyrophenium: {
+      type: BasicBulletType
+      sprite: missile-large
+      backColor: a26d2c
+      frontColor: ffcf92
+      trailColor: ffcf92
+      damage: 24
+      splashDamageRadius: 20
+      speed: 4
+      lifetime: 37
+      status: burning
+      statusDuration: 300
+      recoil: 0.0
+      width: 8
+      height: 10
+      weaveScale: 3
+      weaveMag: 3
+      weaveRandom: false
+      trailLength: 10
+      trailWidth: 2.5
+      trailRotation: true
+      trailInterval: 1.5
+      trailEffect: {
+      type: ParticleEffect
+      particles: 1
+      length: 0
+      lifetime: 15
+      region: darken-mod-trail1
+      lightColor: A9D8FFFF
+      colorFrom: ffcf92
+      colorTo: ffb558
+      sizeFrom: 7
+      sizeTo: 0
+      }
+      smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 20
+        lifetime: 30
+        sizeFrom: 4
+        sizeTo: 0
+        offsetX: -2
+        cone: 20
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffcf92
+        colorTo: ffb558
+      }
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 40
+        lifetime: 40
+        lenFrom: 7
+        lenTo: 0
+        cone: 75
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffcf92
+        colorTo: ffb558
+        }
+        {
+        type: ParticleEffect
+        line: false
+        particles: 20
+        baseLength: 0
+        length: 20
+        lifetime: 80
+        sizeFrom: 4
+        sizeTo: 0
+        interp: circleOut
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: ffcf92
+        colorTo: ffb558
+        }
+      ]
+    }
+}
+}
+recoil: 1
+recoils: 2
+drawer: {
+  type: DrawTurret
+  basePrefix: dark-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel-l
+      progress: recoil
+      recoilIndex: 0
+      under: true
+      moveY: -1.5
+    }
+    {
+      type: RegionPart
+      suffix: -barrel-r
+      progress: recoil
+      recoilIndex: 1
+      under: true
+      moveY: -1.5
+    }
+  ]
+}
+category: turret
+
+
+requirements: [
+  a1-palladium/40
+]
+researchCost: [
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

@@ -66,6 +66,15 @@ drawer: {
   parts: [
     {
       type: RegionPart
+      suffix: -wing
+      mirror: true
+      progress: warmup
+      moveX: 1.5
+      moveY: -0.5
+      moveRot: -8
+    }
+    {
+      type: RegionPart
       suffix: -movable
       mirror: true
       progress: recoil
@@ -74,15 +83,6 @@ drawer: {
       moveY: -1.5
       growX: 0.1
       growY: 0.1
-    }
-    {
-      type: RegionPart
-      suffix: -wing
-      mirror: true
-      progress: warmup
-      moveX: 1.5
-      moveY: -0.5
-      moveRot: -8
     }
   ]
 }

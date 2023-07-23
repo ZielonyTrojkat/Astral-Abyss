@@ -1,0 +1,50 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 2
+fogRadius: 1
+hasItems: true
+hasPower: true
+hasLiquids: true
+liquidCapacity: 90
+ambientSound: hum
+ambientSoundVolume: 1
+craftTime: 60
+craftEffect: none
+consumes: {
+  power: 5
+  liquids: [
+  waste-water/1
+  ]
+  }
+outputLiquid: water/0.5
+outputItem: b5-waste/1
+
+requirements: [
+  a1-palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawLiquidTile
+  drawLiquid: waste-water
+  }
+  {
+  type: DrawRegion
+  suffix: -rotator
+  rotateSpeed: 3
+  }
+  {
+  type: DrawDefault
+  }
+  ]
+  }
