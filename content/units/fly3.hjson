@@ -1,42 +1,62 @@
-type: payload
-flying: true
-lowAltitude: true
-speed: 1.2
+type: hover
+hovering: true
+speed: 0.8
+rotateSpeed: 2
 accel: 0.1
-drag: 0.04
-flying: true
+drag: 0.02
 health: 300
 hitSize: 10
 armor: 1
 itemCapacity: 50
 outlineColor: 36363c
 faceTarget: true
-controller: BuilderAI
-mineTier: 2
-mineSpeed: 5
-buildSpeed: 1
-buildBeamOffset: 6
-isEnemy: false
-targetable: false
-hittable: false
-coreUnitDock: true
-vulnerableWithPayloads: true
-payloadCapacity: 64
-engineOffset: 8
-engineSize: 2.5
-engines: [
-{
-x: 5.5
-y: -4
-rotation: -90
-radius: 2
-}
-{
-x: -5.5
-y: -4
-rotation: -90
-radius: 2
-}
+engineSize: 3
+engineOffset: 11
+engineColor: 95f0f5
+faceTarget: true
+trailColor: 95f0f5
+trailLength: 18
+trailScl: 1
+useEngineElevation: false
+shadowElevation: 0.1
+
+parts: [
+	{
+		type: HoverPart
+		x: 12
+		y: 6
+    mirror: true
+    circles: 2
+		radius: 8
+		phase: 90
+		stroke: 1.75
+    minStroke: 0
+		layerOffset: -0.001
+		color: 95f0f5
+	}
+	{
+		type: HoverPart
+		x: 10
+		y: -10
+    mirror: true
+    circles: 2
+		radius: 9
+		phase: 90
+		stroke: 1.75
+    minStroke: 0
+		layerOffset: -0.001
+		color: 95f0f5
+	}
+	{
+		type: FlarePart
+		x: 0
+		y: -11
+		radius: 8
+		stroke: 1.75
+    followRotation: true
+		color1: 95f0f5
+    color1: 77ced4
+	}
 ]
 
 weapons: [
@@ -137,7 +157,7 @@ recoil: 3
     max: 200
     regen: 0.05
     cooldown: 300
-    whenShooting: false
+    whenShooting: true
     region: darken-mod-fly3-shield
     drawArc: false
   }

@@ -1,12 +1,11 @@
-type: Conveyor
+type: ItemBridge
+hasPower: false
 health: 50
-speed: 0.03
-displayedSpeed: 8
-junctionReplacement: palladium-crossing
-bridgeReplacement: palladium-bridge
+range: 4
+transportTime: 4
 
 requirements: [
-  a1-palladium/1
+  a1-palladium/5
 ]
 researchCost: [
   a1-palladium/20

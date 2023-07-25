@@ -1,9 +1,6 @@
-type: Conveyor
-health: 50
-speed: 0.03
-displayedSpeed: 8
-junctionReplacement: palladium-crossing
-bridgeReplacement: palladium-bridge
+type: Unloader
+health: 120
+itemCapacity: 0
 
 requirements: [
   a1-palladium/1

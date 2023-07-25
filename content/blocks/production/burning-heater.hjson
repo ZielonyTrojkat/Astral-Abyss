@@ -1,0 +1,40 @@
+type: HeatProducer
+category: crafting
+health: 400
+size: 2
+squareSprite: false
+fogRadius: 1
+hasItems: false
+hasPower: false
+hasLiquids: true
+liquidCapacity: 30
+rotateDraw: false
+regionRotated1: 1
+ambientSound: hum
+ambientSoundVolume: 1
+heatOutput: 4
+
+consumes: {
+  liquids: [
+  methane/0.1
+  ]
+  }
+
+requirements: [
+  a1-palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawHeatOutput
+  }
+  ]
+  }

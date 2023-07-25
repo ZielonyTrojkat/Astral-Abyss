@@ -1,6 +1,7 @@
 type: hover
 hovering: true
 speed: 1.2
+rotateSpeed: 2.5
 accel: 0.1
 drag: 0.02
 health: 300
@@ -9,18 +10,27 @@ armor: 1
 itemCapacity: 50
 outlineColor: 36363c
 faceTarget: true
-engineSize: 0
+engineSize: 2.5
+engineOffset: 8
+engineColor: 95f0f5
+faceTarget: true
+trailColor: 95f0f5
+trailLength: 10
+trailScl: 1
+useEngineElevation: false
+shadowElevation: 0.1
 
 parts: [
 	{
 		type: HoverPart
-		x: 6
-		y: 5
+		x: 7
+		y: 4
     mirror: true
 		radius: 7
 		phase: 90
-		stroke: 2
-    rotation: 90
+		stroke: 1.5
+    minStroke: 0
+    rotation: 180
 		layerOffset: -0.001
 		color: 95f0f5
 	}
@@ -32,8 +42,19 @@ parts: [
 		radius: 7
 		phase: 90
 		stroke: 2
+    minStroke: 0
 		layerOffset: -0.001
 		color: 95f0f5
+	}
+	{
+		type: FlarePart
+		x: 0
+		y: -8.25
+		radius: 7
+		stroke: 1.25
+    followRotation: true
+		color1: 95f0f5
+    color1: 77ced4
 	}
 ]
 

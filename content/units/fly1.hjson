@@ -1,26 +1,48 @@
-type: payload
-flying: true
-lowAltitude: true
-speed: 2
+type: hover
+hovering: true
+speed: 1.5
+rotateSpeed: 3
 accel: 0.1
-drag: 0.04
-flying: true
+drag: 0.03
 health: 300
 hitSize: 10
 armor: 1
 itemCapacity: 50
 outlineColor: 36363c
 faceTarget: true
+engineSize: 2.5
+engineOffset: 5
+engineColor: 95f0f5
+faceTarget: true
+trailColor: 95f0f5
+trailLength: 6
+trailScl: 1
+useEngineElevation: false
+shadowElevation: 0.1
+
 parts: [
 	{
 		type: HoverPart
-		x: 0
-		y: -6
-		radius: 7
+		x: 4
+		y: -2
+    mirror: true
+		radius: 6
 		phase: 90
-		stroke: 2
+		stroke: 1.2
+    minStroke: 0
 		layerOffset: -0.001
 		color: 95f0f5
+	}
+	{
+		type: FlarePart
+		x: 0
+		y: -5.2
+		radius: 5
+		stroke: 1
+    minStroke: 0
+    followRotation: true
+		color1: 95f0f5
+    color1: 77ced4
 	}
 ]
 
