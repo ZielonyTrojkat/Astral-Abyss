@@ -1,7 +1,7 @@
 type: Conveyor
 health: 50
-speed: 0.03
-displayedSpeed: 8
+speed: 0.04
+displayedSpeed: 6
 junctionReplacement: palladium-crossing
 bridgeReplacement: palladium-bridge
 

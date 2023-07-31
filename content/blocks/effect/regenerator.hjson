@@ -1,0 +1,36 @@
+type: RegenProjector
+category: effect
+health: 100
+size: 2
+baseColor: ffffff
+healPercent: 1
+phaseBoost: 1
+phaseRangeBoost: 5
+reload: 20
+consumes: {
+  power: 1
+  items: {
+    items: [
+    lead/1
+    ]
+  booster: true
+  optional: true
+  }
+
+}
+
+requirements: [
+  a1-palladium/16
+]
+research: {
+    parent: crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: groundZero
+        }
+    ]
+}
+researchCost: [
+    a4-resonance-crystal/750
+  ]

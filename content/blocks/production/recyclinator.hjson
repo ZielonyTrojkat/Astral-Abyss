@@ -1,0 +1,31 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 3
+fogRadius: 1
+hasItems: true
+hasPower: true
+hasLiquids: false
+ambientSound: hum
+ambientSoundVolume: 1
+craftTime: 120
+craftEffect: none
+consumes: {
+  power: 1
+  liquids: [
+  waste-water/1
+  ]
+  }
+outputItems: [
+  a2-silica/3
+  b5-waste/2
+  b1-magnetite/1
+]
+
+requirements: [
+  a1-palladium/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]

@@ -9,17 +9,17 @@ hasPower: false
 hasLiquids: false
 ambientSound: hum
 ambientSoundVolume: 1
-heatRequirement: 8
+heatRequirement: 4
 overheatScale: 1
 maxEfficiency: 1
-craftTime: 60
+craftTime: 75
 craftEffect: none
 consumes: {
   items: [
-  a5-pyrodust/4
+  a5-pyrodust/2
   ]
   }
-outputItem: a6-compacted-pyrophenium/2
+outputItem: a6-compacted-pyrophenium/1
 
 requirements: [
   a1-palladium/40
