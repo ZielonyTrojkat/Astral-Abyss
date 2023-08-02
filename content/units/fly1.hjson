@@ -45,7 +45,6 @@ parts: [
     color1: 77ced4
 	}
 ]
-
 weapons: [
  {
     name: none
@@ -73,8 +72,39 @@ weapons: [
       recoil: 0.0
       width: 2
       height: 6
-      shootEffect: none
+      hitEffect: none
+      despawnEffect: none
       smokeEffect: none
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+            {
+                type: ParticleEffect
+                region: darken-mod-trail1
+                colorFrom: a9bfc2
+                colorTo: 8eaaad
+                lifetime: 30
+                spin: 70
+                strokeFrom: 8
+                strokeTo: 0
+            }
+        ]
+    }
+    shrinkX: 0
+    shrinkY: 0
+    trailChance: 1
+    trailEffect: {
+    type: ParticleEffect
+    particles: 1
+    length: 0
+    spin: 360
+    lifetime: 20
+    sizeFrom: 5
+    sizeTo: 0
+    colorFrom: a9bfc2
+    colorTo: 8eaaad
+    region: darken-mod-trail1
+  }
     }
   }
 ]
