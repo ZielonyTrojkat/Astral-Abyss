@@ -13,9 +13,7 @@ outlineColor: 36363c
 faceTarget: true
 engineSize: 2.5
 engineOffset: 9
-engineColor: f34949
 faceTarget: true
-trailColor: f34949
 trailLength: 6
 trailScl: 1
 engines: [
@@ -66,7 +64,6 @@ weapons: [
     barrels: 2
     barrelOffset: 0
     spread: 9
-
     }
     bullet: {
       type: BasicBulletType

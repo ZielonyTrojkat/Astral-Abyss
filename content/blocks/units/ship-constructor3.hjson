@@ -1,6 +1,7 @@
 type: Reconstructor
 health: 800
 size: 5
+category: units
 squareSprite: false
 constructTime: 1000
 liquidCapacity: 60

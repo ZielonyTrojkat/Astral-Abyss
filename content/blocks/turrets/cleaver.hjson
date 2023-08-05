@@ -2,62 +2,282 @@ targetAir: true
 type: ItemTurret
 size: 3
 health: 2300
-range: 200
+range: 260
 rotateSpeed: 14
-reload: 30
+reload: 35
 recoilAmount: 3
 shootSound: blaster
 shake: 4
+shootY: -4
 outlineColor: 252729
 cooldownTime: 60
-shootWarmupSpeed: 0.08
+shootWarmupSpeed: 0.04
 minWarmup: 0.9
 warmupMaintainTime: 60
+    shoot: {
+    type: ShootAlternate
+    shots: 3
+    barrels: 3
+    barrelOffset: 0
+    spread: 6
+    }
 ammoTypes: {
     a4-resonance-crystal: {
 type: BasicBulletType
-width: 20
-height: 26
-damage: 75
-splashDamage: 50
-splashDamageRadius: 16
-speed: 4
-lifetime: 50
+sprite: missile
+width: 12
+height: 16
+damage: 50
+speed: 6
+lifetime: 40
 frontColor: ff7373
 backColor: de4545
 status: melting
 statusDuration: 70
 hitShake: 8
-hitSound: spark
-lightning: 6
-lightningDamage: 10
-lightningCone: 360
-lightningLengthRand: 5
-lightningLength: 8
-lightningColor: ff3333
-lightningType: {
-    type: BasicBulletType
-    damage: 0
-    lifetime: 0
+hitSound: laser
+trailLength: 14
+trailWidth: 2
+trailColor: ff5c5c
+fragBullets: 1
+fragSpread: 0
+fragRandomSpread: 0
+fragBullet: {
+  type: LaserBulletType
+  width: 16
+  damage: 30
+  lifetime: 30
+  drawSize: 400
+  length: 60
+  pierceCap: 2
+  colors: [de4545, ff5c5c, ffffff]
+}
+shootEffect: {
+    type: ParticleEffect
+    offsetX: 0
+    line: true
+    lifetime: 30
+    particles: 12
+    cone: 15
+    length: 50
+    baseLength: 0
+    interp: circleOut
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: ff7d7d
+    colorTo: fa5043
+}
+      smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 45
+        lifetime: 45
+        sizeFrom: 4
+        sizeTo: 0
+        cone: 15
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ff7d7d
+        colorTo: fa5043
+      }
+}
+    b1-magnetite: {
+type: BasicBulletType
+sprite: missile
+width: 12
+height: 16
+damage: 0
+speed: 6
+lifetime: 40
+frontColor: 8b48bd
+backColor: 45225e
+status: melting
+statusDuration: 70
+homingPower: 0.02
+homingRange: 60
+splashDamage: 40
+splashDamageRadius: 24
+splashDamagePierce: false
+hitShake: 8
+hitSound: laser
+trailLength: 14
+trailWidth: 2
+trailColor: 8b48bd
+fragBullets: 2
+fragSpread: 0
+fragRandomSpread: 360
+fragBullet: {
+  type: BasicBulletType
+  sprite: missile
+  width: 8
+  height: 12
+  damage: 15
+  speed: 2
+  lifetime: 40
+  frontColor: 8b48bd
+  backColor: 45225e
+  trailLength: 10
+  trailWidth: 2
+  trailColor: 8b48bd
+  despawnEffect: none
+  hitEffect: none
+  despawnHit: true
+}
     despawnHit: true
     despawnEffect: none
     hitEffect: {
-      type: ParticleEffect
-      particles: 1
-      sizeFrom: 8
-      sizeTo: 0
-      length: 0
-      spin: 0
-      lifetime: 30
-      region: darken-mod-square                 
-      colorFrom: ff7373
-      colorTo: de4545
-   }  
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 16
+        sizeTo: 13
+        interp: circleOut
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: be66ff
+        colorTo: 6f26a3
+        }
+        {
+        type: WaveEffect
+        lifetime: 15
+        sizeFrom: 10
+        sizeTo: 6
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: be66ff
+        colorTo: 6f26a3
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 40
+        lifetime: 40
+        lenFrom: 7
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: be66ff
+        colorTo: 6f26a3
+        }
+      ]
+    }
+shootEffect: {
+    type: ParticleEffect
+    offsetX: 0
+    line: true
+    lifetime: 30
+    particles: 12
+    cone: 15
+    length: 50
+    baseLength: 0
+    interp: circleOut
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: be66ff
+    colorTo: 6f26a3
 }
-trailChance: 0.6
-trailLength: 8
-trailWidth: 4
-trailColor: de4545
+      smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 45
+        lifetime: 45
+        sizeFrom: 4
+        sizeTo: 0
+        cone: 15
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: be66ff
+        colorTo: 6f26a3
+      }
+}
+    c3-technetium: {
+type: BasicBulletType
+sprite: missile
+width: 12
+height: 16
+damage: 40
+speed: 6
+lifetime: 40
+frontColor: 75fffa
+backColor: 44cfcf
+status: melting
+statusDuration: 70
+hitShake: 8
+hitSound: laser
+trailLength: 14
+trailWidth: 2
+trailColor: 75fffa
+weaveScale: 1
+weaveMag: 200
+weaveRandom: false
+fragBullets: 0
+fragSpread: 0
+fragRandomSpread: 0
+fragBullet: {
+  type: LaserBulletType
+  width: 16
+  damage: 30
+  lifetime: 30
+  drawSize: 400
+  length: 60
+  pierceCap: 2
+  colors: [de4545, ff5c5c, ffffff]
+}
+shootEffect: {
+    type: ParticleEffect
+    offsetX: 0
+    line: true
+    lifetime: 30
+    particles: 12
+    cone: 15
+    length: 50
+    baseLength: 0
+    interp: circleOut
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: 75fffa
+    colorTo: 44cfcf
+}
+      smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 45
+        lifetime: 45
+        sizeFrom: 4
+        sizeTo: 0
+        cone: 15
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: 75fffa
+        colorTo: 44cfcf
+      }
 }
 }
 drawer: {
@@ -66,23 +286,27 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -wing
-      mirror: true
+      layerOffset: -0.3
+      turretHeatLayer: 49.9
+      suffix: -spine
+      mirror: false
       progress: warmup
-      moveX: 1.5
-      moveY: -0.5
-      moveRot: -8
+      heatProgress: warmup
+      outline: false
+      under: true
+      color: e82c2c
+      heatColor: ff4f4f
     }
     {
       type: RegionPart
-      suffix: -movable
+      suffix: -wing
       mirror: true
-      progress: recoil
-      heatProgress: recoil
+      progress: warmup
       under: true
-      moveY: -1.5
-      growX: 0.1
-      growY: 0.1
+      x: -1
+      moveX: 2.8
+      moveY: -0.5
+      moveRot: -5
     }
   ]
 }

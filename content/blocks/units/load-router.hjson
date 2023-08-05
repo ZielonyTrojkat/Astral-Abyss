@@ -1,5 +1,6 @@
 type: PayloadRouter
 size: 3
+category: units
 moveTime: 80
 moveForce: 300
 payloadLimit: 3

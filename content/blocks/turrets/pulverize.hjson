@@ -64,7 +64,7 @@ despawnHit: true
 splashDamage: 450
 splashDamageRadius: 60
 splashDamagePierce: false
-homingPower: 0.01
+homingPower: 0.02
 homingRange: 100
 trailChance: -1
 trailLength: 25

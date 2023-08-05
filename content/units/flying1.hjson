@@ -1,6 +1,7 @@
 type: flying
 flying: true
 lowAltitude: true
+unitController: SuicideAI
 speed: 2
 rotateSpeed: 3
 accel: 0.1
@@ -13,9 +14,7 @@ outlineColor: 36363c
 faceTarget: true
 engineSize: 2.5
 engineOffset: 5
-engineColor: f34949
 faceTarget: true
-trailColor: f34949
 trailLength: 6
 trailScl: 1
 
@@ -40,27 +39,33 @@ weapons: [
     rotate: false
     x: 0
     y: 1
-    top: true
+    top: false
     mirror: false
-    shootSound: pew
+    shootSound: beam
     reload: 30
     ignoreRotation: true
     recoil: 0.8
+    continuous: true
     shoot: {
      type: ShootSpread
     shots: 1
     spread: 7
     }
     bullet: {
-      type: LaserBoltBulletType
-      frontColor: 8bb3b7
-      backColor: 8bb3b7
+      type: ContinuousLaserBulletType
+      colors: [fc3a3a, ff6666, ffc2c2]
       damage: 20
-      speed: 3
-      lifetime: 60
+      speed: 0
+      lifetime: 120
       recoil: 0.0
-      width: 2
-      height: 6
+      shake: 0.3
+      width: 1.5
+      length: 10
+      fadeTime: 1
+      frontLength: 6
+      backLength: 4
+      oscMag: 0.5
+      oscScl: 1.5
       shootEffect: none
       smokeEffect: none
     }

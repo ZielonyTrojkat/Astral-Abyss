@@ -1,6 +1,7 @@
 type: UnitFactory
 health: 800
 size: 3
+category: units
 squareSprite: false
 consumes: {
   power: 1.2

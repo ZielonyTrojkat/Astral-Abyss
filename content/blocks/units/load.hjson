@@ -1,5 +1,6 @@
 type: PayloadConveyor
 size: 3
+category: units
 moveTime: 60
 moveForce: 300
 payloadLimit: 3

@@ -8,7 +8,7 @@ consumes: {
 }
 plans: [
   {
-    unit: fly1
+    unit: flying1
     time: 600
     requirements: [
      a1-palladium/40
@@ -18,7 +18,7 @@ plans: [
 ]
 requirements: [
   a1-palladium/4
-  b1-magnetite/4
+  a4-resonance-crystal/4
 ]
 researchCost: [
   b1-magnetite/750

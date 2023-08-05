@@ -60,15 +60,3 @@ research: {
         }
     ]
 }
-
-abilities: [
-  {
-    type: ShieldArcAbility
-    max: 200
-    regen: 0.05
-    cooldown: 300
-    whenShooting: false
-    region: darken-mod-ship1-shield
-    drawArc: false
-  }
-]
