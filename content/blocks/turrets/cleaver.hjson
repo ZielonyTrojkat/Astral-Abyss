@@ -227,8 +227,8 @@ hitSound: laser
 trailLength: 14
 trailWidth: 2
 trailColor: 75fffa
-weaveScale: 1
-weaveMag: 200
+weaveScale: 2
+weaveMag: 4
 weaveRandom: false
 fragBullets: 0
 fragSpread: 0
@@ -312,5 +312,18 @@ drawer: {
 }
 category: turret
 requirements: [
-  a1-palladium/700
+  a1-palladium/70
+  a3-siliglass/30
 ]
+researchCost: [
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-torment
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}
