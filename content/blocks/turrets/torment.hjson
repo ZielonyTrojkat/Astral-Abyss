@@ -90,9 +90,18 @@ drawer: {
 
 category: turret
 requirements: [
-  lead/120
+  a1-palladium/70
+  a3-siliglass/30
 ]
-research: lead
 researchCost: [
-    lead/1
-  ]
+  a1-palladium/750
+]
+research: {
+    parent: darken-mod-kurbash
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}
