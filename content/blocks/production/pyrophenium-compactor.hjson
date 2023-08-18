@@ -35,6 +35,10 @@ type: DrawMulti
   type: DrawDefault
   }
   {
+  type: DrawHeatInput
+  suffix: -heat
+  }
+  {
   type: DrawFlame
   }
   ]
