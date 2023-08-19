@@ -1,0 +1,39 @@
+type: ThermalGenerator
+size: 1
+hasPower: true
+powerProduction: 0.4
+category: power
+
+attribute: resonance
+displayEfficiency: true
+
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawGlowRegion
+  suffix: -glow
+  alpha: 0.5
+  color:ff6d45
+  }
+  ]
+  }
+
+requirements: [
+  a4-resonance-crystal/8
+]
+researchCost: [
+  a4-resonance-crystal/750
+]
+research: {
+    parent: darken-mod-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: hollow-crater
+        }
+    ]
+}

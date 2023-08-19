@@ -9,7 +9,23 @@ hasLiquids: false
 ambientSound: hum
 ambientSoundVolume: 1
 craftTime: 75
-craftEffect: none
+craftEffect: {
+  type: ParticleEffect
+  particles: 8
+  lifetime: 60
+  length: 12
+  sizeFrom: 4
+  sizeTo: 0
+  colorFrom: ffffff
+  colorTo: ffffff
+  strokeFrom: 0.5
+  strokeTo: 0
+  interp: pow3Out
+  spin: 5
+  sizeInterp: pow2In
+  region: darken-mod-square2
+}
+
 consumes: {
   items: [
   a1-palladium/2
