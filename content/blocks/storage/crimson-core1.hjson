@@ -11,7 +11,8 @@ itemCapacity: 5000
 unitCapModifier: 12
 unitType: crimson-core-unit1
 requirements: [
-  a1-palladium/1000
+  a1-palladium/1500
+  a8-makeshift-concrete/1000
 ]
 research: {
   root: true

@@ -34,6 +34,24 @@ consumes: {
   }
 outputItem: a8-makeshift-concrete/2
 
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawDefault
+  }
+  {	
+  type: DrawPistons
+  suffix: -piston
+  sinMag: 3
+  sinScl: 8
+  angleOffset: 45
+  lenOffset: -2
+  sides: 4
+	}
+  ]
+}
+
 requirements: [
   a1-palladium/40
   ]

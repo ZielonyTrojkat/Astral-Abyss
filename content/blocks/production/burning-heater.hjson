@@ -13,6 +13,29 @@ regionRotated1: 1
 ambientSound: hum
 ambientSoundVolume: 1
 heatOutput: 4
+craftTime: 45
+craftEffect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 90
+    amount: 4
+    lengthOffset: 4
+    effect: {
+      particles: 1
+      length: 50
+      lifetime: 400
+      cone: 15
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 6
+      colorFrom: 78787866
+      colorTo: 78787800
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }
 
 consumes: {
   liquids: [
@@ -30,6 +53,33 @@ researchCost: [
 drawer: {
 type: DrawMulti
   drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawCrucibleFlame
+  circleSpace: 0
+  circleStroke: 0
+  flameRadius: 1
+  flameRadiusScl: 3
+  flameRadiusMag: 1
+	flameColor: fa7020
+  particleLife: 100
+  particleRad: 8
+  particles: 150
+  particleSize: 3
+  rotateScl: 0.5
+  }
+  {
+  type: DrawRegion
+  suffix: -bottom2
+  }
+  {
+  type: DrawLiquidRegion
+  drawLiquid: methane
+  suffix: -liquid
+  }
   {
   type: DrawDefault
   }
