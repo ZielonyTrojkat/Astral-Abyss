@@ -1,5 +1,5 @@
 type: StaticWall
 variants: 3
 attributes: {
-  pyrodust: 1
+  palladium: 1
 }

@@ -4,7 +4,7 @@ health: 18000
 size: 3
 
 requirements: [
-  c3-technetium/6
+  c4-technetium/6
   c2-heavy-armor-plate/4
 ]
 researchCost: [
