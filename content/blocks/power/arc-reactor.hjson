@@ -24,7 +24,7 @@ consumes: {
   ]
   items: [
     {
-    item: c3-technetium
+    item: c4-technetium
     amount: 1
     }
   ]

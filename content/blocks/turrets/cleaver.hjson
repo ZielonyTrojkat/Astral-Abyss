@@ -210,7 +210,7 @@ shootEffect: {
         colorTo: 6f26a3
       }
 }
-    c3-technetium: {
+    c4-technetium: {
 type: BasicBulletType
 sprite: missile
 width: 12

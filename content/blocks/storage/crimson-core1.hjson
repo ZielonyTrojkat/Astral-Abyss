@@ -7,7 +7,7 @@ hasPower: false
 underBullets: false
 absorbLasers: true
 squareSprite: false
-itemCapacity: 5000
+itemCapacity: 2000
 unitCapModifier: 12
 unitType: crimson-core-unit1
 requirements: [
