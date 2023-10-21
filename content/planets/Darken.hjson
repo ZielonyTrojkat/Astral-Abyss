@@ -12,7 +12,7 @@
     alwaysUnlocked: true,
     defaultCore: "darken-mod-crimson-core1",
     sectorSeed: 69,
-    startSector: 0,
+    startSector: 1,
     sectorSize: 3,
     clearSectorOnLose: true,
     allowSectorInvasion: false,

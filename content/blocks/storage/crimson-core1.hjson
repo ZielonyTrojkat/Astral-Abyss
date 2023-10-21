@@ -2,7 +2,9 @@ type: CoreBlock
 category: effect
 health: 5000
 size: 3
-fogRadius: 10
+fogRadius: 40
+emitLight: true
+lightRadius: 190
 hasPower: false
 underBullets: false
 absorbLasers: true

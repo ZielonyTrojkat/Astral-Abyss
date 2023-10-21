@@ -4,15 +4,18 @@ size: 2
 health: 2300
 range: 160
 rotateSpeed: 14
-reload: 30
+reload: 80
 recoilAmount: 4
 shootSound: blaster
 shake: 2
 outlineColor: 252729
+shootY: 5
 shoot: {
     type: ShootAlternate
+    shots: 4
+    shotDelay: 10
     barrels: 2
-    spread: 5
+    spread: 7
 }
 ammoTypes: {
     a1-palladium: {
@@ -178,7 +181,7 @@ ammoTypes: {
     }
 }
 }
-recoil: 1
+recoil: 1.5
 recoils: 2
 drawer: {
   type: DrawTurret
@@ -186,17 +189,17 @@ drawer: {
   parts: [
     {
       type: RegionPart
-      suffix: -barrel-l
+      suffix: -barrel-r
       progress: recoil
-      recoilIndex: 0
+      recoilIndex: 1
       under: true
       moveY: -1.5
     }
     {
       type: RegionPart
-      suffix: -barrel-r
+      suffix: -barrel-l
       progress: recoil
-      recoilIndex: 1
+      recoilIndex: 0
       under: true
       moveY: -1.5
     }
