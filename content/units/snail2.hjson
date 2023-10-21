@@ -1,8 +1,8 @@
 type: crawl
-health: 2560
+health: 600
 flying: false
 range: 140
-speed: 1.0
+speed: 0.9
 armor: 5
 hitsize: 18
 omniMovement: false
