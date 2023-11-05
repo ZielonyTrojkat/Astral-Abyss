@@ -22,11 +22,13 @@ consumes: {
 }
 
 requirements: [
-  a1-palladium/40
+  a1-palladium/30
+  a8-makeshift-concrete/15
   ]
 research: lead
 researchCost: [
-  lead/1
+  a1-palladium/100
+  a8-makeshift-concrete/50
   ]
 
 generateEffectRange: 1

@@ -1,0 +1,9 @@
+sector: 2
+planet: Darken
+captureWave: 10
+research: {
+    parent: hollow-crater
+}
+difficulty: 1
+overrideLaunchDefaults: true
+addStartingItems: true

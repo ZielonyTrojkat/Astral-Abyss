@@ -9,7 +9,7 @@ researchCost: [
   a1-palladium/40
 ]
 research: {
-    parent: darken-mod-palladium-crossing
+    parent: darken-mod-palladium-conveyor
     objectives: [
         {
             type: OnSector

@@ -11,10 +11,10 @@ researchCost: [
   a1-palladium/20
 ]
 research: {
-    parent: darken-mod-crimson-core1
+    parent: darken-mod-palladium-crossing
     objectives: [
         {
-            type: OnSector
+            type: SectorComplete
             preset: hollow-crater
         }
     ]

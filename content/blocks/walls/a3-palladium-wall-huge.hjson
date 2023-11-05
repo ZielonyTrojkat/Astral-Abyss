@@ -4,10 +4,10 @@ health: 4500
 size: 3
 
 requirements: [
-  a1-palladium/6
+  a1-palladium/54
 ]
 researchCost: [
-  a1-palladium/100
+  a1-palladium/900
 ]
 research: {
     parent: darken-mod-a2-palladium-wall-big

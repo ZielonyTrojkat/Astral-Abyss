@@ -20,11 +20,11 @@ consumes: {
 outputItem: a3-siliglass/1
 
 requirements: [
-  a1-palladium/40
+  a1-palladium/30
   ]
 research: lead
 researchCost: [
-  lead/1
+  a1-palladium/120
   ]
 drawer: {
 type: DrawMulti

@@ -1,0 +1,4 @@
+type: Floor
+variants: 4
+itemDrop: a5-pyrodust
+blendGroup: basalt-floor

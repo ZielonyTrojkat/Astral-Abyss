@@ -9,7 +9,7 @@ researchCost: [
   a1-palladium/20
 ]
 research: {
-    parent: darken-mod-crimson-core1
+    parent: darken-mod-palladium-splitter
     objectives: [
         {
             type: OnSector

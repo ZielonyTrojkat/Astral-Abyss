@@ -29,9 +29,11 @@ drawer: [
 
 requirements: [
   a1-palladium/40
+  a8-makeshift-concrete/40
 ]
 researchCost: [
-  a1-palladium/750
+  a1-palladium/150
+  a8-makeshift-concrete/100
 ]
 research: {
     parent: darken-mod-crimson-core1

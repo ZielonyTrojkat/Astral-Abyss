@@ -7,10 +7,10 @@ requirements: [
   a1-palladium/3
 ]
 researchCost: [
-  a1-palladium/60
+  a1-palladium/30
 ]
 research: {
-    parent: darken-mod-palladium-conveyor
+    parent: darken-mod-palladium-splitter
     objectives: [
         {
             type: OnSector

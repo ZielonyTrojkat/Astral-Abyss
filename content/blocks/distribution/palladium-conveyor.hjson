@@ -9,7 +9,7 @@ requirements: [
   a1-palladium/1
 ]
 researchCost: [
-  a1-palladium/20
+  a1-palladium/10
 ]
 research: {
     parent: darken-mod-crimson-core1
