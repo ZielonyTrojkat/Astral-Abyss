@@ -209,10 +209,10 @@ category: turret
 
 
 requirements: [
-  a1-palladium/40
+  a1-palladium/35
 ]
 researchCost: [
-  a1-palladium/750
+  a1-palladium/100
 ]
 research: {
     parent: darken-mod-crimson-core1
