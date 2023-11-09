@@ -18,16 +18,18 @@ boostHeatColor: ff0000
 
 requirements: [
   a1-palladium/16
+  a3-siliglass/12
 ]
 researchCost: [
-  a4-resonance-crystal/750
+  a1-palladium/160
+  a3-siliglass/100
 ]
 research: {
     parent: darken-mod-a1-stroke-drill
     objectives: [
         {
             type: OnSector
-            preset: hollow-crater
+            preset: basalt-shores
         }
     ]
 }

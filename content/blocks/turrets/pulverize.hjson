@@ -178,17 +178,17 @@ shootEffect: {
     type: ParticleEffect
     offsetX: -10
     line: true
-    lifetime: 80
-    particles: 40
-    cone: 60
-    length: 45
+    lifetime: 90
+    particles: 60
+    cone: 45
+    length: 70
     baseLength: 0
     interp: circleOut
     sizeFrom: 0
     sizeTo: 15
-    lenFrom: 5
+    lenFrom: 6
     lenTo: 0
-    strokeFrom: 2
+    strokeFrom: 3
     strokeTo: 0
     colorFrom: ff8278
     colorTo: fa5043
@@ -344,6 +344,8 @@ drawer: {
       moveX: 1.5
       moveY: -1.0
       moveRot: -5
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -353,6 +355,8 @@ drawer: {
           rot: -5
           x: 1.6
           y: 1.2
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.45
           growY: 0.45
         }
@@ -362,6 +366,8 @@ drawer: {
           rot: -25
           moveX: 16.5
           moveY: -2.0
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.55
           growY: 0.55
         } 
@@ -372,6 +378,8 @@ drawer: {
       suffix: -barrel
       mirror: false
       progress: warmup
+      xScl: 1.25
+      yScl: 1.25
       moveY: -2
       moves: [
         {
@@ -385,6 +393,8 @@ drawer: {
       type: RegionPart
       suffix: -main
       under: false
+      xScl: 1.25
+      yScl: 1.25
     }
     {
       type: RegionPart
@@ -395,6 +405,8 @@ drawer: {
       moveX: 1.0
       moveY: -0.2
       moveRot: 0
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -404,6 +416,8 @@ drawer: {
           rot: -5
           moveX: 1.0
           moveY: -0.2
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.05
           growY: 0.05
         }
@@ -413,6 +427,8 @@ drawer: {
           rot: -10
           moveX: 0.5
           moveY: -0.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.15
           growY: 0.15
         } 
@@ -427,6 +443,8 @@ drawer: {
       moveX: 1.5
       moveY: -0.0
       moveRot: -10
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -436,6 +454,8 @@ drawer: {
           rot: -5
           moveX: 2.5
           moveY: -1.0
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         }
@@ -445,6 +465,8 @@ drawer: {
           rot: -10
           moveX: 4.0
           moveY: -1.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         } 
@@ -459,6 +481,8 @@ drawer: {
       moveX: 2.0
       moveY: -1.0
       moveRot: -10
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.05
       growY: 0.05
       moves: [
@@ -468,6 +492,8 @@ drawer: {
           rot: -10
           moveX: 1.5
           moveY: -1.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.05
           growY: 0.05
         }
@@ -477,20 +503,13 @@ drawer: {
           rot: -15
           moveX: 1.5
           moveY: -0.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         } 
       ]
     }
-
-
-
-
-
-
-
-
-
     {
       type: RegionPart
       suffix: -none1
@@ -500,6 +519,8 @@ drawer: {
       moveX: 1.5
       moveY: -1.0
       moveRot: -5
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -509,6 +530,8 @@ drawer: {
           rot: -5
           x: 1.6
           y: 1.2
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.45
           growY: 0.45
         }
@@ -518,6 +541,8 @@ drawer: {
           rot: -25
           moveX: 16.5
           moveY: -2.0
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.55
           growY: 0.55
         } 
@@ -531,6 +556,8 @@ drawer: {
       moveX: 1.0
       moveY: -0.2
       moveRot: 0
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -540,6 +567,8 @@ drawer: {
           rot: -5
           moveX: 1.0
           moveY: -0.2
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.05
           growY: 0.05
         }
@@ -549,6 +578,8 @@ drawer: {
           rot: -10
           moveX: 0.5
           moveY: -0.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.15
           growY: 0.15
         } 
@@ -562,6 +593,8 @@ drawer: {
       moveX: 1.5
       moveY: -0.0
       moveRot: -10
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.1
       growY: 0.1
       moves: [
@@ -571,6 +604,8 @@ drawer: {
           rot: -5
           moveX: 2.5
           moveY: -1.0
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         }
@@ -580,6 +615,8 @@ drawer: {
           rot: -10
           moveX: 4.0
           moveY: -1.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         } 
@@ -593,6 +630,8 @@ drawer: {
       moveX: 2.0
       moveY: -1.0
       moveRot: -10
+      xScl: 1.25
+      yScl: 1.25
       growX: 0.05
       growY: 0.05
       moves: [
@@ -602,6 +641,8 @@ drawer: {
           rot: -10
           moveX: 1.5
           moveY: -1.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.05
           growY: 0.05
         }
@@ -611,6 +652,8 @@ drawer: {
           rot: -15
           moveX: 1.5
           moveY: -0.5
+      xScl: 1.25
+      yScl: 1.25
           growX: 0.1
           growY: 0.1
         } 

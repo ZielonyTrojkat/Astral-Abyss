@@ -1,5 +1,3 @@
 type: StaticWall
 variants: 3
-attributes: {
-  palladium: 1
-}
+itemDrop: a1-palladium
