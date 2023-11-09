@@ -1,12 +1,12 @@
     generator: "AsteroidGenerator",
-    parent: "1-0-halagwiazda",
+    parent: "1-2-asteroid",
     iconColor: 1a236e,
-    orbitRadius: 12,
+    orbitRadius: 0.5,
     hasAtmosphere: false,
     updateLighting: false,
     drawOrbit: false,
-    accessible: true,
-    alwaysUnlocked: true,
+    accessible: false,
+    alwaysUnlocked: false,
     defaultCore: "core-nucleus",
     clearSectorOnLose: true,
     allowSectorInvasion: false,
@@ -38,17 +38,17 @@
     ],
 mesh: {
   type: NoiseMesh
-  divisions: 3
+  divisions: 4
   radius: 0.1
   planet: 1
-  color1: 131316
-  color2: 0a8bc7
+  color1: 2d2d3b
+  color2: 22222b
   octaves: 4
   persistence: 0.2
   scale: 1.1
-  mag: 5
-  coct: 4
+  mag: 8
+  coct: 2
   cper: 1.4
   cscl: 0.3
-  cthresh: 0.01
+  cthresh: 0.04
   }
