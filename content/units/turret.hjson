@@ -57,7 +57,7 @@ hitSound: spark
         particles: 16
         baseLength: 0
         length: 50
-        lifetime: 20
+        lifetime: 30
         lenFrom: 7
         lenTo: 0
         cone: 75
