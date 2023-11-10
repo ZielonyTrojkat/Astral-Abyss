@@ -11,6 +11,7 @@
 "mechSideSway": 0.3,
 "mechStepParticles": true,
 "mechStepShake": 0.5,
+legPairOffset: 9
 	"hovering": false,
 	"immunities": [
 		"freezing"
@@ -18,18 +19,18 @@
 targetAir: true
 weapons: [
 {
-name: cryomech3-gun
-x: 12
-y: 0
+name: tur1
+x: 0
+y: 4
 mirror: true
 shoot: {
 type: ShootPattern
-shots: 3
-shotDelay: 12
+shots: 1
+shotDelay: 20
 }
 top: false
 rotate: false
-reload: 90
+reload: 60
 recoil: 2
 shootSound: bang
 ejectEffect: none
