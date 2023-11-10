@@ -15,36 +15,49 @@ weapons: [
     rotate: true
     rotateSpeed: 12
     x: 4
-    y: 1
+    y: 0
     top: true
     mirror: true
-    shootSound: pew
-    reload: 30
+    shootSound: small-laser-1
+    reload: 50
     ignoreRotation: true
     targetAir: true
-    recoil: 0.8
+    recoil: 1
     shoot: {
-     type: ShootSpread
+     type: ShootPattern
     shots: 1
-    spread: 7
     }
+    chargeSound: short-laser-charge
     bullet: {
-      type: BasicBulletType
-      sprite: missile-large
-      backColor: 68969a
-      frontColor: a5c7c9
-      trailColor: 7bacb0
-      damage: 30
-      speed: 2
-      lifetime: 60
-      recoil: 0.0
-      width: 5
-      height: 7
-      trailWidth: 1.6
-      trailLength: 7
-      shootEffect: none
-      smokeEffect: none
+    type: LaserBulletType
+    colors: [bdf8ff, 8ceaff, 8ceaff]
+    width: 5
+    length: 60
+    damage: 20
+    lifetime: 15
+    pierce: true
+    pierceBuilding: false
+    pierceCap: 1
+    chargeEffect: lightningCharge
+    shootEffect: {
+    type: ParticleEffect
+    line: true
+    particles: 8
+    baseLength: 0
+    length: 14
+    lifetime: 30
+    lenFrom: 6
+    lenTo: 0
+    cone: 75
+    interp: circleOut
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: bdf8ff
+    colorTo: 8ceaff
     }
+    smokeEffect: shootSmallSmoke
+    hitColor: 85c278
+  }
   }
 ]
 

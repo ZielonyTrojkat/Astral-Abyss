@@ -11,7 +11,6 @@
 "mechSideSway": 0.3,
 "mechStepParticles": true,
 "mechStepShake": 0.5,
-legPairOffset: 9
 	"hovering": false,
 	"immunities": [
 		"freezing"
@@ -21,29 +20,94 @@ weapons: [
 {
 name: tur1
 x: 0
-y: 4
+y: 0
 mirror: true
+shootY: 5
 shoot: {
 type: ShootPattern
 shots: 1
 shotDelay: 20
 }
+cooldownTime: 50
 top: false
 rotate: false
 reload: 60
-recoil: 2
 shootSound: bang
 ejectEffect: none
 bullet: {
-width: 13
-height: 19
-damage: 40
-speed: 7
-lifetime: 40
-frontColor: b2afb3
-backColor: d5d2d6
-status: freezing
-statusDuration: 180
+recoil: 1
+width: 12
+height: 16
+damage: 30
+speed: 6
+lifetime: 30
+frontColor: ffa382
+backColor: e05e3a
+status: melting
+statusDuration: 70
+shake: 3
+hitShake: 6
+hitSound: spark
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: ParticleEffect
+        line: true
+        particles: 16
+        baseLength: 0
+        length: 50
+        lifetime: 20
+        lenFrom: 7
+        lenTo: 0
+        cone: 75
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ffa382
+        colorTo: e05e3a
+        }
+        {
+        type: ParticleEffect
+        line: false
+        particles: 20
+        baseLength: 0
+        length: 30
+        lifetime: 50
+        sizeFrom: 4
+        sizeTo: 0
+		cone: 90
+        interp: circleOut
+        strokeFrom: 6
+        strokeTo: 0
+        colorFrom: ffa382
+        colorTo: e05e3a
+        }
+      ]
+    }
+	smokeEffect: {
+        type: ParticleEffect
+        line: false
+        particles: 16
+        baseLength: 0
+        length: 35
+        lifetime: 30
+        sizeFrom: 4
+        sizeTo: 0
+        offsetX: -2
+        cone: 25
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ffa382
+        colorTo: e05e3a
+      }
+    despawnHit: true
+    despawnEffect: none
+trailChance: 1
+trailLength: 12
+trailWidth: 2.5
+trailColor: ffa382
 }
 }
 ]
