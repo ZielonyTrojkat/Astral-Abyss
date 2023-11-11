@@ -2,7 +2,7 @@
   "type": "mech",
 	"speed": 0.35,
 	"hitSize": 14,
-	"health": 3260,
+	"health": 400,
 	"faceTarget": true,
 	"armor": 6,
 	"range": 140,
@@ -28,6 +28,7 @@ type: ShootPattern
 shots: 1
 shotDelay: 20
 }
+recoil: 0
 cooldownTime: 50
 top: false
 rotate: false
