@@ -2,4 +2,4 @@ type: Floor
 variants: 4
 itemDrop: a5-pyrodust
 blendGroup: basalt-floor
-color: f79239
+mapColor: f79239
