@@ -2,7 +2,7 @@ type: naval
 flying: false
 hitSize: 9
 omniMovement: false
-health: 200
+health: 400
 armor: 1
 speed: 0.5
 rotateSpeed: 4

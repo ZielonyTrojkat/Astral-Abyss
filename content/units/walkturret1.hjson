@@ -2,7 +2,7 @@
   "type": "mech",
 	"speed": 0.35,
 	"hitSize": 14,
-	"health": 400,
+	"health": 380,
 	"faceTarget": true,
 	"armor": 6,
 	"range": 140,
@@ -18,7 +18,7 @@
 targetAir: true
 weapons: [
 {
-name: tur1
+name: walkturret1-gun
 x: 0
 y: 0
 mirror: true
@@ -55,17 +55,17 @@ hitSound: spark
         {
         type: ParticleEffect
         line: true
-        particles: 16
+        particles: 20
         baseLength: 0
-        length: 50
-        lifetime: 30
+        length: 60
+        lifetime: 35
         lenFrom: 7
         lenTo: 0
-        cone: 75
+        cone: 50
         interp: circleOut
-        strokeFrom: 5
+        strokeFrom: 6
         strokeTo: 0
-        colorFrom: ffa382
+        colorFrom: ffb69c
         colorTo: e05e3a
         }
         {
@@ -73,8 +73,8 @@ hitSound: spark
         line: false
         particles: 20
         baseLength: 0
-        length: 30
-        lifetime: 50
+        length: 25
+        lifetime: 55
         sizeFrom: 4
         sizeTo: 0
 		cone: 90
@@ -92,21 +92,36 @@ hitSound: spark
         particles: 16
         baseLength: 0
         length: 35
-        lifetime: 30
+        lifetime: 35
         sizeFrom: 4
         sizeTo: 0
         offsetX: -2
         cone: 25
         interp: circleOut
-        strokeFrom: 5
+        strokeFrom: 6
         strokeTo: 0
-        colorFrom: ffa382
+        colorFrom: ffb69c
         colorTo: e05e3a
       }
     despawnHit: true
     despawnEffect: none
-trailChance: 1
-trailLength: 12
+
+trailRotation: true
+trailInterval: 1.3
+trailEffect: {
+  type: ParticleEffect
+  particles: 1
+  length: 0
+  lifetime: 20
+  region: darken-mod-arrow1
+  lightColor: A9D8FFFF
+  colorFrom: ffcf92
+  colorTo: ffb558
+  sizeFrom: 9
+  sizeTo: 0
+  }
+trailChance: 0
+trailLength: 14
 trailWidth: 2.5
 trailColor: ffa382
 }

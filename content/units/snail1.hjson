@@ -1,7 +1,7 @@
 type: crawl
 health: 180
 flying: false
-range: 140
+range: 320
 speed: 0.75
 armor: 1
 hitsize: 14

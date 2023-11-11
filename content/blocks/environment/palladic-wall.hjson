@@ -1,3 +1,5 @@
 type: StaticWall
 variants: 3
 itemDrop: a1-palladium
+mapColor: ebf8ff
+hasColor: true
