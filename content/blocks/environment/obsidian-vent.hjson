@@ -1,7 +1,0 @@
-type: SteamVent
-variants: 2
-parent: obsidian-floor
-blendGroup: obsidian-floor
-attributes: {
-  steam: 1
-}

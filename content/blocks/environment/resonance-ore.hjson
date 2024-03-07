@@ -1,7 +1,0 @@
-type: OreBlock
-itemDrop: a4-resonance-crystal
-variants: 2
-oreDefault: true
-oreScale: 20
-oreThreshold: 0.85
-wallOre: true

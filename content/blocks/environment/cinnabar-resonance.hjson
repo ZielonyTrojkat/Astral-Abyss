@@ -1,6 +1,0 @@
-type: Floor
-variants: 2
-
-attributes: {
-  resonance: 1
-}
