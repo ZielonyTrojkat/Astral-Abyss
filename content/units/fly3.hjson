@@ -1,0 +1,171 @@
+type: hover
+hovering: true
+speed: 0.8
+rotateSpeed: 2
+accel: 0.1
+drag: 0.02
+health: 300
+hitSize: 10
+armor: 1
+itemCapacity: 50
+outlineColor: 36363c
+faceTarget: true
+engineSize: 3
+engineOffset: 11
+engineColor: 95f0f5
+faceTarget: true
+trailColor: 95f0f5
+trailLength: 18
+trailScl: 1
+useEngineElevation: false
+shadowElevation: 0.1
+
+parts: [
+	{
+		type: HoverPart
+		x: 12
+		y: 6
+    mirror: true
+    circles: 2
+		radius: 8
+		phase: 90
+		stroke: 1.75
+    minStroke: 0
+		layerOffset: -0.001
+		color: 95f0f5
+	}
+	{
+		type: HoverPart
+		x: 10
+		y: -10
+    mirror: true
+    circles: 2
+		radius: 9
+		phase: 90
+		stroke: 1.75
+    minStroke: 0
+		layerOffset: -0.001
+		color: 95f0f5
+	}
+	{
+		type: FlarePart
+		x: 0
+		y: -11
+		radius: 8
+		stroke: 1.75
+    followRotation: true
+		color1: 95f0f5
+    color1: 77ced4
+	}
+]
+
+weapons: [
+{
+name: fly3-weapon
+x: 13
+y: -5
+mirror: true
+shoot: {
+type: ShootPattern
+shots: 3
+shotDelay: 8
+}
+top: true
+rotate: false
+reload: 90
+recoil: 3
+    shootSound: blaster
+    bullet: {
+      type: BasicBulletType
+      sprite: missile-large
+      backColor: 417487
+      frontColor: 97b5c4
+      trailColor: 79b3c9
+      keepVelocity: false
+      damage: 30
+      speed: 4
+      lifetime: 50
+      recoil: 0.0
+      width: 8
+      height: 10
+      shrinkX: 0
+      shrinkY: 0
+      despawnEffect: none
+      trailWidth: 2
+      trailLength: 8
+      hitSound: laser
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+            {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: 35
+        lifetime: 35
+        lenFrom: 4
+        lenTo: 0
+        cone: 25
+        offsetX: -4
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffffff
+        colorTo: 4d8f99
+            }
+        ]
+    }
+          hitEffect: {
+        type: MultiEffect
+        effects: [
+            {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: -30
+        lifetime: 30
+        cone: 40
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        lenFrom: 5
+        lenTo: 0
+        offsetX: 0
+        colorFrom: ffffff
+        colorTo: 4d8f99
+            }
+        ]
+    }
+      smokeEffect: none
+      weaveMag: 3
+      weaveScale: 4
+      fragBullets: 1
+      fragSpread: 0
+      fragRandomSpread: 0
+      fragBullet: {
+        type: LaserBulletType
+        width: 10
+        damage: 30
+        lifetime: 30
+        drawSize: 400
+        length: 20
+        pierceCap: 2
+        colors: [97b5c4, 97b5c4, ffffff]
+      }
+    }
+}
+ ]
+
+ abilities: [
+  {
+    type: ShieldArcAbility
+    max: 200
+    regen: 0.05
+    cooldown: 300
+    whenShooting: true
+    region: astral-abyss-fly3-shield
+    drawArc: false
+  }
+]

@@ -1,7 +1,8 @@
-name: "Darken-mod"
-displayName: "The Darken (WIP)"
-author: CY4N & Zielony Trójkąt
+name: "astral-abyss"
+displayName: "Astral Abyss WIP"
+author: Zielony Trójkąt
 description: "Work In Progress"
 version: "0.01"
-minGameVersion: "144.1"
+minGameVersion: "145"
 hidden: false
+main: MultiCrafterAdapter

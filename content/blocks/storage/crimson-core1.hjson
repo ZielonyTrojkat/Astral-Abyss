@@ -1,0 +1,24 @@
+type: CoreBlock
+category: effect
+health: 5000
+size: 3
+fogRadius: 40
+emitLight: true
+lightRadius: 190
+hasPower: false
+underBullets: false
+absorbLasers: true
+squareSprite: false
+itemCapacity: 2000
+unitCapModifier: 12
+unitType: crimson-core-unit1
+requirements: [
+  copper/15
+]
+research: {
+  root: true
+  name: Darken
+  requiresUnlock: false
+  planet: Darken
+  }
+alwaysUnlocked: true

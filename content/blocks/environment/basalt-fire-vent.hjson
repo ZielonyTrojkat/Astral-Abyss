@@ -1,0 +1,29 @@
+type: SteamVent
+variants: 2
+parent: basalt-floor
+blendGroup: basalt-floor
+attributes: {
+  steam: 1
+}
+effect: {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 90
+    amount: 6
+    lengthOffset: 4
+    effect: {
+      particles: 1
+      length: 40
+      lifetime: 60
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 0
+      sizeTo: 8
+      colorFrom: ffa985
+      colorTo: ff512e00
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+    }
+  }

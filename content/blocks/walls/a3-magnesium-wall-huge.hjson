@@ -1,0 +1,11 @@
+type: Wall
+category: defense
+health: 4500
+size: 3
+
+requirements: [
+  a1-magnesium/54
+]
+researchCost: [
+  a1-magnesium/900
+]
