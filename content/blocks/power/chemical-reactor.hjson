@@ -12,7 +12,6 @@ ambientSound: generator-hum
 ambientSoundVolume: 1
 powerProduction: 0
 liquidCapacity: 60
-warmupSpeed: 0.008
 recipes: 
 [
 {
@@ -91,8 +90,13 @@ type: DrawMulti
   type: DrawGlowRegion
   suffix: -glow
   glowScale: 8
-  glowIntensity: 5
-  color: ff7373
+  color: c22d2d
+  }
+  {
+  type: DrawGlowRegion
+  suffix: -glow2
+  glowScale: 8
+  color: c26969
   }
   {
   type: DrawHeatOutput

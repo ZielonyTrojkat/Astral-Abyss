@@ -1,0 +1,53 @@
+type: ConsumeGenerator
+category: power
+health: 1000
+size: 3
+squareSprite: false
+regionRotated1: 1
+fogRadius: 1
+hasItems: false
+hasPower: true
+hasLiquids: true
+ambientSound: generator-hum
+ambientSoundVolume: 1
+liquidCapacity: 60
+consumes: {
+  liquid: steam/0.25
+}
+powerProduction: 30
+
+requirements: [
+  copper/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawLiquidTile
+  drawLiquid: astral-abyss-steam
+  padding: 1
+  }
+  {
+  type: DrawDefault
+  }
+  {
+    type: DrawBlurSpin
+    suffix: -rotor
+    blurThresh: 0.5
+    rotateSpeed: 60
+  }
+  {
+    type: DrawRegion
+    suffix: -top
+  }
+  ]
+  }
