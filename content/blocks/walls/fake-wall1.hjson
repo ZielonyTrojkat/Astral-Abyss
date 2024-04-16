@@ -1,0 +1,16 @@
+type: Wall
+category: defense
+health: 500
+size: 1
+drawTeamOverlay: false
+forceDark: true
+mapColor: 243752
+useColor: false
+hasColor: true
+
+requirements: [
+  a2-magnesium/6
+]
+researchCost: [
+  a2-magnesium/100
+]

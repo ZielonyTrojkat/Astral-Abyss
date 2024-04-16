@@ -12,7 +12,7 @@ ambientSound: generator-hum
 ambientSoundVolume: 1
 liquidCapacity: 60
 consumes: {
-  liquid: steam/0.25
+  liquid: steam/0.2
 }
 powerProduction: 30
 
@@ -51,3 +51,5 @@ type: DrawMulti
   }
   ]
   }
+
+research: conduction-boiler

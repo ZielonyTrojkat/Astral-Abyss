@@ -1,0 +1,31 @@
+type: UnitFactory
+health: 800
+size: 3
+category: units
+squareSprite: false
+consumes: {
+  power: 1.2
+}
+plans: [
+  {
+    unit: ship2
+    time: 200
+    requirements: [
+     a2-magnesium/20
+    ]
+  }
+  {
+    unit: fly2
+    time: 300
+    requirements: [
+     a2-magnesium/20
+     silicon/20
+    ]
+  }
+]
+requirements: [
+  a2-magnesium/4
+]
+researchCost: [
+  a2-magnesium/750
+]

@@ -1,0 +1,6 @@
+type: OreBlock
+itemDrop: a5-nickel
+variants: 4
+oreDefault: true
+oreScale: 25
+oreThreshold: 0.85

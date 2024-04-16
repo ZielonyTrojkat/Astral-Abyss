@@ -1,0 +1,14 @@
+type: Conduit
+leaks: true
+health: 50
+hasPower: false
+placeableLiquid: true
+junctionReplacement: a5-flow-crossing
+requirements: [
+  a4-quartz/2
+]
+liquidCapacity: 10
+liquidPressure: 1
+botColor: 303036
+category: liquid
+research: crimson-core1

@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: a1-magnesium
+itemDrop: a2-magnesium
 variants: 3
 oreDefault: true
 oreScale: 25

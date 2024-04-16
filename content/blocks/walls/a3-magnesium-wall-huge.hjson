@@ -4,8 +4,11 @@ health: 4500
 size: 3
 
 requirements: [
-  a1-magnesium/54
+  a1-silicon-carbide/27
+  a2-magnesium/27
 ]
 researchCost: [
-  a1-magnesium/900
+  a2-magnesium/900
 ]
+
+research: a2-magnesium-wall-big

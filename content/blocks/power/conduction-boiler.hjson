@@ -8,7 +8,7 @@ fogRadius: 1
 hasItems: true
 hasPower: false
 hasLiquids: true
-ambientSound: generator-hum
+ambientSound: boiler-hum
 ambientSoundVolume: 1
 liquidCapacity: 60
 recipes: 
@@ -22,7 +22,7 @@ recipes:
   }
   output: {
     fluids: [
-      astral-abyss-steam/1
+      astral-abyss-steam/0.25
     ]
   }
   craftTime: 60.0
@@ -58,8 +58,7 @@ type: DrawMulti
   glowScale: 8
   color: c22d2d
   }
-  {
-  type: DrawHeatInput
-  }
   ]
   }
+
+research: chemical-reactor

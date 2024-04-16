@@ -1,0 +1,10 @@
+type: LiquidRouter
+health: 90
+liquidCapacity: 20
+category: liquid
+placeableLiquid: true
+requirements: [
+  a4-quartz/2
+  a1-silicon-carbide/2
+]
+research: a1-low-flow-duct

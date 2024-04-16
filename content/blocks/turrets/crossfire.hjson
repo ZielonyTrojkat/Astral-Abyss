@@ -1,0 +1,57 @@
+targetAir: true
+type: ItemTurret
+size: 3
+health: 2300
+range: 200
+rotateSpeed: 14
+reload: 45
+recoilAmount: 4
+shootSound: blaster
+shake: 4
+outlineColor: 252729
+ammoTypes: {
+    a2-magnesium: {
+type: BasicBulletType
+width: 20
+height: 26
+damage: 75
+splashDamage: 50
+splashDamageRadius: 16
+speed: 4
+lifetime: 50
+frontColor: b3f1ff
+backColor: 66b3bd
+status: melting
+statusDuration: 70
+hitShake: 8
+hitSound: spark
+trailChance: 0.6
+trailLength: 8
+trailWidth: 4
+trailColor: 66b3bd
+}
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: dark-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -barrel
+      mirror: false
+      progress: recoil
+      heatProgress: recoil
+      under: true
+      moveY: -2
+    }
+  ]
+}
+category: turret
+
+
+requirements: [
+  a2-magnesium/70
+]
+researchCost: [
+ a2-magnesium/750
+]

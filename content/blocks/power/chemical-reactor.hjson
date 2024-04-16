@@ -8,7 +8,7 @@ fogRadius: 1
 hasItems: true
 hasPower: false
 hasLiquids: true
-ambientSound: generator-hum
+ambientSound: engine-small
 ambientSoundVolume: 1
 powerProduction: 0
 liquidCapacity: 60
@@ -17,7 +17,10 @@ recipes:
 {
   input: {
     items: [
-      astral-abyss-a1-magnesium/1
+      astral-abyss-a2-magnesium/1
+    ]
+    fluids: [
+      water/0.2
     ]
   }
   output: {
@@ -90,16 +93,18 @@ type: DrawMulti
   type: DrawGlowRegion
   suffix: -glow
   glowScale: 8
-  color: c22d2d
+  color: c26969
   }
   {
-  type: DrawGlowRegion
-  suffix: -glow2
-  glowScale: 8
-  color: c26969
+  type: DrawRegion
+  layer: 31
+  suffix: -end
+  buildingRotate: true
   }
   {
   type: DrawHeatOutput
   }
   ]
   }
+
+research: organic-burner

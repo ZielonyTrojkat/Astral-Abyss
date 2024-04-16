@@ -1,0 +1,9 @@
+sector: 1
+planet: Darken
+captureWave: 0
+research: {
+    parent: darken-mod-crimson-core1
+}
+difficulty: 1
+overrideLaunchDefaults: true
+addStartingItems: false

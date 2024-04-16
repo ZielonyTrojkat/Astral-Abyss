@@ -1,0 +1,23 @@
+type: PowerNode
+category: power
+health: 50
+size: 1
+fogRadius: 1
+hasPower: true
+outputsPower: true
+underBullets: true
+laserColor1: ffac70bb
+laserColor2: c47054
+maxNodes: 10
+maxRange: 1
+laserRange: 10
+laserScale: 0.4
+
+requirements: [
+  a5-nickel/5
+]
+researchCost: [
+  a5-nickel/150
+]
+
+research: crimson-core1

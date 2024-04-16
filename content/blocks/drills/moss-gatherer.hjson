@@ -1,0 +1,76 @@
+type: AttributeCrafter
+size: 2
+outputItem: a3-azure-moss/1
+customShadow: true
+craftTime: 240
+baseEfficiency: 0
+maxBoost: 1
+minEfficiency: 1
+hasPower: false
+category: production
+research: crimson-core1
+requirements: [
+  a1-silicon-carbide/10
+  a2-magnesium/15
+]
+
+craftEffect: {
+  type: MultiEffect
+    effects: [
+    {
+      type: ParticleEffect
+      particles: 8
+      colorFrom: 4e7ac2
+      colorTo: 30547a
+      lifetime: 60
+      baseLength: 0
+      length: 10
+      sizeFrom: 5
+      sizeTo: 0
+      interp: circleOut
+      strokeFrom: 3
+      strokeTo: 0
+      spin: 5
+      region: astral-abyss-square1
+    }
+    {
+    type: RadialEffect
+    layer: 118
+    rotationSpacing: 90
+    amount: 4
+    lengthOffset: 4
+    effect: {
+      particles: 1
+      length: 80
+      lifetime: 500
+      cone: 20
+      baseRotation: 32
+      useRotation: false 
+      sizeFrom: 5
+      sizeTo: 0
+      colorFrom: 3f72a6
+      colorTo: 3f72a6
+      sizeInterp: pow2Out
+      interp: pow2Out
+      layer: 111
+      region: astral-abyss-ball2
+    }
+    }
+  ]
+}
+
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -blade
+  rotateSpeed: -0.5
+  }
+  {
+  type: DrawDefault
+  }
+  ]
+  }
+
+research: quartz-grinder

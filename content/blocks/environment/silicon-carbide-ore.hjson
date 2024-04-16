@@ -1,0 +1,6 @@
+type: OreBlock
+itemDrop: a1-silicon-carbide
+variants: 3
+oreDefault: true
+oreScale: 25
+oreThreshold: 0.85

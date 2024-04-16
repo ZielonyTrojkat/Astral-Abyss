@@ -1,0 +1,37 @@
+type: Battery
+category: power
+health: 50
+size: 1
+fogRadius: 1
+hasPower: true
+outputsPower: true
+consumesPower: true
+underBullets: false
+hasItems: false
+canOverdrive: false
+consumes: {
+    powerBuffered: 1000
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPower
+      suffix: -power
+      emptyLightColor: ccf1ff00
+      fullLightColor: ccf1ffbb
+    }
+  ]
+}
+
+requirements: [
+  a2-magnesium/4
+]
+researchCost: [
+  a2-magnesium/50
+]
+
+research: organic-burner

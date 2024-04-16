@@ -1,0 +1,22 @@
+type: Conveyor
+health: 50
+speed: 0.04
+displayedSpeed: 6
+junctionReplacement: carbide-crossing
+
+requirements: [
+  a1-silicon-carbide/1
+]
+researchCost: [
+  a1-silicon-carbide/10
+]
+
+research: {
+    parent: astral-abyss-crimson-core1
+    objectives: [
+        {
+            type: OnSector
+            preset: astral-map1-astralmogus
+        }
+    ]
+}

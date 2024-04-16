@@ -1,0 +1,18 @@
+type: ParticleWeather
+color: 29538a
+noiseColor: 1f345e
+particleRegion: particle
+sizeMax: 7
+sizeMin: 1
+minAlpha: 1
+maxAlpha: 1
+density: 3500
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.35
+baseSpeed: 0.2
+soundVol: 0.0
+force: 0.0
+attrs: {
+  azure-moss: 1.1
+}
