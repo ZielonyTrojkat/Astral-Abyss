@@ -5,4 +5,3 @@ description: "Work In Progress"
 version: "0.01"
 minGameVersion: "145"
 hidden: false
-main: MultiCrafterAdapter
