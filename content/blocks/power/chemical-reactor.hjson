@@ -1,4 +1,4 @@
-type: multicraft.MultiCrafter
+type: HeatProducer
 category: power
 health: 1000
 size: 3
@@ -10,25 +10,16 @@ hasPower: false
 hasLiquids: true
 ambientSound: engine-small
 ambientSoundVolume: 1
-powerProduction: 0
 liquidCapacity: 60
-recipes: 
-[
-{
-  input: {
-    items: [
-      astral-abyss-a2-magnesium/1
-    ]
-    fluids: [
-      water/0.2
-    ]
-  }
-  output: {
-    heat: 10
-  }
-  craftTime: 60.0
+heatOutput: 10
+consumes: {
+  items: [
+    a2-magnesium/2
+  ]
+  liquids: [
+    water/0.2
+  ]
 }
-]
 
 requirements: [
   copper/40
