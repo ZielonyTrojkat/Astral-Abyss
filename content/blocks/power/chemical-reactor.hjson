@@ -1,4 +1,4 @@
-type: HeatCrafter
+type: heatCrafter
 category: power
 health: 1000
 size: 3
