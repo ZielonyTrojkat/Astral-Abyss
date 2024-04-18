@@ -15,9 +15,7 @@
     sectorSeed: 69,
     startSector: 1,
     sectorSize: 3,
-    clearSectorOnLose: true,
-    allowSectorInvasion: false,
-	allowLaunchToNumbered: false,
+    radius: 1,
     hiddenItems: [
         "copper",
         "lead",
