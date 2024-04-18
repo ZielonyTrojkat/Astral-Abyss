@@ -7,3 +7,4 @@ research: {
 difficulty: 1
 overrideLaunchDefaults: true
 addStartingItems: false
+alwaysUnlocked: true
