@@ -12,6 +12,13 @@
     accessible: true,
     alwaysUnlocked: true,
     defaultCore: "crimson-core1",
+    sectorSeed: 69,
+    startSector: 1,
+    sectorSize: 3,
+    clearSectorOnLose: true,
+    allowSectorInvasion: false,
+	allowLaunchToNumbered: false,
+    radius: 1,
 cloudMesh: [
     {
     type: HexSkyMesh
