@@ -18,7 +18,30 @@
     clearSectorOnLose: true,
     allowSectorInvasion: false,
 	allowLaunchToNumbered: false,
-    radius: 1,
+    hiddenItems: [
+        "copper",
+        "lead",
+        "scrap",
+        "graphite",
+        "coal",
+        "titanium",
+        "thorium",
+        "silicon",
+        "plastanium",
+        "phase-fabric",
+        "surge-alloy",
+        "spore-pod",
+        "sand",
+        "blast-compound",
+        "pyratite",
+        "metaglass",
+        "beryllium",
+        "oxide",
+        "tungsten",
+        "carbide",
+        "fissile-matter",
+        "dormant-cyst"
+    ],
 cloudMesh: [
     {
     type: HexSkyMesh
