@@ -6,11 +6,11 @@ fogRadius: 1
 hasPower: true
 outputsPower: true
 underBullets: true
-laserColor1: ffac70bb
-laserColor2: c47054
+laserColor1: f8ae87
+laserColor2: d28566
 maxNodes: 10
 maxRange: 1
-laserRange: 10
+laserRange: 8
 laserScale: 0.4
 
 requirements: [
