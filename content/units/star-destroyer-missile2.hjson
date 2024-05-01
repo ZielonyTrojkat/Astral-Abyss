@@ -4,6 +4,7 @@
   "lowAltitude": true,
   "speed": 4.6,
   "rotateSpeed": 1,
+  hoverable: false
   "lifetime": 270,
   "isEnemy": false,
   "allowedInPayloads": false,

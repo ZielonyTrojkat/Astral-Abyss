@@ -10,7 +10,7 @@ shootSound: shootAltLong
 shake: 4
 cooldownTime: 60
 ammoTypes: {
-    a2-magnesium: {
+    b2-phosphorus: {
 type: ArtilleryBulletType
 width: 12
 height: 16
@@ -88,5 +88,5 @@ shootEffect:   	{
 }
 category: turret
 requirements: [
-  a2-magnesium/700
+  b2-phosphorus/700
 ]

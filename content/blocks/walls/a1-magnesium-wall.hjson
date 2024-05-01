@@ -4,11 +4,11 @@ health: 500
 size: 1
 
 requirements: [
-  a1-silicon-carbide/3
-  a2-magnesium/3
+  c1-vanadium-carbide/3
+  b2-phosphorus/3
 ]
 researchCost: [
-  a2-magnesium/100
+  b2-phosphorus/100
 ]
 
 research: crimson-core1

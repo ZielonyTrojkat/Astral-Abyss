@@ -18,7 +18,7 @@ shoot: {
     barrelOffset: 0
 }
 ammoTypes: {
-  a2-magnesium: {
+  b2-phosphorus: {
     type: ArtilleryBulletType
     incendAmount: 3
     incendChance: 1
@@ -71,9 +71,9 @@ ammoTypes: {
 }
 category: turret
 requirements: [
- a2-magnesium/120
+ b2-phosphorus/120
 ]
 research: lead
 researchCost: [
-    a2-magnesium/1
+    b2-phosphorus/1
   ]

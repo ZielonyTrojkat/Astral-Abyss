@@ -10,8 +10,8 @@ hasPower: false
 category: production
 research: crimson-core1
 requirements: [
-  a1-silicon-carbide/10
-  a2-magnesium/15
+  c1-vanadium-carbide/10
+  b2-phosphorus/15
 ]
 
 craftEffect: {

@@ -3,9 +3,9 @@ health: 100
 speed: 10
 
 requirements: [
-  a1-silicon-carbide/4
+  c1-vanadium-carbide/4
 ]
 researchCost: [
-  a1-silicon-carbide/40
+  c1-vanadium-carbide/40
 ]
 research: carbide-line

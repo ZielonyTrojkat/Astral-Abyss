@@ -5,10 +5,10 @@ displayedSpeed: 6
 junctionReplacement: carbide-crossing
 
 requirements: [
-  a1-silicon-carbide/1
+  c1-vanadium-carbide/1
 ]
 researchCost: [
-  a1-silicon-carbide/10
+  c1-vanadium-carbide/10
 ]
 
 research: {

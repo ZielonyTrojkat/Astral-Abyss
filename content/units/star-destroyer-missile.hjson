@@ -5,6 +5,7 @@
   "speed": 6.6,
   "rotateSpeed": 2.5,
   "lifetime": 170,
+  hoverable: false
   "homingDelay": 45,
   "isEnemy": false,
   "allowedInPayloads": false,

@@ -6,5 +6,5 @@ moveForce: 300
 payloadLimit: 3
 category: units
 requirements: [
-  a2-magnesium/1
+  b2-phosphorus/1
 ]

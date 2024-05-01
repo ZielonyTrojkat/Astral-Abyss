@@ -22,7 +22,7 @@ warmupMaintainTime: 60
     spread: 6
     }
 ammoTypes: {
-    a2-magnesium: {
+    b2-phosphorus: {
 type: BasicBulletType
 sprite: missile
 width: 12
@@ -312,8 +312,8 @@ drawer: {
 }
 category: turret
 requirements: [
-  a2-magnesium/70
+  b2-phosphorus/70
 ]
 researchCost: [
-  a2-magnesium/750
+  b2-phosphorus/750
 ]

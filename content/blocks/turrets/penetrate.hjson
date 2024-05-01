@@ -18,7 +18,7 @@ shoot: {
     spread: 7
 }
 ammoTypes: {
-    a2-magnesium: {
+    b2-phosphorus: {
       type: BasicBulletType
       sprite: missile-large
       backColor: 68969a
@@ -209,8 +209,8 @@ category: turret
 
 
 requirements: [
-  a2-magnesium/35
+  b2-phosphorus/35
 ]
 researchCost: [
-  a2-magnesium/100
+  b2-phosphorus/100
 ]

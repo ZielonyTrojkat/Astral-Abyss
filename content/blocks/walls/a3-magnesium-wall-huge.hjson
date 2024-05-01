@@ -4,11 +4,11 @@ health: 4500
 size: 3
 
 requirements: [
-  a1-silicon-carbide/27
-  a2-magnesium/27
+  c1-vanadium-carbide/27
+  b2-phosphorus/27
 ]
 researchCost: [
-  a2-magnesium/900
+  b2-phosphorus/900
 ]
 
-research: a2-magnesium-wall-big
+research: b2-phosphorus-wall-big

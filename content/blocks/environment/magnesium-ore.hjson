@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: a2-magnesium
+itemDrop: b2-phosphorus
 variants: 3
 oreDefault: true
 oreScale: 25

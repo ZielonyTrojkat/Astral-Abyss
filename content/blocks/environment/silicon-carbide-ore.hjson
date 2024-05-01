@@ -1,5 +1,5 @@
 type: OreBlock
-itemDrop: a1-silicon-carbide
+itemDrop: c1-vanadium-carbide
 variants: 3
 oreDefault: true
 oreScale: 25

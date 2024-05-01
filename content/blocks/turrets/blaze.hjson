@@ -19,7 +19,7 @@ shoot: {
     barrelOffset: 0
 }
 ammoTypes: {
-      a2-magnesium: {
+      b2-phosphorus: {
     type: BulletType
     inaccuracy: 6
     damage: 22
@@ -278,8 +278,8 @@ drawer: {
 }
 category: turret
 requirements: [
-  a2-magnesium/30
+  b2-phosphorus/30
 ]
 researchCost: [
- a2-magnesium/120
+ b2-phosphorus/120
 ]

@@ -7,10 +7,10 @@ output: a4-quartz
 attribute: a4-quartz
 
 requirements: [
-  a2-magnesium/40
+  b2-phosphorus/40
 ]
 researchCost: [
-  a2-magnesium/750
+  b2-phosphorus/750
 ]
 
 research: crimson-core1

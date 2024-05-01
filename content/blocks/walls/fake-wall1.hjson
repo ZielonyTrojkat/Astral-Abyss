@@ -9,8 +9,8 @@ useColor: false
 hasColor: true
 
 requirements: [
-  a2-magnesium/6
+  b2-phosphorus/6
 ]
 researchCost: [
-  a2-magnesium/100
+  b2-phosphorus/100
 ]

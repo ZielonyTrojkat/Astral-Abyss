@@ -11,23 +11,23 @@ plans: [
     unit: flying1
     time: 200
     requirements: [
-     a2-magnesium/20
+     b2-phosphorus/20
     ]
   }
   {
     unit: flying2
     time: 300
     requirements: [
-     a2-magnesium/20
+     b2-phosphorus/20
      silicon/20
     ]
   }
 ]
 requirements: [
-  a2-magnesium/4
+  b2-phosphorus/4
 ]
 researchCost: [
-  a2-magnesium/750
+  b2-phosphorus/750
 ]
 
 research: crimson-core1

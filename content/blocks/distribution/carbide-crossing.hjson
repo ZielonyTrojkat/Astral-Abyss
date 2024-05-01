@@ -4,9 +4,9 @@ speed: 10
 capacity: 8
 
 requirements: [
-  a1-silicon-carbide/3
+  c1-vanadium-carbide/3
 ]
 researchCost: [
-  a1-silicon-carbide/30
+  c1-vanadium-carbide/30
 ]
 research: carbide-splitter

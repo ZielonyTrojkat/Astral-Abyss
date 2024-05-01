@@ -14,7 +14,7 @@ liquidCapacity: 60
 heatOutput: 10
 consumes: {
   items: [
-    a2-magnesium/2
+    b2-phosphorus/2
   ]
   liquids: [
     water/0.2

@@ -4,6 +4,6 @@ category: liquid
 placeableLiquid: true
 requirements: [
   a4-quartz/2
-  a1-silicon-carbide/2
+  c1-vanadium-carbide/2
 ]
 research: a4-flow-splitter

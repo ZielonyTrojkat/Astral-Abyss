@@ -10,7 +10,7 @@ shootSound: blaster
 shake: 4
 outlineColor: 252729
 ammoTypes: {
-    a2-magnesium: {
+    b2-phosphorus: {
 type: BasicBulletType
 width: 20
 height: 26
@@ -50,8 +50,8 @@ category: turret
 
 
 requirements: [
-  a2-magnesium/70
+  b2-phosphorus/70
 ]
 researchCost: [
- a2-magnesium/750
+ b2-phosphorus/750
 ]

@@ -7,7 +7,7 @@ junctionReplacement: a5-flow-crossing
 requirements: [
   a4-quartz/4
   a8-niobium/4
-  b1-nickel-superalloy/2
+  c2-nickel-superalloy/2
 ]
 leaks: false
 liquidCapacity: 20
