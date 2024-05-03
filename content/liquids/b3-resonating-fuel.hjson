@@ -1,0 +1,7 @@
+gas: false
+color: f32a1d
+explosiveness: 1.2
+flammability: 1.5
+temperature: 0.6
+viscosity: 0.5
+heatCapacity: 0.5

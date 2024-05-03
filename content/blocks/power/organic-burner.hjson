@@ -1,6 +1,6 @@
 type: ConsumeGenerator
 category: power
-health: 1000
+health: 300
 size: 2
 squareSprite: false
 regionRotated1: 1
@@ -10,12 +10,14 @@ hasPower: true
 hasLiquids: false
 ambientSound: fire
 ambientSoundVolume: 1
+craftTime: 60
 consumes: {
   items: [
-    a3-azure-moss/2
+    a7-carbon-powder/1
   ]
 }
-powerProduction: 30
+powerProduction: 2.5
+itemDuration: 60
 
 requirements: [
   copper/40
@@ -91,8 +93,8 @@ type: DrawMulti
   type: DrawGlowRegion
   suffix: -glow2
   glowScale: 8
-  color: ffffff
-  alpha: 0.3
+  color: ff0000
+  alpha: 0.4
   }
   ]
   }

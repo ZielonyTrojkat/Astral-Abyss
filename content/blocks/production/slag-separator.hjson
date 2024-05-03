@@ -1,7 +1,7 @@
 type: GenericCrafter
 category: crafting
-health: 1500
-size: 4
+health: 400
+size: 2
 fogRadius: 1
 hasItems: true
 hasPower: false
@@ -9,16 +9,16 @@ hasLiquids: false
 itemCapacity: 20
 ambientSound: blast-furnace
 ambientSoundVolume: 1
-craftTime: 60
+craftTime: 180
 consumes: {
   liquids: [
-  slag/0.2
+  slag/0.19
   ]
   }
 outputItems: [
-  a2-silica/2
-  b1-magnetite/1
-  a1-palladium/1
+  a2-vanadium/2
+  a4-quartz/1
+  a5-nickel/1
 ]
 
 
@@ -33,33 +33,13 @@ drawer: {
 type: DrawMulti
   drawers: [
   {
-  type: DrawFlame
-  flameRadius: 1
-  flameRadiusScl: 3
-  flameRadiusMag: 1
-	flameColor: ff4d00
-  lightRadius: 6
-  lightSinScl: 5
-  lightSinMag: 0
-  lightAlpha: 0.5
-  }
-  {
   type: DrawRegion
   suffix: -bottom
   }
   {
-  type: DrawCrucibleFlame
-  circleSpace: 1
-  circleStroke: 3
-  flameRadius: 1
-  flameRadiusScl: 3
-  flameRadiusMag: 1
-	flameColor: fa7020
-  particleLife: 80
-  particleRad: 10
-  particles: 100
-  particleSize: 2
-  rotateScl: 0.5
+  type: DrawLiquidTile
+  drawLiquid: slag
+  padding: 2
   }
   {
   type: DrawDefault
@@ -73,154 +53,3 @@ type: DrawMulti
   }
   ]
   }
-
-craftEffect: [
-  {
-    type: RadialEffect
-    layer: 118
-    rotationSpacing: 60
-    amount: 6
-    lengthOffset: 4
-    effect: {
-      particles: 1
-      length: 110
-      lifetime: 400
-      cone: 20
-      baseRotation: 33
-      useRotation: false 
-      sizeFrom: 0
-      sizeTo: 12
-      colorFrom: 787878aa
-      colorTo: 78787800
-      sizeInterp: pow2Out
-      interp: pow2Out
-      layer: 111
-    }
-  }
-    {
-    type: RadialEffect
-    layer: 118
-    rotationSpacing: 60
-    amount: 6
-    lengthOffset: 4
-    effect: {
-      startDelay: 30
-      particles: 1
-      length: 110
-      lifetime: 400
-      cone: 20
-      baseRotation: 33
-      useRotation: false 
-      sizeFrom: 0
-      sizeTo: 12
-      colorFrom: 787878aa
-      colorTo: 78787800
-      sizeInterp: pow2Out
-      interp: pow2Out
-      layer: 111
-    }
-  }
-  {
-  type: RadialEffect
-  layer: 118
-  rotationSpacing: 30
-  amount: 12
-  lengthOffset: 4
-  effect: {
-    particles: 1
-    line: true
-    length: 15
-    lifetime: 45
-    cone: 20
-    useRotation: false
-    baseRotation: 90
-    lenFrom: 0
-    lenTo: 4
-    strokeFrom: 0.7
-    strokeTo: 0
-    colorFrom: ff823acc
-    colorTo: ff823a88
-    interp: pow2
-    sizeInterp: pow3In
-    layer: 80
-    }
-  }
-    {
-  type: RadialEffect
-  layer: 118
-  rotationSpacing: 30
-  amount: 12
-  lengthOffset: 4
-  effect: {
-    particles: 1
-    line: true
-    length: 15
-    lifetime: 45
-    cone: 20
-    startDelay: 15
-    useRotation: false
-    baseRotation: 90
-    lenFrom: 0
-    lenTo: 4
-    strokeFrom: 0.7
-    strokeTo: 0
-    colorFrom: ff823acc
-    colorTo: ff823a88
-    interp: pow2
-    sizeInterp: pow3In
-    layer: 80
-    }
-  }
-      {
-  type: RadialEffect
-  layer: 118
-  rotationSpacing: 30
-  amount: 12
-  lengthOffset: 4
-  effect: {
-    particles: 1
-    line: true
-    length: 15
-    lifetime: 45
-    cone: 20
-    startDelay: 30
-    useRotation: false
-    baseRotation: 90
-    lenFrom: 0
-    lenTo: 4
-    strokeFrom: 0.7
-    strokeTo: 0
-    colorFrom: ff823acc
-    colorTo: ff823a88
-    interp: pow2
-    sizeInterp: pow3In
-    layer: 80
-    }
-  }
-      {
-  type: RadialEffect
-  layer: 118
-  rotationSpacing: 30
-  amount: 12
-  lengthOffset: 4
-  effect: {
-    particles: 1
-    line: true
-    length: 15
-    lifetime: 45
-    cone: 20
-    startDelay: 45
-    useRotation: false
-    baseRotation: 90
-    lenFrom: 0
-    lenTo: 4
-    strokeFrom: 0.7
-    strokeTo: 0
-    colorFrom: ff823acc
-    colorTo: ff823a88
-    interp: pow2
-    sizeInterp: pow3In
-    layer: 80
-    }
-  }
-]

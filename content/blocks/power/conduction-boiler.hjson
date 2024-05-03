@@ -18,7 +18,7 @@ consumes: {
     water/0.2
   ]
 }
-outputLiquid: astral-abyss-steam/0.25
+outputLiquid: astral-abyss-a1-steam/0.25
 
 requirements: [
   copper/40
@@ -37,7 +37,7 @@ type: DrawMulti
   }
   {
   type: DrawLiquidTile
-  drawLiquid: astral-abyss-steam
+  drawLiquid: astral-abyss-a1-steam
   padding: 1.5
   }
   {

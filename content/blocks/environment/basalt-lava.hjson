@@ -1,0 +1,4 @@
+type: Floor
+variants: 7
+parent: basalt-stone
+blendGroup: basalt-stone

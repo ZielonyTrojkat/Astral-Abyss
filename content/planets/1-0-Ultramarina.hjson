@@ -28,7 +28,7 @@ mesh: {
         5caae6
     ]
 }
-radius: 5
+radius: 10
 # Whether this can be landed on.
 accessible: false
 # This is self-explanatory...
@@ -49,7 +49,7 @@ solarSystem: 1-0-Ultramarina
 parent: sun
 # Orbit radius of this planet. (Just to make it very far from the sun, I guess?)
 # Part 2 of the band-aid solution.
-orbitRadius: 120
+orbitRadius: 150
 # Whether to draw this planet's orbit.
 drawOrbit: false
 # Whether this planet is tidally locked. No clue what this means, go check Wikipedia

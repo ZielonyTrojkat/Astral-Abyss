@@ -1,0 +1,7 @@
+gas: false
+color: c4567a
+explosiveness: 0.0
+flammability: 0.0
+temperature: 0.5
+viscosity: 0.5
+heatCapacity: 0.5

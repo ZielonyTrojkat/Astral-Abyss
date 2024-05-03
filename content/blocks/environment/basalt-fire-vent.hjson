@@ -2,10 +2,14 @@ type: SteamVent
 variants: 2
 parent: basalt-floor
 blendGroup: basalt-floor
+emitLight: true
+lightRadius: 32
+lightColor: ffac0055
 attributes: {
   steam: 1
 }
-effect: {
+effect: [
+  {
     type: RadialEffect
     layer: 118
     rotationSpacing: 90
@@ -20,10 +24,11 @@ effect: {
       useRotation: false 
       sizeFrom: 0
       sizeTo: 8
-      colorFrom: ffa985
-      colorTo: ff512e00
+      colorFrom: ff9766
+      colorTo: f26c2a00
       sizeInterp: pow2Out
       interp: pow2Out
       layer: 111
     }
   }
+]

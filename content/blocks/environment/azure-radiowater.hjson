@@ -10,6 +10,6 @@ liquidDrop: water
 liquidMultiplier: 1
 supportsOverlay: true
 emitLight: true
-lightRadius: 50f
-lightColor: 56bafc
+lightRadius: 40
+lightColor: 3c9eff55
 drownTime: 180

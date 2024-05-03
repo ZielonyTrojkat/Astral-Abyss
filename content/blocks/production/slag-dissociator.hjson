@@ -1,0 +1,61 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 2
+fogRadius: 1
+hasItems: true
+hasPower: false
+hasLiquids: false
+itemCapacity: 20
+liquidCapacity: 10
+ambientSound: none
+ambientSoundVolume: 1
+craftTime: 360
+consumes: {
+  liquids: [
+  slag/0.19
+  ]
+  }
+outputItems: [
+  a2-vanadium/2
+  a4-quartz/1
+  a5-nickel/1
+]
+
+
+requirements: [
+  b1-crimson-rock/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawLiquidTile
+  drawLiquid: slag
+  padding: 2
+  }
+  {
+  type: DrawRegion
+  suffix: -rotor
+  rotateSpeed: -2
+  }
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawGlowRegion
+  suffix: -heat
+  glowScale: 10
+  color: fa7020
+  alpha: 0.7
+  }
+  ]
+  }

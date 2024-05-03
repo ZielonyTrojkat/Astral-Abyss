@@ -1,8 +1,7 @@
     generator: PlanetGenerator
     parent: 1-0-Ultramarina
-    solarSystem: 1-0-Ultramarina
     iconColor: 10d7e6,
-    orbitRadius: 10,
+    orbitRadius: 32,
     hasAtmosphere: true,
     updateLighting: false,
     atmosphereRadIn: 0.01,

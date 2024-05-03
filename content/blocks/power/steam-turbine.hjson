@@ -12,7 +12,7 @@ ambientSound: generator-hum
 ambientSoundVolume: 1
 liquidCapacity: 60
 consumes: {
-  liquid: steam/0.2
+  liquid: a1-steam/0.2
 }
 powerProduction: 30
 
@@ -33,7 +33,7 @@ type: DrawMulti
   }
   {
   type: DrawLiquidTile
-  drawLiquid: astral-abyss-steam
+  drawLiquid: astral-abyss-a1-steam
   padding: 1
   }
   {

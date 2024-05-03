@@ -2,13 +2,14 @@ type: GenericCrafter
 category: crafting
 health: 1500
 size: 4
-fogRadius: 1
+fogRadius: 3
 hasItems: true
 hasPower: false
-hasLiquids: false
+hasLiquids: true
 itemCapacity: 20
-ambientSound: blast-furnace
-ambientSoundVolume: 1
+liquidCapacity: 40
+ambientSound: blast-furnace2
+ambientSoundVolume: 0.8
 craftTime: 60
 consumes: {
   items: [
@@ -17,7 +18,7 @@ consumes: {
   ]
   }
 outputItem: b2-phosphorus/2
-outputLiquid: slag/0.2
+outputLiquid: slag/0.4
 
 
 requirements: [

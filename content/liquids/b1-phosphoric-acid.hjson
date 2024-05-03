@@ -4,9 +4,10 @@ cells: 7
 capPuddles: true
 flammability: 0.5
 cache: water
-color: 3d484f
-colorFrom: 2f3536
-colorTo: 4a4c4d
+color: d2b8b8
+colorFrom: ba9a9a
+colorTo: dac3c3
 removeScaling: 0.5
-viscosity: 0.99
+viscosity: 0.70
+heatCapacity: 0.5
 effect: acidic-corrosion

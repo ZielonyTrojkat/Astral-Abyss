@@ -1,0 +1,53 @@
+type: GenericCrafter
+category: crafting
+health: 400
+size: 2
+fogRadius: 1
+hasItems: true
+hasPower: false
+hasLiquids: false
+itemCapacity: 10
+liquidCapacity: 10
+ambientSound: hum
+ambientSoundVolume: 1
+craftTime: 60
+consumes: {
+  items: [
+    a3-azure-moss/1
+  ]
+  liquids: [
+    astral-abyss-a2-neon/0.1
+  ]
+}
+outputItems: [
+  a7-carbon-powder/1
+]
+
+
+requirements: [
+  b1-crimson-rock/40
+  ]
+research: lead
+researchCost: [
+  lead/1
+  ]
+drawer: {
+type: DrawMulti
+  drawers: [
+  {
+  type: DrawRegion
+  suffix: -bottom
+  }
+  {
+  type: DrawDefault
+  }
+  {
+  type: DrawFlame
+  flameColor: bed6f8
+  flameRadius: 2.2
+  flameRadiusIn: 1.1
+  flameRadiusMag: 1.3
+  flameRadiusScl: 6
+  }
+  ]
+  }
