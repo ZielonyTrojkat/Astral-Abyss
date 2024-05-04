@@ -16,14 +16,14 @@ consumes: {
   ]
   }
 outputItems: [
-  a2-vanadium/2
+  a1-vanadium/2
   a4-quartz/1
   a5-nickel/1
 ]
 
 
 requirements: [
-  b1-crimson-rock/40
+  b1-phosphate-rock/40
   ]
 research: lead
 researchCost: [

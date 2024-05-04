@@ -13,7 +13,7 @@ ambientSoundVolume: 0.8
 craftTime: 60
 consumes: {
   items: [
-  b1-crimson-rock/4
+  b1-phosphate-rock/4
   a7-carbon-powder/2
   ]
   }
@@ -22,7 +22,7 @@ outputLiquid: slag/0.4
 
 
 requirements: [
-  b1-crimson-rock/40
+  b1-phosphate-rock/40
   ]
 research: lead
 researchCost: [

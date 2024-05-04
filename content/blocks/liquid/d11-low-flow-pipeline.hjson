@@ -3,7 +3,7 @@ leaks: true
 health: 50
 hasPower: false
 placeableLiquid: true
-junctionReplacement: a5-flow-crossing
+junctionReplacement: d22-flow-crossing
 requirements: [
   a4-quartz/2
 ]

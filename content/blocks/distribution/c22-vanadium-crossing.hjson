@@ -9,4 +9,4 @@ requirements: [
 researchCost: [
   c1-vanadium-carbide/30
 ]
-research: carbide-splitter
+research: c21-vanadium-splitter

@@ -1,17 +1,15 @@
 type: Conduit
 leaks: true
-health: 200
+health: 90
 hasPower: false
 placeableLiquid: true
-junctionReplacement: a5-flow-crossing
+junctionReplacement: d22-flow-crossing
 requirements: [
-  a4-quartz/4
-  a8-niobium/4
-  c2-nickel-superalloy/2
+  a4-quartz/3
+  a8-niobium/2
 ]
-leaks: false
 liquidCapacity: 20
 liquidPressure: 1.025
 botColor: 303036
 category: liquid
-research: a2-high-flow-duct
+research: d11-low-flow-pipeline

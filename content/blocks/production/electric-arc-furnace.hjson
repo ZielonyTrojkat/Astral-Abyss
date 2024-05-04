@@ -22,7 +22,7 @@ outputLiquid: c1-molten-superalloy/0.2
 
 
 requirements: [
-  b1-crimson-rock/40
+  b1-phosphate-rock/40
   ]
 research: lead
 researchCost: [

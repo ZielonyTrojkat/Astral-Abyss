@@ -6,8 +6,8 @@ fogRadius: 1
 hasPower: true
 outputsPower: true
 underBullets: true
-laserColor1: f8ae87
-laserColor2: d28566
+laserColor1: ff8c8c
+laserColor2: cc5e5e
 maxNodes: 10
 maxRange: 1
 laserRange: 8

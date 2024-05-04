@@ -8,4 +8,4 @@ requirements: [
 researchCost: [
   c1-vanadium-carbide/40
 ]
-research: carbide-line
+research: c11-vanadium-rail

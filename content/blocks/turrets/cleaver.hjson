@@ -4,7 +4,7 @@ size: 3
 health: 2300
 range: 260
 rotateSpeed: 14
-reload: 35
+reload: 45
 recoilAmount: 3
 shootSound: blaster
 shake: 4
@@ -28,8 +28,8 @@ sprite: missile
 width: 12
 height: 16
 damage: 50
-speed: 6
-lifetime: 40
+speed: 7
+lifetime: 34
 frontColor: ff7373
 backColor: de4545
 status: melting
@@ -87,6 +87,23 @@ shootEffect: {
         colorFrom: ff7d7d
         colorTo: fa5043
       }
+      hitEffect: {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: 35
+        lifetime: 25
+        sizeFrom: 4
+        sizeTo: 0
+        cone: 20
+        interp: circleOut
+        strokeFrom: 7
+        strokeTo: 0
+        colorFrom: ff7d7d
+        colorTo: fa5043
+      }
+      despawnHit: true
 }
     lead: {
 type: BasicBulletType

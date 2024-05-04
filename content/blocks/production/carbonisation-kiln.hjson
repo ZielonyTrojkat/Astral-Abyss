@@ -25,7 +25,7 @@ outputItems: [
 
 
 requirements: [
-  b1-crimson-rock/40
+  b1-phosphate-rock/40
   ]
 research: lead
 researchCost: [

@@ -1,10 +1,9 @@
-type: LiquidRouter
+type: LiquidJunction
 health: 90
-liquidCapacity: 20
 category: liquid
 placeableLiquid: true
 requirements: [
   a4-quartz/2
   c1-vanadium-carbide/2
 ]
-research: a1-low-flow-duct
+research: d21-flow-splitter
