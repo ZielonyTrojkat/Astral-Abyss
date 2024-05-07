@@ -5,4 +5,6 @@ flammability: 0.0
 explosiveness: 0
 radioactivity: 0
 charge: 0.0
+frames: 6
+frameTime: 4
 research: a5-nickel

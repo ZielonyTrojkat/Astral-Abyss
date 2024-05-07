@@ -1,0 +1,5 @@
+type: TallBlock
+variants: 1
+emitLight: true
+lightRadius: 50
+lightColor: ff0000aa

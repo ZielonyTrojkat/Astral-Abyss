@@ -1,7 +1,7 @@
 type: Floor
-variants: 7
-parent: basalt-stone
-blendGroup: basalt-stone
+variants: 2
+parent: basalt-floor
+blendGroup: basalt-floor
 emitLight: true
 lightRadius: 16
 lightColor: ffac0022
