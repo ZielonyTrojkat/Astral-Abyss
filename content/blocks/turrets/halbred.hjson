@@ -1,6 +1,6 @@
 type: ItemTurret
 squareSprite: false
-size: 8
+size: 5
 shootCone: 360
 squareSprite: false
 range: 1440
