@@ -63,7 +63,7 @@ smokeEffect: [
   }
 ]
 ammoTypes: {
-  anden: {
+  neptunium: {
     ammoMultiplier: 1
     displayAmmoMultiplier: false
     spawnUnit: darken-mod-neptunium-missle
