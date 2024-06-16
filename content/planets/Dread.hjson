@@ -1,5 +1,5 @@
   generator: PlanetGenerator
-    parent: 2-1-Ultramarina
+    parent: 1-0-Ultramarina
     iconColor: 10d7e6,
     orbitRadius: 96,
     hasAtmosphere: true,
