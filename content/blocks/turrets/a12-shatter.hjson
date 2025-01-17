@@ -1,0 +1,59 @@
+type: ItemTurret
+name: Shatter
+description: Charges a piercing beam at targeted foes.
+details: The very first laser Noxirus has created, a prototype that will upgrades into a stronger laser.
+size: 2
+health: 200
+category: turret
+range: 240
+squareSprite: false
+reload: 80
+shootSound: laser
+rotateSpeed: 2
+shootCone: 3
+shootY: 4
+outlineColor: 252729
+shake: 2
+requirements: [
+  a1-vanadium/30
+  a5-nickel/50
+  a4-quartz/45
+]
+shoot: {
+  firstShotDelay: 20
+  type: ShootSpread
+  shots: 2
+  spread: 1.5
+  shotDelay: 2
+}
+drawer: {
+  type: DrawTurret
+  basePrefix: darken-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -mid
+      mirror: false
+      under: true
+      progress: recoil
+      moveY: -2.4
+    }
+  ]
+}
+ammoTypes: {
+  a4-quartz: {
+    type: LaserBulletType
+    colors: [eea57f50, eea57f, ffffff]
+    width: 19
+    damage: 30
+    hitEffect: hitLancer
+    sideAngle: 90
+    sideWidth: 6
+    sideLength: 6
+    lifetime: 30
+    drawSize: 400
+    length: 240
+    pierceCap: 5
+  }
+}
+research: crimson-core1

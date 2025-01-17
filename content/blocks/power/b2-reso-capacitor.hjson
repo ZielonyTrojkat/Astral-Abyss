@@ -1,0 +1,37 @@
+type: Battery
+category: power
+health: 250
+size: 2
+fogRadius: 1
+hasPower: true
+outputsPower: true
+consumesPower: true
+underBullets: false
+hasItems: false
+canOverdrive: false
+consumes: {
+    powerBuffered: 6000
+}
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPower
+      suffix: -power
+      emptyLightColor: ff383800
+      fullLightColor: ff4040aa
+    }
+  ]
+}
+
+requirements: [
+  b2-phosphorus/4
+]
+researchCost: [
+  b2-phosphorus/50
+]
+
+research: piezo-capacitor

@@ -1,0 +1,63 @@
+type: BurstDrill
+name: Shock drill
+description: Uses large-scale friction explosions to mine materials from the ground in high amounts. Enhanced through Obsidian. Can mine advanced materials. Requires power.
+size: 2
+hardnessDrillMultiplier: 150
+category: production
+drillTime: 150
+hasLiquids: false
+tier: 1
+shake: 8
+arrows: 1
+arrowSpacing: 0
+arrowOffset: 0
+squareSprite: false
+itemCapacity: 40
+researchCostMultiplier: 0.5
+drillEffect: [
+{
+      type: ParticleEffect
+      particles: 5
+      line: true
+      length: 50
+      lifetime: 50
+      offset: 20
+      interp: pow5Out
+      lightColor: fffb85
+      colorFrom: fffb85
+      colorTo: e49e5c
+      lenFrom: 12
+      lenTo: 0
+      strokeFrom: 4
+      strokeTo: 0
+}
+{
+       type: WaveEffect
+       lifetime: 30
+       sizeFrom: 0
+       sizeTo: 30
+       strokeFrom: 8
+       strokeTo: 0
+       colorFrom: ffffff
+       colorTo: 606060
+       followParent: true
+}
+{
+particles: 12
+length: 110
+lifetime: 340
+cone: 30
+baseRotation: 25
+sizeFrom: 0
+sizeTo: 5
+colorFrom: 606060
+colorTo: 20202000
+sizeInterp: pow3Out
+interp: pow3Out
+}
+]
+requirements: [
+  a1-vanadium/30
+]
+squareSprite: false
+research: crimson-core1

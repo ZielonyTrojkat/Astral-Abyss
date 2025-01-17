@@ -1,0 +1,429 @@
+type: ItemTurret
+name: Pulverize
+description: Launches a resonating plasma saw that obliterates enemy targets.
+size: 5
+health: 200
+category: turret
+range: 360
+squareSprite: false
+reload: 720
+shootSound: railgun
+rotateSpeed: 2
+shootCone: 3
+shootY: 4
+outlineColor: 252729
+shake: 25
+shoot: {
+firstShotDelay: 160
+}
+consumes: {
+  power: 20
+  liquids: [
+  b3-resonating-fuel/1.2
+  ]
+}
+requirements: [
+  a1-vanadium/76
+  a6-resonating-crystal/70
+  a5-nickel/80
+  a4-quartz/70
+]
+drawer: {
+  type: DrawTurret
+  basePrefix: darken-
+  parts: [
+    {
+      type: RegionPart
+      suffix: -side
+      mirror: true
+      under: true
+      progress: recoil
+      moveY: -2
+      moveX: 1.2
+      moveRot: -5
+    }
+    {
+      type: RegionPart
+      suffix: -mid
+      mirror: true
+      under: true
+      progress: recoil
+      moveY: -2
+      moveX: -1.2
+    }
+    {
+   		type: FlarePart
+   		radiusFrom: 9
+      radiusTo: 0
+      followRotation: true
+      sides: 3
+      rotMove: 60
+      progress: warmup
+      color1: ff8b8b
+    	}
+  ]
+}
+ammoTypes: {
+  a6-resonating-crystal: {
+type: BasicBulletType
+knockback: 30
+width: 40
+height: 40
+damage: 720
+shrinkX: -0.3
+shrinkY: -0.3
+sprite: large-orb
+backSprite: astral-abyss-star2
+speed: 8
+spin: -8
+buildingDamageMultiplier: 0.2
+lifetime: 90
+frontColor: ff7373
+backColor: de4545
+status: melting
+statusDuration: 70
+hitShake: 18
+hitSound: largeCannon
+despawnHit: true
+splashDamage: 480
+splashDamageRadius: 60
+splashDamagePierce: false
+homingPower: 0.02
+homingRange: 100
+trailChance: -1
+trailLength: 25
+trailWidth: 7
+trailColor: f25c5c
+intervalBullets: 2
+bulletInterval: 7
+intervalRandomSpread: 0
+intervalSpread: 180
+intervalAngle: 0
+intervalBullet: {
+  hitSound: spark
+  instantDisappear: true
+  lightning: 1
+  lightningDamage: 20
+  lightningLengthRand: 5
+  lightningLength: 5
+  lightningColor: ff3333
+  hitEffect: none
+  despawnEffect: none
+}
+hitEffect: {
+  type: MultiEffect
+  effects: [
+  scatheLight,
+  scatheExplosion
+    {
+    type: WaveEffect
+    lifetime: 40
+    sizeFrom: 20
+    sizeTo: 70
+    interp: circleOut
+    strokeFrom: 15
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    lifetime: 80
+    particles: 20
+    cone: 360
+    length: 100
+    region: astral-abyss-star2
+    baseLength: 0
+    interp: exp5Out
+    sizeInterp: pow5In
+    sizeFrom: 12
+    sizeTo: 0
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff8585
+    colorTo: ff5454
+    spin: -6
+    }
+    {
+    type: ParticleEffect
+    lifetime: 80
+    particles: 1
+    cone: 360
+    length: 0
+    region: astral-abyss-star2
+    baseLength: 0
+    interp: pow10Out
+    sizeInterp: exp5
+    sizeFrom: 50
+    sizeTo: 0
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff8585
+    colorTo: ff5454
+    spin: -6
+    }
+    {
+    type: ParticleEffect
+    line: true
+    lifetime: 80
+    particles: 30
+    cone: 360
+    length: 120
+    baseLength: 0
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 15
+    lenTo: 0
+    strokeFrom: 7
+    strokeTo: 0
+    colorFrom: ff857a
+    colorTo: ff5e52
+    }
+    {
+    type: ParticleEffect
+    line: true
+    lifetime: 140
+    particles: 30
+    cone: 360
+    length: 100
+    baseLength: 0
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 15
+    lenTo: 0
+    strokeFrom: 6
+    strokeTo: 0
+    colorFrom: ff5c5c
+    colorTo: ff3030
+    }
+    {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 80
+    sizeTo: 75
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: WaveEffect
+    lifetime: 20
+    sizeFrom: 60
+    sizeTo: 55
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+  ]
+}
+shootEffect: {
+    type: ParticleEffect
+    offsetX: -10
+    line: true
+    lifetime: 90
+    particles: 60
+    cone: 45
+    length: 70
+    baseLength: 0
+    interp: circleOut
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 6
+    lenTo: 0
+    strokeFrom: 3
+    strokeTo: 0
+    colorFrom: ff8278
+    colorTo: fa5043
+}
+chargeEffect: {
+type: MultiEffect
+    effects: [
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 240
+    particles: 30
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 200
+    particles: 16
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 160
+    particles: 16
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 120
+    particles: 13
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    line: true
+    lifetime: 80
+    particles: 10
+    length: -40
+    baseLength: 40
+    interp: sineIn
+    sizeFrom: 0
+    sizeTo: 15
+    lenFrom: 0
+    lenTo: 6
+    strokeFrom: 0
+    strokeTo: 2
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    region: astral-abyss-ball2
+    lifetime: 240
+    particles: 1
+    length: 0
+    sizeInterp: sineOut
+    sizeFrom: 0
+    sizeTo: 12
+    spin: -6
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: WaveEffect
+    offsetX: -5
+    lifetime: 240
+    sizeInterp: sineOut
+    sizeFrom: 0
+    sizeTo: 20
+    strokeFrom: 2
+    strokeTo: 0
+    colorFrom: fa5043
+    colorTo: ff6f63
+    }
+    {
+    type: ParticleEffect
+    offsetX: -5
+    region: astral-abyss-ball2
+    lifetime: 240
+    particles: 1
+    length: 0
+    sizeInterp: sineOut
+    sizeFrom: 0
+    sizeTo: 17
+    spin: -6
+    colorFrom: e8493c
+    colorTo: ff8278
+    }
+    ]
+  }
+    fragBullets: 1
+    fragLifeMin: 1
+    fragLifeMax: 1
+    fragBullet: {
+    type: BasicBulletType
+    parts: [
+        {
+      	 type: FlarePart
+      	 radiusTo: 6
+        followRotation: true
+        sides: 3
+        color1: ff8b8b
+        }
+      ]
+      damage: 20
+      splashDamage: 90
+      splashDamageRadius: 32
+      spin: -2
+      shrinkY: 0
+      speed: 0
+      lifetime: 90
+      width: 8
+      hitSize: 7
+      collides: false
+      height: 8
+      ammoMultiplier: 1
+      pierceCap: 2
+      pierce: true
+      pierceBuilding: true
+      hitColor: ff8b8b
+      trailColor: ff8b8b
+      frontColor: ffffff
+      lightColor: ff8b8b
+      backColor: ff8b8b
+      hitEffect: hitBulletColor
+      despawnEffect: blastExplosion
+      bulletInterval: 3
+      intervalBullet: {
+        type: LaserBulletType
+        colors: [ff8b8b50, ff8b8b, ffffff]
+        width: 19
+        damage: 20
+        hitEffect: hitLancer
+        sideAngle: 90
+        sideWidth: 12
+        sideLength: 2
+        lifetime: 30
+        drawSize: 400
+        length: 180
+        pierceCap: 5
+      }
+    }
+  }
+}
+research: crimson-core1

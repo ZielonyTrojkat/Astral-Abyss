@@ -1,0 +1,11 @@
+type: DuctBridge
+health: 100
+speed: 10
+capacity: 8
+requirements: [
+  a1-vanadium/3
+]
+researchCost: [
+  a1-vanadium/30
+]
+research: a1-vanadium-splitter
