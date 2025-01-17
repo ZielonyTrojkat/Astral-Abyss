@@ -1,0 +1,10 @@
+name: Niobium
+description: A metal used in alloymaking and superconductors.
+cost: 1
+charge: 0.5
+color: 94d7e2
+hiddenOnPlanets: [
+  serpulo,
+  erekir
+]
+research: a2-nickel

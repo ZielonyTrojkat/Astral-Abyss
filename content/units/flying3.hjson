@@ -1,0 +1,420 @@
+type: flying
+flying: true
+lowAltitude: true
+unitController: SuicideAI
+speed: 2
+rotateSpeed: 3
+accel: 0.1
+drag: 0.03
+health: 640
+hitSize: 32
+armor: 3
+itemCapacity: 50
+outlineColor: 36363c
+engineSize: 3.0
+engineOffset: 6.0
+faceTarget: true
+trailLength: 10
+trailScl: 0.9
+engines: [
+{
+x: 8.5
+y: -12
+rotation: -75
+radius: 2.5
+}
+{
+x: -8.5
+y: -12
+rotation: -105
+radius: 2.5
+}
+]
+
+parts: [
+	{
+		type: FlarePart
+		x: 0
+		y: -6.0
+		radius: 6
+		stroke: 1.2
+    minStroke: 0
+    followRotation: true
+    sides: 6
+		color1: ff8b8b
+    color1: ff8b8b
+	}
+]
+
+weapons: [
+ {
+    name: laser
+    rotate: false
+    x: 0
+    y: 3
+    top: true
+    mirror: false
+    shootSound: railgun
+    parentizeEffects: true
+    shootStatus: slow
+    shootStatusDuration: 90
+    reload: 190
+    ignoreRotation: true
+    targetAir: true
+    recoil: 1
+    shoot: {
+     type: ShootPattern
+    shots: 1
+    firstShotDelay: 30
+    }
+    chargeSound: short-laser-charge
+    bullet: {
+    type: LaserBulletType
+    colors: [ff7d7d, ff5454, ff5454]
+    width: 8
+    length: 110
+    damage: 50
+    lifetime: 25
+    pierce: true
+    pierceBuilding: true
+    pierceCap: 4
+      chargeEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 31
+        sizeFrom: 10
+        sizeTo: 0
+        interp: circleIn
+        strokeFrom: 0
+        strokeTo: 4
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 26
+        length: -25
+        lifetime: 30
+        lenFrom: 0
+        lenTo: 4
+        interp: circleIn
+        strokeFrom: 0
+        strokeTo: 2.5
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+      ]
+    }
+    shootEffect: {
+    type: ParticleEffect
+    line: true
+    particles: 8
+    baseLength: 0
+    length: 14
+    lifetime: 30
+    lenFrom: 6
+    lenTo: 0
+    cone: 75
+    interp: circleOut
+    strokeFrom: 4
+    strokeTo: 0
+    colorFrom: ffd1d1
+    colorTo: e04141
+    }
+    smokeEffect: none
+    hitColor: ffd1d1
+  }
+  }
+ {
+    name: flying3-launcher
+    rotate: false
+    x: 10
+    y: 6
+    alternate: false
+    layerOffset: -1
+    shootCone: 360
+    top: false
+    mirror: true
+    shootSound: blaster
+    reload: 60
+    baseRotation: -30
+    ignoreRotation: true
+    recoil: 1.0
+    cooldownTime: 30
+    shoot: {
+     type: ShootSpread
+    shots: 1
+    }
+    bullet: {
+      type: BasicBulletType
+      keepVelocity: false
+      frontColor: ff8b8b
+      backColor: f03d3d
+      trailLength: 5
+      trailWidth: 2
+      trailColor: ff8b8b
+      damage: 10
+      speed: 3
+      lifetime: 60
+      recoil: 0.0
+      width: 10
+      height: 14
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: 25
+        lifetime: 30
+        lenFrom: 5
+        lenTo: 0
+        cone: 25
+        offsetX: -4
+        interp: circleOut
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+          }
+        ]
+      }
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 1
+        sizeTo: 10
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 2
+        length: 20
+        lifetime: 25
+        lenFrom: 5
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+      ]
+    }
+      smokeEffect: none
+      homingPower: 0.15
+      homingDelay: 6
+    }
+  }
+ {
+    name: flying3-launcher
+    rotate: false
+    x: 12
+    y: 1
+    alternate: false
+    layerOffset: -1
+    shootCone: 360
+    top: false
+    mirror: true
+    shootSound: blaster
+    reload: 60
+    rotate: false
+    baseRotation: -50
+    ignoreRotation: true
+    recoil: 1.0
+    cooldownTime: 30
+    shoot: {
+     type: ShootSpread
+    shots: 1
+    firstShotDelay: 15
+    }
+    bullet: {
+      type: BasicBulletType
+      keepVelocity: false
+      frontColor: ff8b8b
+      backColor: f03d3d
+      trailLength: 5
+      trailWidth: 2
+      trailColor: ff8b8b
+      damage: 10
+      speed: 3
+      lifetime: 60
+      recoil: 0.0
+      width: 10
+      height: 14
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: 25
+        lifetime: 30
+        lenFrom: 5
+        lenTo: 0
+        cone: 25
+        offsetX: -4
+        interp: circleOut
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+          }
+        ]
+      }
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 1
+        sizeTo: 10
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 2
+        length: 20
+        lifetime: 25
+        lenFrom: 5
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+      ]
+    }
+      smokeEffect: none
+      homingPower: 0.15
+      homingDelay: 6
+    }
+  }
+  {
+    name: flying3-launcher
+    rotate: false
+    x: 13
+    y: -5
+    alternate: false
+    layerOffset: -1
+    shootCone: 360
+    top: false
+    mirror: true
+    shootSound: blaster
+    reload: 60
+    rotate: false
+    baseRotation: -70
+    ignoreRotation: true
+    recoil: 1.0
+    cooldownTime: 30
+    shoot: {
+     type: ShootSpread
+    shots: 1
+    firstShotDelay: 30
+    }
+    bullet: {
+      type: BasicBulletType
+      keepVelocity: false
+      frontColor: ff8b8b
+      backColor: f03d3d
+      trailLength: 5
+      trailWidth: 2
+      trailColor: ff8b8b
+      damage: 10
+      speed: 3
+      lifetime: 60
+      recoil: 0.0
+      width: 10
+      height: 14
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 0
+        length: 25
+        lifetime: 30
+        lenFrom: 5
+        lenTo: 0
+        cone: 25
+        offsetX: -4
+        interp: circleOut
+        strokeFrom: 3
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+          }
+        ]
+      }
+    despawnHit: true
+    despawnEffect: none
+    hitEffect: {
+      type: MultiEffect
+      effects: [
+        {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 1
+        sizeTo: 10
+        interp: circleOut
+        strokeFrom: 5
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+        {
+        type: ParticleEffect
+        line: true
+        particles: 12
+        baseLength: 2
+        length: 20
+        lifetime: 25
+        lenFrom: 5
+        lenTo: 0
+        interp: circleOut
+        strokeFrom: 4
+        strokeTo: 0
+        colorFrom: ffd1d1
+        colorTo: e04141
+        }
+      ]
+    }
+      smokeEffect: none
+      homingPower: 0.15
+      homingDelay: 6
+    }
+  }
+]
+
+research: flying2

@@ -1,0 +1,9 @@
+name: Nickel
+description: A metal. Used in armoring infrastructure.
+cost: 1
+color: eea57f
+hiddenOnPlanets: [
+  serpulo,
+  erekir
+]
+research: a1-vanadium

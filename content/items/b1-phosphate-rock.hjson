@@ -1,0 +1,8 @@
+type: item
+cost: 1
+color: 6d717b
+flammability: 0.5
+explosiveness: 0
+radioactivity: 0.1
+charge: 0
+research: c1-vanadium-carbide

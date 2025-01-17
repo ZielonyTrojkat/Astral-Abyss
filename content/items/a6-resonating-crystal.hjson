@@ -1,0 +1,11 @@
+name: Quartz
+description: Red resonating crystals have a capacity to carry power.
+details: used in power capacitors and intermediate infrastructure.
+cost: 1
+charge: 0.5
+color: ffb2ad
+hiddenOnPlanets: [
+  serpulo,
+  erekir
+]
+research: a4-quartz

@@ -1,0 +1,9 @@
+name: Azure moss
+description: Flammable blue moss, tends to grow near radioactive zones.
+cost: 1
+color: 3b83b8
+hiddenOnPlanets: [
+  serpulo,
+  erekir
+]
+research: a1-vanadium
