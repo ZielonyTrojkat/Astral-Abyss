@@ -1,7 +1,7 @@
 name: "astral-abyss"
 displayName: "Astral Abyss WIP"
 author: Zielony Trójkąt and Cy4nide
-description: "Work In Progress"
+description: "Work In Progress note this mod needs the bleeding edge of mindustry to function make sure the version is 25511 or higher"
 version: "0.01"
 minGameVersion: "147"
 hidden: false
