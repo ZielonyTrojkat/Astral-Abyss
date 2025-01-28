@@ -1,7 +1,0 @@
-type: Floor
-variants: 3
-parent: densite-floor
-blendGroup: densite-floor
-emitLight: true
-lightRadius: 16
-lightColor: ffac0022

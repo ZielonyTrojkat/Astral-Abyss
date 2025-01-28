@@ -1,5 +1,0 @@
-type: StaticWall
-variants: 2
-attributes: {
-  a4-quartz: 1
-}

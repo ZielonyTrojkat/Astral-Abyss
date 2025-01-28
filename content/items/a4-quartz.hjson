@@ -1,9 +1,0 @@
-name: Quartz
-description: A shiny silver mineral. Used in synthesis.
-cost: 1
-color: eea57f
-hiddenOnPlanets: [
-  serpulo,
-  erekir
-]
-research: a2-nickel

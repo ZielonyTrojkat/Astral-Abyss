@@ -1,9 +1,0 @@
-name: Vanadium
-description: Lightweight metal. Used in basic infrastructure.
-cost: 1
-color: 696c99
-hiddenOnPlanets: [
-  serpulo,
-  erekir
-]
-research: crimson-core1

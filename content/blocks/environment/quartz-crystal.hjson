@@ -1,5 +1,0 @@
-type: TallBlock
-variants: 2
-emitLight: true
-lightRadius: 34
-lightColor: ffffff
